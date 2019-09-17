@@ -2,14 +2,17 @@ package com.example.rockpedia;
 
 import com.example.rockpedia.dao.BandDAO;
 import com.example.rockpedia.entity.Band;
+import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.info.Info;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.persistence.Entity;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,35 +27,37 @@ public class RockpediaWS {
     }
 
     @GetMapping("/bands/{id}")
-    public ResponseEntity<Info> Get(@PathVariable Long id){
+    public ResponseEntity<Object> Get(@PathVariable Long id){
         Band bandtoget = bandDAO.findById(id).get();
-        Info.Builder builder = new Info.Builder();
-        builder.withDetail("Name", bandtoget.getName());
-        builder.withDetail("members", bandtoget.getMembers());
-        builder.withDetail("style", bandtoget.getStyle());
-        builder.withDetail("members", bandtoget.getMembers());
-        builder.withDetail("yearofcreation", bandtoget.getYearofcreation());
-        builder.withDetail("townoforigin", bandtoget.getTownoforigin());
-        builder.withDetail("label", bandtoget.getLabel());
-        final Info bandJSON = builder.build();
-        return ResponseEntity.ok(bandJSON);
+        JSONObject entity = new JSONObject();
+        entity.put("id", bandtoget.getId());
+        entity.put("Name", bandtoget.getName());
+        entity.put("members", bandtoget.getMembers());
+        entity.put("style", bandtoget.getStyle());
+        entity.put("members", bandtoget.getMembers());
+        entity.put("yearofcreation", bandtoget.getYearofcreation());
+        entity.put("townoforigin", bandtoget.getTownoforigin());
+        entity.put("label", bandtoget.getLabel());
+        return new ResponseEntity<Object>(entity, HttpStatus.OK);
     }
 
     @GetMapping("/bands")
-    public ResponseEntity<Info> Get(){
+    public ResponseEntity<Object> Get(){
         Iterable<Band> listOfBands = bandDAO.findAll();
-        Info.Builder builder = new Info.Builder();
-        for(Band bandtoget: listOfBands)
-        {
-            builder.withDetail("Name", bandtoget.getName());
-            builder.withDetail("members", bandtoget.getMembers());
-            builder.withDetail("style", bandtoget.getStyle());
-            builder.withDetail("members", bandtoget.getMembers());
-            builder.withDetail("yearofcreation", bandtoget.getYearofcreation());
-            builder.withDetail("townoforigin", bandtoget.getTownoforigin());
-            builder.withDetail("label", bandtoget.getLabel());
+
+        List<JSONObject> entities = new ArrayList<JSONObject>();
+        for (Band bandtoget : listOfBands) {
+            JSONObject entity = new JSONObject();
+            entity.put("id", bandtoget.getId());
+            entity.put("Name", bandtoget.getName());
+            entity.put("members", bandtoget.getMembers());
+            entity.put("style", bandtoget.getStyle());
+            entity.put("members", bandtoget.getMembers());
+            entity.put("yearofcreation", bandtoget.getYearofcreation());
+            entity.put("townoforigin", bandtoget.getTownoforigin());
+            entity.put("label", bandtoget.getLabel());
+            entities.add(entity);
         }
-        final Info bandJSON = builder.build();
-        return ResponseEntity.ok(bandJSON);
+        return new ResponseEntity<Object>(entities, HttpStatus.OK);
     }
 }
