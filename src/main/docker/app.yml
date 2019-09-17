@@ -1,6 +1,6 @@
 version: '3.5'
 services:
-  CHANGEZMOILENOMDUGROUPE:
+  g1-rockpedia:
     image: m2gi/g1-rockpedia:0.0.1-SNAPSHOT
     networks:
       #network pour traefik
