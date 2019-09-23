@@ -1,5 +1,7 @@
 package com.example.rockpedia.entity;
 
+import net.minidev.json.JSONObject;
+
 import javax.persistence.*;
 
 @Entity
@@ -91,5 +93,19 @@ public class Band {
                 ", townoforigin='" + townoforigin + '\'' +
                 ", label='" + label + '\'' +
                 '}';
+    }
+    
+    public JSONObject toJSON()
+    {
+        JSONObject entity = new JSONObject();
+        entity.put("id", this.getId());
+        entity.put("Name", this.getName());
+        entity.put("members", this.getMembers());
+        entity.put("style", this.getStyle());
+        entity.put("members", this.getMembers());
+        entity.put("yearofcreation", this.getYearofcreation());
+        entity.put("townoforigin", this.getTownoforigin());
+        entity.put("label", this.getLabel());
+        return entity;
     }
 }

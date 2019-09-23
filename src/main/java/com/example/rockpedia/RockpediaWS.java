@@ -25,40 +25,21 @@ public class RockpediaWS {
 
     @GetMapping("/bands/{id}")
     public ResponseEntity<Object> Get(@PathVariable Long id){
-        Band bandtoget = bandDAO.findById(id).get();
-        JSONObject entity = new JSONObject();
-        entity.put("id", bandtoget.getId());
-        entity.put("Name", bandtoget.getName());
-        entity.put("members", bandtoget.getMembers());
-        entity.put("style", bandtoget.getStyle());
-        entity.put("members", bandtoget.getMembers());
-        entity.put("yearofcreation", bandtoget.getYearofcreation());
-        entity.put("townoforigin", bandtoget.getTownoforigin());
-        entity.put("label", bandtoget.getLabel());
+        Band bandtoget = bandDAO.findById(id).isPresent() ? bandDAO.findById(id).get(): bandDAO.findById(id).get();
+        JSONObject entity = bandtoget.toJSON();
         return new ResponseEntity<Object>(entity, HttpStatus.OK);
     }
 
     @GetMapping("/bands")
     public ResponseEntity<Object> Get(){
         Iterable<Band> listOfBands = bandDAO.findAll();
-
         List<JSONObject> entities = new ArrayList<JSONObject>();
-        for (Band bandtoget : listOfBands) {
-            JSONObject entity = new JSONObject();
-            entity.put("id", bandtoget.getId());
-            entity.put("Name", bandtoget.getName());
-            entity.put("members", bandtoget.getMembers());
-            entity.put("style", bandtoget.getStyle());
-            entity.put("members", bandtoget.getMembers());
-            entity.put("yearofcreation", bandtoget.getYearofcreation());
-            entity.put("townoforigin", bandtoget.getTownoforigin());
-            entity.put("label", bandtoget.getLabel());
-            entities.add(entity);
-        }
+        for (Band bandtoget : listOfBands)
+            entities.add(bandtoget.toJSON());
         return new ResponseEntity<Object>(entities, HttpStatus.OK);
     }
 
-    @PostMapping(path = "/addband", consumes = "application/json")
+    @PostMapping(path = "/add", consumes = "application/json")
     public Band newBand(@RequestBody Band band)
     {
         return bandDAO.save(band);
