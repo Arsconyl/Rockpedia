@@ -92,14 +92,4 @@ public class Band {
                 ", label='" + label + '\'' +
                 '}';
     }
-
-    //    public Band(Long id, String name, String members, String style, int yearofcreation, String townoforigin, String label) {
-//        this.id = id;
-//        this.name = name;
-//        this.members = members;
-//        this.style = style;
-//        this.yearofcreation = yearofcreation;
-//        this.townoforigin = townoforigin;
-//        this.label = label;
-//    }
 }

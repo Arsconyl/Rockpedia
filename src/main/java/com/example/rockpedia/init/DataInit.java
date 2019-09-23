@@ -23,6 +23,7 @@ public class DataInit implements ApplicationRunner {
         if(count == 0)
         {
             Band b1 = new Band();
+            Band b2 = new Band();
 
             b1.setName("Rammstein");
             b1.setLabel("Universal Music Group");
@@ -31,7 +32,15 @@ public class DataInit implements ApplicationRunner {
             b1.setYearofcreation(1994);
             b1.setTownoforigin("Berlin");
 
+            b2.setName("The Beatles");
+            b2.setLabel("Apple Records");
+            b2.setMembers("Paul McCartney, John Lennon, Ringo Star, George Harrisson");
+            b2.setStyle("Rock");
+            b2.setYearofcreation(1960);
+            b2.setTownoforigin("Liverpool");
+
             bandDAO.save(b1);
+            bandDAO.save(b2);
         }
     }
 }
