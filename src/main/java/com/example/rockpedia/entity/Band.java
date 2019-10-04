@@ -13,15 +13,15 @@ public class Band {
     @Column(name = "Id", nullable = false)
     private Long id;
 
-    @Column(name = "Name", length = 32, nullable = false)
+    @Column(name = "Name", length = 64, nullable = false)
     private String name;
     @Column(name = "Members", length = 128, nullable = false)
     private String members;
-    @Column(name = "Style", length = 32, nullable = false)
+    @Column(name = "Style", length = 64, nullable = false)
     private String style;
     @Column(name = "Year_creation", nullable = false)
     private int yearofcreation;
-    @Column(name = "townoforigin", length = 32)
+    @Column(name = "townoforigin", length = 64)
     private String townoforigin;
 
     public Long getId() {

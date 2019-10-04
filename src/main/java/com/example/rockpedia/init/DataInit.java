@@ -2,10 +2,15 @@ package com.example.rockpedia.init;
 
 import com.example.rockpedia.dao.BandDAO;
 import com.example.rockpedia.entity.Band;
+import com.github.loki.afro.metallum.MetallumException;
+import com.github.loki.afro.metallum.search.query.BandSearchQuery;
+import com.github.loki.afro.metallum.search.service.advanced.BandSearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class DataInit implements ApplicationRunner {
@@ -41,6 +46,38 @@ public class DataInit implements ApplicationRunner {
 
             bandDAO.save(b1);
             bandDAO.save(b2);
+
+            final BandSearchService service = new BandSearchService();
+            final BandSearchQuery query = new BandSearchQuery();
+            //             Here we give some parameters to the query
+            //             In our case the name of the band and
+            //             the second parameter here is exact match, because we are sure that there is a Band named Slayer
+            query.setYearOfFormationFrom(2019);
+            query.setYearOfFormationTo(2019);
+            query.setGenre("Metal");
+            //             now we say "search", like pressing the search button
+            try {
+                final List<com.github.loki.afro.metallum.entity.Band> resultList = service.performSearch(query);
+                Band bandToSave;
+                for (final com.github.loki.afro.metallum.entity.Band band : resultList) {
+                    bandToSave = new Band();
+                    bandToSave.setLabel(band.getLabel().getName());
+                    bandToSave.setName(band.getName());
+                    bandToSave.setStyle(band.getGenre());
+                    bandToSave.setTownoforigin(band.getLocation().split(",")[1]);
+                    bandToSave.setYearofcreation(band.getYearFormedIn());
+                    bandToSave.setMembers(band.getLiveLineup().toString());
+
+                    bandDAO.save(bandToSave);
+//                    System.out.println("Bandname: " + band.getName());
+//                    System.out.println("Bandgenre: " + band.getGenre());
+//                    System.out.println("Bandstatus: " + band.getStatus().asString());
+//                    System.out.println("---");
+
+                }
+            } catch (MetallumException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
