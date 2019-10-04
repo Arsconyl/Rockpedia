@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+main {
+    margin: auto;
+    max-width: 50%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
