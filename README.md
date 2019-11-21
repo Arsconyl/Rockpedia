@@ -1,7 +1,11 @@
-An API REST about some great rock bands
+# Rockpedia
 
-Voici quelques pistes, en vrac
+### L'API qui fait du bruit
 
+[Swagger](/swagger-ui.html)
+
+
+Quelque trucs à faire :
 - [ ] pre commit hooks
 - [ ] git flow
 - [ ] Spring actuator : health

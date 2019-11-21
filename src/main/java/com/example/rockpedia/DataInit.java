@@ -1,30 +1,25 @@
-package com.example.rockpedia.init;
+package com.example.rockpedia;
 
-import com.example.rockpedia.dao.BandDAO;
-import com.example.rockpedia.entity.Band;
-import com.github.loki.afro.metallum.MetallumException;
-import com.github.loki.afro.metallum.search.query.BandSearchQuery;
-import com.github.loki.afro.metallum.search.service.advanced.BandSearchService;
+import com.example.rockpedia.band.BandRepository;
+import com.example.rockpedia.band.Band;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 @Component
 public class DataInit implements ApplicationRunner {
 
-    private BandDAO bandDAO;
+    private BandRepository bandRepository;
 
     @Autowired
-    public DataInit(BandDAO bandDAO) {
-        this.bandDAO = bandDAO;
+    public DataInit(BandRepository bandRepository) {
+        this.bandRepository = bandRepository;
     }
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        long count = bandDAO.count();
+        long count = bandRepository.count();
         if(count == 0)
         {
             Band b1 = new Band();
@@ -44,8 +39,8 @@ public class DataInit implements ApplicationRunner {
             b2.setYearofcreation(1960);
             b2.setTownoforigin("Liverpool");
 
-            bandDAO.save(b1);
-            bandDAO.save(b2);
+            bandRepository.save(b1);
+            bandRepository.save(b2);
 
 //            final BandSearchService service = new BandSearchService();
 //            final BandSearchQuery query = new BandSearchQuery();
