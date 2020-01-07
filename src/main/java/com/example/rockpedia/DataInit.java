@@ -2,10 +2,15 @@ package com.example.rockpedia;
 
 import com.example.rockpedia.band.BandRepository;
 import com.example.rockpedia.band.Band;
+import com.github.loki.afro.metallum.MetallumException;
+import com.github.loki.afro.metallum.search.query.BandSearchQuery;
+import com.github.loki.afro.metallum.search.service.advanced.BandSearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class DataInit implements ApplicationRunner {
@@ -47,28 +52,33 @@ public class DataInit implements ApplicationRunner {
 //            //             Here we give some parameters to the query
 //            //             In our case the name of the band and
 //            //             the second parameter here is exact match, because we are sure that there is a Band named Slayer
-//            query.setYearOfFormationFrom(2019);
+//            query.setYearOfFormationFrom(2016);
 //            query.setYearOfFormationTo(2019);
 //            query.setGenre("Metal");
 //            //             now we say "search", like pressing the search button
 //            try {
 //                final List<com.github.loki.afro.metallum.entity.Band> resultList = service.performSearch(query);
 //                Band bandToSave;
+//                System.out.println(resultList.size());
 //                for (final com.github.loki.afro.metallum.entity.Band band : resultList) {
-//                    bandToSave = new Band();
-//                    bandToSave.setLabel(band.getLabel().getName());
-//                    bandToSave.setName(band.getName());
-//                    bandToSave.setStyle(band.getGenre());
-//                    bandToSave.setTownoforigin(band.getLocation().split(",")[1]);
-//                    bandToSave.setYearofcreation(band.getYearFormedIn());
-//                    bandToSave.setMembers(band.getLiveLineup().toString());
+//                    String townoforigin = band.getLocation().split(",")[1].trim();
+//                    String label = band.getLabel().getName().trim();
+//                    String name = band.getName();
+//                    String style = band.getGenre();
+//                    boolean notown = !townoforigin.isEmpty(), nolabel = !label.isEmpty(), namenottoolong = name.length() < 64, stylenottoolong = style.length() < 64;
+//                    if(notown && nolabel && namenottoolong && stylenottoolong) {
+//                        bandToSave = new Band();
+//                        bandToSave.setLabel(label);
+//                        bandToSave.setName(name);
+//                        bandToSave.setStyle(style);
+//                        bandToSave.setTownoforigin(townoforigin);
+//                        bandToSave.setYearofcreation(band.getYearFormedIn());
+//                        bandToSave.setMembers(band.getLiveLineup().toString());
 //
-//                    bandDAO.save(bandToSave);
-//                    System.out.println("Bandname: " + band.getName());
-//                    System.out.println("Bandgenre: " + band.getGenre());
-//                    System.out.println("Bandstatus: " + band.getStatus().asString());
-//                    System.out.println("---");
-//
+//                        bandRepository.save(bandToSave);
+//                    }
+//                    else
+//                        System.out.println(band.getLabel().getName().length() + " " + band.getLabel().getName() + " " + name);
 //                }
 //            } catch (MetallumException e) {
 //                e.printStackTrace();

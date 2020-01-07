@@ -43,7 +43,7 @@ public class BandController {
         return new ResponseEntity<Object>(entity, HttpStatus.OK);
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<Object> Get(){
         Iterable<Band> listOfBands = bandRepository.findAll();
         List<JSONObject> entities = new ArrayList<JSONObject>();
