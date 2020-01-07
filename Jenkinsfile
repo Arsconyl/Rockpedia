@@ -1,5 +1,3 @@
- 
-#!/usr/bin/env groovy
 properties([buildDiscarder(logRotator(artifactNumToKeepStr: '5', numToKeepStr: '5'))])
 
 
