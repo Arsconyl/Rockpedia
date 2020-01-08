@@ -2,7 +2,6 @@ package com.example.rockpedia.band;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,20 +16,20 @@ public class BandController {
     @Autowired
     private BandRepository bandRepository;
 
-    public BandController() {
-    }
-
     @GetMapping("/{id}")
-    public ResponseEntity<Band> Get(@PathVariable Long id){
-        Band bandtoget = bandRepository.findById(id).isPresent() ? bandRepository.findById(id).get(): bandRepository.findById(id).get();
-        return new ResponseEntity<Band>(bandtoget, HttpStatus.OK);
+    public ResponseEntity<Band> byId(@PathVariable Long id){
+        Optional<Band> bandtoget = bandRepository.findById(id);
+        Band band = new Band();
+        if(bandtoget.isPresent())
+           band = bandtoget.get();
+        return new ResponseEntity<>(band, HttpStatus.OK);
     }
 
     @GetMapping("")
-    public ResponseEntity<List> Get(){
+    public ResponseEntity<List> get(){
         Iterable<Band> listOfBands = bandRepository.findAll();
         List<Band> bands = iterableToList(listOfBands);
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @PostMapping(path = "/add", consumes = "application/json")
@@ -59,46 +58,46 @@ public class BandController {
         List<Band> bands = new ArrayList<>();
         if(listOfBands.isPresent())
             bands = iterableToList(listOfBands.get());
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byGenre/{genre}")
-    public ResponseEntity<List> byGenre(@PathVariable(value="genre")String label)
+    public ResponseEntity<List> byGenre(@PathVariable(value="genre")String genre)
     {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByGenreContainingIgnoreCase(label);
+        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByGenreContainingIgnoreCase(genre);
         List<Band> bands = new ArrayList<>();
         if(listOfBands.isPresent())
             bands = iterableToList(listOfBands.get());
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byTheme/{theme}")
-    public ResponseEntity<List> byTheme(@PathVariable(value="theme")String label)
+    public ResponseEntity<List> byTheme(@PathVariable(value="theme")String theme)
     {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByThemesContainingIgnoreCase(label);
+        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByThemesContainingIgnoreCase(theme);
         List<Band> bands = new ArrayList<>();
         if(listOfBands.isPresent())
             bands = iterableToList(listOfBands.get());
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byLocation/{location}")
-    public ResponseEntity<List> byLocation(@PathVariable(value="location")String label)
+    public ResponseEntity<List> byLocation(@PathVariable(value="location")String location)
     {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByLocationContainingIgnoreCase(label);
+        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByLocationContainingIgnoreCase(location);
         List<Band> bands = new ArrayList<>();
         if(listOfBands.isPresent())
             bands = iterableToList(listOfBands.get());
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
     @GetMapping("/byCountry/{country}")
-    public ResponseEntity<List> byCountry(@PathVariable(value="country")String label)
+    public ResponseEntity<List> byCountry(@PathVariable(value="country")String country)
     {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByCountryContainingIgnoreCase(label);
+        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByCountryContainingIgnoreCase(country);
         List<Band> bands = new ArrayList<>();
         if(listOfBands.isPresent())
             bands = iterableToList(listOfBands.get());
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byLabel/{label}")
@@ -108,17 +107,17 @@ public class BandController {
         List<Band> bands = new ArrayList<>();
         if(listOfBands.isPresent())
             bands = iterableToList(listOfBands.get());
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byStatus/{status}")
-    public ResponseEntity<List> byStatus(@PathVariable(value="status")String label)
+    public ResponseEntity<List> byStatus(@PathVariable(value="status")String status)
     {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByStatusContainingIgnoreCase(label);
+        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByStatusContainingIgnoreCase(status);
         List<Band> bands = new ArrayList<>();
         if(listOfBands.isPresent())
             bands = iterableToList(listOfBands.get());
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byFormed/{formed}")
@@ -128,7 +127,7 @@ public class BandController {
         List<Band> bands = new ArrayList<>();
         if(listOfBands.isPresent())
             bands = iterableToList(listOfBands.get());
-        return new ResponseEntity<List>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     //@GetMapping("/bands/search")

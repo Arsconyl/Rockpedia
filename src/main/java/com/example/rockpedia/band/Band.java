@@ -1,8 +1,7 @@
 package com.example.rockpedia.band;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name="Band")
@@ -129,5 +128,26 @@ public class Band {
                 ", status='" + status + '\'' +
                 ", formed=" + formed +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Band band = (Band) o;
+        return formed == band.formed &&
+                id.equals(band.id) &&
+                name.equals(band.name) &&
+                genre.equals(band.genre) &&
+                themes.equals(band.themes) &&
+                location.equals(band.location) &&
+                country.equals(band.country) &&
+                label.equals(band.label) &&
+                status.equals(band.status);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, genre, themes, location, country, label, status, formed);
     }
 }
