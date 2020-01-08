@@ -8,9 +8,12 @@ import java.util.Optional;
 @Repository
 public interface BandRepository extends CrudRepository<Band, Long> {
     public Optional<Band> findById(Long id);
-    public Optional<Band> findBandByNameContainingIgnoreCase(String name);
-    public Optional<Band> findBandByMembersContainingIgnoreCase(String name);
-    public Optional<Band> findBandByLabelContainingIgnoreCase(String name);
-    public Optional<Band> findBandByTownoforiginContainingIgnoreCase(String name);
-    public Optional<Band> findBandByStyleContainingIgnoreCase(String name);
+    public Optional<Iterable<Band>> findAllByNameContainingIgnoreCase(String name);
+    public Optional<Iterable<Band>> findAllByGenreContainingIgnoreCase(String genre);
+    public Optional<Iterable<Band>> findAllByThemesContainingIgnoreCase(String theme);
+    public Optional<Iterable<Band>> findAllByLocationContainingIgnoreCase(String location);
+    public Optional<Iterable<Band>> findAllByCountryContainingIgnoreCase(String country);
+    public Optional<Iterable<Band>> findAllByLabelContainingIgnoreCase(String label);
+    public Optional<Iterable<Band>> findAllByStatusContainingIgnoreCase(String status);
+    public Optional<Iterable<Band>> findAllByFormed(int formed);
 }

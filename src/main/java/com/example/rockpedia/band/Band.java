@@ -1,11 +1,11 @@
 package com.example.rockpedia.band;
 
-import net.minidev.json.JSONObject;
-
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name="BAND")
+@Table(name="Band")
 public class Band {
 
     @Id
@@ -13,99 +13,121 @@ public class Band {
     @Column(name = "Id", nullable = false)
     private Long id;
 
-    @Column(name = "Name", length = 64, nullable = false)
+    @Column(name = "Name", length = 128, nullable = false)
     private String name;
-    @Column(name = "Members", length = 128, nullable = false)
-    private String members;
-    @Column(name = "Style", length = 64, nullable = false)
-    private String style;
-    @Column(name = "Year_creation", nullable = false)
-    private int yearofcreation;
-    @Column(name = "townoforigin", length = 64)
-    private String townoforigin;
+    @Column(name = "genre", length = 128, nullable = false)
+    private String genre;
+    @Column(name = "themes", nullable = false)
+    public String themes;
+    @Column(name = "location", length = 128, nullable = false)
+    private String location;
+    @Column(name = "country", length = 128, nullable = false)
+    private String country;
+    @Column(name = "label", length = 128, nullable = false)
+    public String label;
+    @Column(name = "status", length = 128, nullable = false)
+    public String status;
+    @Column(name = "formed", length = 128, nullable = false)
+    public int formed;
+
+    public Band() {
+    }
+
+    public Band(String name, String genre, String themes, String location, String country, String label, String status, int formed) {
+        this.name = name;
+        this.genre = genre;
+        this.themes = themes;
+        this.location = location;
+        this.country = country;
+        this.label = label;
+        this.status = status;
+        this.formed = formed;
+    }
 
     public Long getId() {
         return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getMembers() {
-        return members;
-    }
-
-    public String getStyle() {
-        return style;
-    }
-
-    public int getYearofcreation() {
-        return yearofcreation;
-    }
-
-    public String getTownoforigin() {
-        return townoforigin;
-    }
-
-    public String getLabel() {
-        return label;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setMembers(String members) {
-        this.members = members;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setStyle(String style) {
-        this.style = style;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
-    public void setYearofcreation(int yearofcreation) {
-        this.yearofcreation = yearofcreation;
+    public String getThemes() {
+        return themes;
     }
 
-    public void setTownoforigin(String townoforigin) {
-        this.townoforigin = townoforigin;
+    public void setThemes(String themes) {
+        this.themes = themes;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getLabel() {
+        return label;
     }
 
     public void setLabel(String label) {
         this.label = label;
     }
 
-    private String label;
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public int getformed() {
+        return formed;
+    }
+
+    public void setformed(int formed) {
+        this.formed = formed;
+    }
 
     @Override
     public String toString() {
         return "Band{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", members='" + members + '\'' +
-                ", style='" + style + '\'' +
-                ", yearofcreation=" + yearofcreation +
-                ", townoforigin='" + townoforigin + '\'' +
+                ", genre='" + genre + '\'' +
+                ", themes='" + themes + '\'' +
+                ", location='" + location + '\'' +
+                ", country='" + country + '\'' +
                 ", label='" + label + '\'' +
+                ", status='" + status + '\'' +
+                ", formed=" + formed +
                 '}';
-    }
-    
-    public JSONObject toJSON()
-    {
-        JSONObject entity = new JSONObject();
-        entity.put("id", this.getId());
-        entity.put("Name", this.getName());
-        entity.put("members", this.getMembers());
-        entity.put("style", this.getStyle());
-        entity.put("members", this.getMembers());
-        entity.put("yearofcreation", this.getYearofcreation());
-        entity.put("townoforigin", this.getTownoforigin());
-        entity.put("label", this.getLabel());
-        return entity;
     }
 }

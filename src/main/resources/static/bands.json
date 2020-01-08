@@ -1,0 +1,1872 @@
+[
+    {
+        "name": "Metallica",
+        "genre": "Thrash Metal (early), Hard Rock (mid), Heavy/Thrash Metal (later)",
+        "themes": "Corruption, Death, Life, Internal struggles, Anger",
+        "label": "Blackened Recordings",
+        "country": "United States",
+        "location": "Los Angeles/San Francisco, California",
+        "status": "Active",
+        "formed": 1981
+    },
+    {
+        "name": "S.U.T.U.R.E.",
+        "genre": "Black Metal/Crust",
+        "themes": "Misanthropy",
+        "label": "Black Pandemie Production",
+        "country": "France",
+        "location": "Metz, Grand Est",
+        "status": "Active",
+        "formed": 2016
+    },
+    {
+        "name": "Psoriasis",
+        "genre": "Power/Progressive/Thrash Metal",
+        "themes": "Social critical (earlier), Humor (later)",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Wilnsdorf/Siegen, North Rhine-Westphalia",
+        "status": "Split-up",
+        "formed": "1992"
+    },
+    {
+        "name": "Mutilation Nation",
+        "genre": "Death/Thrash Metal",
+        "themes": "Violence",
+        "label": "Unsigned/independent",
+        "country": "Finland",
+        "location": "Joensuu",
+        "status": "Split-up",
+        "formed": "2003"
+    },
+    {
+        "name": "Dimholt",
+        "genre": "Black Metal",
+        "themes": "Darkness, Life, Death",
+        "label": "Unsigned/independent",
+        "country": "Bulgaria",
+        "location": "Burgas, Burgas",
+        "status": "Active",
+        "formed": "2003"
+    },
+    {
+        "name": "Valensorow",
+        "genre": "Folk/Viking Metal/Metalcore",
+        "themes": "Fantasy, Battle",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "San Jose, California",
+        "status": "On hold",
+        "formed": "2012"
+    },
+    {
+        "name": "Corazón Profeta",
+        "genre": "Heavy Metal",
+        "themes": "Personal and social issues, Heavy Metal",
+        "label": "Unsigned/independent",
+        "country": "Argentina",
+        "location": "Necochea, Buenos Aires",
+        "status": "Active",
+        "formed": 2000
+    },
+    {
+        "name": "Dhraug",
+        "genre": "Death/Thrash/Black Metal",
+        "themes": "Destruction, Darkness, Hate, Anti-Religion",
+        "label": "Unsigned/independent",
+        "country": "Sweden",
+        "location": "Uppsala",
+        "status": "On hold",
+        "formed": 2003
+    },
+    {
+        "name": "Nekrovoid",
+        "genre": "Black Metal",
+        "themes": "Satanism, War, Misanthropy",
+        "label": "Unsigned/independent",
+        "country": "Denmark",
+        "location": "Svenborg",
+        "status": "Changed name",
+        "formed": 2003
+    },
+    {
+        "name": "Depredate",
+        "genre": "Death Metal",
+        "themes": "Death, Society, Doom, Politics, Religion",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Maceió, Alagoas",
+        "status": "Active",
+        "formed": 2015
+    },
+    {
+        "name": "Garm",
+        "genre": "Black Metal",
+        "themes": "Misanthropy, Despair, Satanic, Anti-Christian",
+        "label": "Unsigned/independent",
+        "country": "Ireland",
+        "location": "Cork, Cork",
+        "status": "Changed name",
+        "formed": 2006
+    },
+    {
+        "name": "Essência Insana",
+        "genre": "Thrash/Black Metal",
+        "themes": "Social Criticism, Carnage, Misanthropy",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Campos Sales, Ceará",
+        "status": "Active",
+        "formed": 2012
+    },
+    {
+        "name": "McLoud",
+        "genre": "Crossover/Thrash Metal",
+        "themes": "Humour, Religion, Violence, Sarcasm",
+        "label": "Unsigned/independent",
+        "country": "Lithuania",
+        "location": "Vilnius, Vilnius",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Beatcoffin Bastard",
+        "genre": "Death Metal",
+        "themes": "Hatred, Misanthropy",
+        "label": "Unsigned/independent",
+        "country": "Finland",
+        "location": "Lieksa, Pohjois-Karjala",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Noctambulant",
+        "genre": "Death/Black Metal",
+        "themes": "Satanism, Anti-Christianity, Hate, Violence",
+        "label": "Unsigned/independent",
+        "country": "Mexico",
+        "location": "Colima, Colima",
+        "status": "Split-up",
+        "formed": 2004
+    },
+    {
+        "name": "Metaphoris",
+        "genre": "Thrash/Death Metal",
+        "themes": "Hate, Chaos",
+        "label": "Unsigned/independent",
+        "country": "Finland",
+        "location": "Vantaa",
+        "status": "Changed name",
+        "formed": 2007
+    },
+    {
+        "name": "Charlie Parra del Riego",
+        "genre": "Power/Thrash Metal, Shred",
+        "themes": "Instrumental",
+        "label": "Unsigned/independent",
+        "country": "Peru",
+        "location": "Lima",
+        "status": "Active",
+        "formed": 2009
+    },
+    {
+        "name": "Golem",
+        "genre": "Death Metal",
+        "themes": "Existential issues",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Mauá, São Paulo",
+        "status": "Active",
+        "formed": 1991
+    },
+    {
+        "name": "Axeslaughter",
+        "genre": "Death/Thrash Metal",
+        "themes": "Death, Gore",
+        "label": "Unsigned/independent",
+        "country": "Finland",
+        "location": "Lappeenranta",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Brutal",
+        "genre": "Thrash Metal",
+        "themes": "Society, Violence, Politics, Anti-Religion",
+        "label": "Unsigned/independent",
+        "country": "Argentina",
+        "location": "Rosario, Santa Fe",
+        "status": "Active",
+        "formed": 2011
+    },
+    {
+        "name": "Engendro Malévolo",
+        "genre": "Death/Black/Thrash Metal",
+        "themes": "Pre-hispanic Rituals, Demonology, Horrors, Occult",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "San Leandro, California",
+        "status": "Active",
+        "formed": 2016
+    },
+    {
+        "name": "Surreal Demise",
+        "genre": "Black Metal",
+        "themes": "Supernatural Horror, Elemental Power, Otherworldly Dimensions",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Westminster, Colorado",
+        "status": "Active",
+        "formed": 2016
+    },
+    {
+        "name": "Insurgence",
+        "genre": "Black/Death Metal",
+        "themes": "War, Death, Murder",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "North Rhine-Westphalia",
+        "status": "Active",
+        "formed": 2019
+    },
+    {
+        "name": "Truth Ascension",
+        "genre": "Progressive/Death Metal",
+        "themes": "Life, Death, Ascension, Truth, Apocalypse",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Toledo, Ohio",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "The Gentiles",
+        "genre": "Heavy Metal",
+        "themes": "Christianity",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Salem, Oregon",
+        "status": "Changed name",
+        "formed": 1979
+    },
+    {
+        "name": "Prosecutor",
+        "genre": "Progressive/Thrash Metal",
+        "themes": "War",
+        "label": "Unsigned/independent",
+        "country": "Lithuania",
+        "location": "Kaunas, Kaunas",
+        "status": "Split-up",
+        "formed": 1992
+    },
+    {
+        "name": "KillScream",
+        "genre": "Thrash/Death/Groove Metal",
+        "themes": "Mental disorders, Sickness, Inner struggle",
+        "label": "Unsigned/independent",
+        "country": "Ukraine",
+        "location": "Kropyvnytskyi, Kirovohrad Oblast",
+        "status": "Active",
+        "formed": 2012
+    },
+    {
+        "name": "Despondency",
+        "genre": "Death Metal",
+        "themes": "Human Machine, Genocide, Death",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Newton, Massachusetts",
+        "status": "Split-up",
+        "formed": 1992
+    },
+    {
+        "name": "Ayera",
+        "genre": "Melodic Death Metal",
+        "themes": "Religion, War",
+        "label": "Unsigned/independent",
+        "country": "Australia",
+        "location": "Melbourne, Victoria",
+        "status": "Unknown",
+        "formed": 2008
+    },
+    {
+        "name": "Percutor 1708",
+        "genre": "Heavy/Thrash Metal",
+        "themes": "Political and Social Denounce, Pollution",
+        "label": "Unsigned/independent",
+        "country": "Argentina",
+        "location": "Morón, Buenos Aires",
+        "status": "Active",
+        "formed": 1992
+    },
+    {
+        "name": "Sicksouls",
+        "genre": "Death/Thrash Metal",
+        "themes": "Politics, Society",
+        "label": "Unsigned/independent",
+        "country": "Portugal",
+        "location": "Cascais, Lisbon",
+        "status": "Split-up",
+        "formed": 2001
+    },
+    {
+        "name": "Asgerahnum",
+        "genre": "Pagan/Black Metal",
+        "themes": "Germanic Beliefs, War, Pride, Glory",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Rostock, Mecklenburg-Vorpommern",
+        "status": "Unknown",
+        "formed": 2006
+    },
+    {
+        "name": "My Season",
+        "genre": "Gothic Metal/Rock",
+        "themes": "Instrumental",
+        "label": "Unsigned/independent",
+        "country": "Romania",
+        "location": "Arad, Arad County",
+        "status": "Active",
+        "formed": 2012
+    },
+    {
+        "name": "Black Warrior",
+        "genre": "Melodic Power/Gothic Metal",
+        "themes": "Love, Destiny, Freedom",
+        "label": "Unsigned/independent",
+        "country": "Russia",
+        "location": "Perm, Perm Krai",
+        "status": "Split-up",
+        "formed": 1999
+    },
+    {
+        "name": "Frostthrone",
+        "genre": "Black Metal",
+        "themes": "Death, Winter, Satan, Mysticism",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Rainelle, West Virginia",
+        "status": "On hold",
+        "formed": 2006
+    },
+    {
+        "name": "Svartalfheim",
+        "genre": "Folk/Black Metal",
+        "themes": "Paganism, Medieval Themes",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Curitiba, Paraná",
+        "status": "Active",
+        "formed": 2005
+    },
+    {
+        "name": "Sentensya",
+        "genre": "Brutal Death Metal",
+        "themes": "Gore, Death",
+        "label": "Unsigned/independent",
+        "country": "Philippines",
+        "location": "Lucena, Calabarzon",
+        "status": "Split-up",
+        "formed": 1994
+    },
+    {
+        "name": "Berdosa",
+        "genre": "Stoner/Doom Metal",
+        "themes": "Philosophy, Stoicism, Hypocrisy, Acceptance",
+        "label": "Unsigned/independent",
+        "country": "Malaysia",
+        "location": "Kuala Lumpur",
+        "status": "Active",
+        "formed": 2017
+    },
+    {
+        "name": "Asathor",
+        "genre": "Black/Death Metal",
+        "themes": "Norse mythology, Vikings, LOTR (old)",
+        "label": "Unsigned/independent",
+        "country": "Luxembourg",
+        "location": "Dahlem, Capellen",
+        "status": "Active",
+        "formed": 2005
+    },
+    {
+        "name": "Karburalcool",
+        "genre": "Heavy/Thrash Metal",
+        "themes": "Anti-Government, Daily Life, Alcohol",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Presidente Prudente, São Paulo",
+        "status": "Active",
+        "formed": 2012
+    },
+    {
+        "name": "Bleedience",
+        "genre": "Black/Death Metal",
+        "themes": "Christianity",
+        "label": "Unsigned/independent",
+        "country": "Norway",
+        "location": "Hønefoss",
+        "status": "Unknown",
+        "formed": 2000
+    },
+    {
+        "name": "Sial",
+        "genre": "Raw Black Metal (early), Depressive Black Metal, Ambient (later)",
+        "themes": "Death, Torture (early), Suicide, Death, Misanthropy, Insanity (later)",
+        "label": "Unsigned/independent",
+        "country": "Malaysia",
+        "location": "Selangor",
+        "status": "Split-up",
+        "formed": 2014
+    },
+    {
+        "name": "Neptunian Horizon",
+        "genre": "Epic Power/Symphonic Metal",
+        "themes": "Gnosticism, Conspiracy, Despair, Spirituality",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Charlottesville, Virginia",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Yin",
+        "genre": "Black Metal",
+        "themes": "Lovecraft/Al Azif Myths, Autumn, The Moon",
+        "label": "Unsigned/independent",
+        "country": "Russia",
+        "location": "Ostrogozhsk, Voronezh Oblast",
+        "status": "Active",
+        "formed": 2005
+    },
+    {
+        "name": "Solve et Coagula",
+        "genre": "Black Metal",
+        "themes": "Satanism, Ice",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Maceió, Alagoas",
+        "status": "Split-up",
+        "formed": 1999
+    },
+    {
+        "name": "Animus Necandi",
+        "genre": "Thrash Metal",
+        "themes": "Aggressive themes",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Salvador, Bahia",
+        "status": "Active",
+        "formed": 2004
+    },
+    {
+        "name": "Foreshadow",
+        "genre": "Thrash Metal/Metalcore",
+        "themes": "Hate, Anger, Death",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Tampa, Florida",
+        "status": "Split-up",
+        "formed": 2008
+    },
+    {
+        "name": "Maniac Force",
+        "genre": "Thrash Metal",
+        "themes": "Violence, Anti-religion, Death, Metal",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Mongaguá, São Paulo",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Kratic",
+        "genre": "Sludge Metal",
+        "themes": "Life, Humanity",
+        "label": "Unsigned/independent",
+        "country": "Norway",
+        "location": "Oslo/Bærum",
+        "status": "Split-up",
+        "formed": 2005
+    },
+    {
+        "name": "Werewolf Satan",
+        "genre": "Raw Black Metal",
+        "themes": "National Socialism, Fascism, War (before), Philosophy, European Spirituality",
+        "label": "Unsigned/independent",
+        "country": "Italy",
+        "location": "Brescia, Lombardy",
+        "status": "Active",
+        "formed": 2011
+    },
+    {
+        "name": "Discrucior",
+        "genre": "Death/Doom Metal",
+        "themes": "Dark dreams, Sorrow",
+        "label": "Unsigned/independent",
+        "country": "Estonia",
+        "location": "Rakvere, Lääne-Viru County",
+        "status": "Split-up",
+        "formed": 1993
+    },
+    {
+        "name": "11th Dimension",
+        "genre": "Progressive Metal",
+        "themes": "Isolation, Society, Anxiety, Hope, Self-Discovery",
+        "label": "Unsigned/independent",
+        "country": "Portugal",
+        "location": "Lisbon, Lisbon",
+        "status": "Active",
+        "formed": 2013
+    },
+    {
+        "name": "Cerebro",
+        "genre": "Heavy Metal",
+        "themes": "Life issues",
+        "label": "Unsigned/independent",
+        "country": "Mexico",
+        "location": "León, Guanajuato",
+        "status": "Split-up",
+        "formed": 1982
+    },
+    {
+        "name": "Februum",
+        "genre": "Black/Doom Metal",
+        "themes": "Anti-Christianity, Satanism, Occultism",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Barbacena, Minas Gerais",
+        "status": "Split-up",
+        "formed": 1995
+    },
+    {
+        "name": "Ucumar",
+        "genre": "Death Metal",
+        "themes": "Andean mythology",
+        "label": "Unsigned/independent",
+        "country": "Argentina",
+        "location": "Rosario de Lerma,Salta",
+        "status": "Active",
+        "formed": 2016
+    },
+    {
+        "name": "Necropia",
+        "genre": "Melodic Death Metal/Deathcore",
+        "themes": "Conceptual",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Long Island, New York",
+        "status": "Active",
+        "formed": 2011
+    },
+    {
+        "name": "Keber",
+        "genre": "Black Metal",
+        "themes": "Christianity",
+        "label": "Unsigned/independent",
+        "country": "Paraguay",
+        "location": "Asunción",
+        "status": "Split-up",
+        "formed": 2000
+    },
+    {
+        "name": "Radical Corps",
+        "genre": "Thrash/Death Metal",
+        "themes": "Politics, Human Suffering",
+        "label": "Unsigned/independent",
+        "country": "Indonesia",
+        "location": "Semarang, Central Java",
+        "status": "Active",
+        "formed": 1992
+    },
+    {
+        "name": "Fanatical Views",
+        "genre": "Thrash Metal/Crossover",
+        "themes": "Society, the Environment, Anti-Posers",
+        "label": "Unsigned/independent",
+        "country": "Canada",
+        "location": "Quebec City, Quebec",
+        "status": "Split-up",
+        "formed": 1988
+    },
+    {
+        "name": "Raven's Hill",
+        "genre": "Black Metal",
+        "themes": "War, Hate",
+        "label": "Unsigned/independent",
+        "country": "France",
+        "location": "Nantes, Pays de la Loire",
+        "status": "Active",
+        "formed": 2007
+    },
+    {
+        "name": "Vengeance Sorcery",
+        "genre": "Black Metal",
+        "themes": "Occult, Satanic, Darkness",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "United States / Russia",
+        "status": "Active",
+        "formed": 2019
+    },
+    {
+        "name": "Sannyasin",
+        "genre": "Death Metal",
+        "themes": "Philosophy",
+        "label": "Unsigned/independent",
+        "country": "Poland",
+        "location": "Lublin, Lubelskie",
+        "status": "Split-up",
+        "formed": 1990
+    },
+    {
+        "name": "Annihilist",
+        "genre": "Melodic Groove/Death Metal",
+        "themes": "Inner struggles, Life",
+        "label": "Unsigned/independent",
+        "country": "Australia",
+        "location": "Melbourne, Victoria",
+        "status": "Active",
+        "formed": 2014
+    },
+    {
+        "name": "Wintermute",
+        "genre": "Dark/Death/Doom Metal",
+        "themes": "Sorrow, Darkness, Suicide",
+        "label": "Unsigned/independent",
+        "country": "Spain",
+        "location": "Málaga, Andalusia",
+        "status": "Active",
+        "formed": 2000
+    },
+    {
+        "name": "Grobut Neerg",
+        "genre": "Death/Folk Metal",
+        "themes": "Horror, Fantasy, Beer",
+        "label": "Unsigned/independent",
+        "country": "Russia",
+        "location": "Ryazan, Ryazan Oblast",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Demise",
+        "genre": "Death Metal",
+        "themes": "Middle ages, Warriors, Doom",
+        "label": "Unsigned/independent",
+        "country": "France",
+        "location": "Lyon, Auvergne-Rhône-Alpes",
+        "status": "Split-up",
+        "formed": 1996
+    },
+    {
+        "name": "Icestorm",
+        "genre": "Epic Heavy Metal",
+        "themes": "Fantasy",
+        "label": "Unsigned/independent",
+        "country": "Spain",
+        "location": "Barcelona, Catalonia",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Ungodly Death",
+        "genre": "Black/Death Metal",
+        "themes": "Morbid Theism",
+        "label": "Unsigned/independent",
+        "country": "Malaysia",
+        "location": "Kuching, Sarawak",
+        "status": "Active",
+        "formed": 1987
+    },
+    {
+        "name": "Bloodwind",
+        "genre": "Black Metal",
+        "themes": "Darkness, Hatred, Torment, Misery",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Placerville, California",
+        "status": "Active",
+        "formed": 2009
+    },
+    {
+        "name": "Air Conditioner-Sama",
+        "genre": "Death Metal/Grindcore",
+        "themes": "Anime, Hentai",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Boston, Massachusetts",
+        "status": "Active",
+        "formed": 2018
+    },
+    {
+        "name": "Forgotten Agony",
+        "genre": "Dark Ambient/Black Metal",
+        "themes": "Satanism, Worship of Demon, Paganism, NS",
+        "label": "Unsigned/independent",
+        "country": "France",
+        "location": "Grand Est",
+        "status": "Unknown",
+        "formed": 2007
+    },
+    {
+        "name": "Day of Mourning",
+        "genre": "Doom Metal",
+        "themes": "Sadness, Darkness",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Schwarzenberg, Saxony",
+        "status": "Split-up",
+        "formed": 1993
+    },
+    {
+        "name": "Psychiatric Regurgitation",
+        "genre": "Death Metal, Goregrind",
+        "themes": "Gore",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Dallas, Texas",
+        "status": "Active",
+        "formed": 2000
+    },
+    {
+        "name": "Crone",
+        "genre": "Folk Black Metal",
+        "themes": "Paganism, Folklore, Medieval themes",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Suisun City, California",
+        "status": "Active",
+        "formed": 1998
+    },
+    {
+        "name": "New Dawn Foundation",
+        "genre": "Melodic Gothic Metal",
+        "themes": "Love, Life",
+        "label": "Unsigned/independent",
+        "country": "Finland",
+        "location": "Kouvola",
+        "status": "Unknown",
+        "formed": 2000
+    },
+    {
+        "name": "Corporate Death",
+        "genre": "Death Metal",
+        "themes": "Anti-Religion, Nihilism, Life",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Jundiaí, São Paulo",
+        "status": "Active",
+        "formed": 2001
+    },
+    {
+        "name": "Dead December Wind",
+        "genre": "Gothic/Doom Metal",
+        "themes": "Space, Chaos, Order",
+        "label": "Unsigned/independent",
+        "country": "Ukraine",
+        "location": "Ukraine (early); Germany (later)",
+        "status": "Unknown",
+        "formed": 1994
+    },
+    {
+        "name": "Waryag",
+        "genre": "Death/Thrash Metal",
+        "themes": "War, Warfare, Drugs",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Berlin",
+        "status": "Split-up",
+        "formed": 2009
+    },
+    {
+        "name": "Pablo G. Soler",
+        "genre": "Neoclassical Metal/Shred",
+        "themes": "Life, Past Experience, Future",
+        "label": "Unsigned/independent",
+        "country": "Argentina",
+        "location": "Buenos Aires",
+        "status": "Active",
+        "formed": 1989
+    },
+    {
+        "name": "Morgue Fetus",
+        "genre": "Death Metal",
+        "themes": "Debauchery, Perversion",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Gays, Illinois",
+        "status": "Split-up",
+        "formed": 1995
+    },
+    {
+        "name": "Necroticism",
+        "genre": "Death Metal",
+        "themes": "Life & Death, Social",
+        "label": "Unsigned/independent",
+        "country": "Romania",
+        "location": "Reşiţa",
+        "status": "Split-up",
+        "formed": 1992
+    },
+    {
+        "name": "Phantom",
+        "genre": "Death Metal",
+        "themes": "Death, Lunacy, Misery",
+        "label": "Unsigned/independent",
+        "country": "Chile",
+        "location": "Quilpué",
+        "status": "Active",
+        "formed": 2017
+    },
+    {
+        "name": "In Nomine",
+        "genre": "Industrial/Black Metal",
+        "themes": "Nihilism, Blasphemy, Murder, Hate, Satanic Worship",
+        "label": "Unsigned/independent",
+        "country": "Italy",
+        "location": "L'Aquila, Abruzzo",
+        "status": "Split-up",
+        "formed": 1997
+    },
+    {
+        "name": "Morridan",
+        "genre": "Folk Metal",
+        "themes": "Folkore, Winter",
+        "label": "Unsigned/independent",
+        "country": "Norway",
+        "location": "Oslo",
+        "status": "Split-up",
+        "formed": 2003
+    },
+    {
+        "name": "Lunae",
+        "genre": "Melodic Heavy Metal",
+        "themes": "Nature, Personal feelings",
+        "label": "Unsigned/independent",
+        "country": "Italy",
+        "location": "Milan, Lombardy",
+        "status": "Split-up",
+        "formed": 1998
+    },
+    {
+        "name": "Oxidized Faith",
+        "genre": "Technical Death Metal",
+        "themes": "Spirituality, Society, Personal Struggles",
+        "label": "Unsigned/independent",
+        "country": "Canada",
+        "location": "Montréal, Quebec",
+        "status": "Active",
+        "formed": 2007
+    },
+    {
+        "name": "Strappado",
+        "genre": "Thrash Metal",
+        "themes": "Death, Sci-fi, Paranormal",
+        "label": "Unsigned/independent",
+        "country": "Canada",
+        "location": "Toronto, Ontario",
+        "status": "Split-up",
+        "formed": 1990
+    },
+    {
+        "name": "Wrath Tears",
+        "genre": "Melodic Heavy Metal",
+        "themes": "Life, Human Thoughts",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Contagem, Minas Gerais",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "At One with Chaos",
+        "genre": "Death/Black Metal",
+        "themes": "Death, Chaos, Destruction",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Hollister, California",
+        "status": "Active",
+        "formed": 2005
+    },
+    {
+        "name": "Emperors Lair",
+        "genre": "Stoner/Doom Metal/Psychedelic Rock",
+        "themes": "Instrumental",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Frankfurt, Hesse",
+        "status": "Active",
+        "formed": 2018
+    },
+    {
+        "name": "Barkhouse",
+        "genre": "Heavy Metal/Hard Rock",
+        "themes": "Life, Society",
+        "label": "Unsigned/independent",
+        "country": "Korea, South",
+        "location": "Busan, Chungcheongnam-do",
+        "status": "Active",
+        "formed": 1998
+    },
+    {
+        "name": "Vortilich",
+        "genre": "Death Metal",
+        "themes": "Death, Horror, The Undead",
+        "label": "Unsigned/independent",
+        "country": "United Kingdom",
+        "location": "Bristol, South West England",
+        "status": "Split-up",
+        "formed": 2009
+    },
+    {
+        "name": "Strijd",
+        "genre": "Black Metal",
+        "themes": "Melancholy, Suicide",
+        "label": "Unsigned/independent",
+        "country": "Sweden",
+        "location": "Skänninge",
+        "status": "Changed name",
+        "formed": 2002
+    },
+    {
+        "name": "Sagu",
+        "genre": "Black Metal",
+        "themes": "Epic stories",
+        "label": "Unsigned/independent",
+        "country": "Turkey",
+        "location": "Istanbul",
+        "status": "Split-up",
+        "formed": 1993
+    },
+    {
+        "name": "Sacrilegio",
+        "genre": "Black Metal",
+        "themes": "Occultism, Profanation, Inquisition",
+        "label": "Unsigned/independent",
+        "country": "Ecuador",
+        "location": "Quito, Pichincha",
+        "status": "Active",
+        "formed": 1999
+    },
+    {
+        "name": "Knurzum",
+        "genre": "Black Metal",
+        "themes": "Krzysztof Kononowicz quotes",
+        "label": "Unsigned/independent",
+        "country": "Poland",
+        "location": "Białystok, ‎Podlaskie",
+        "status": "Active",
+        "formed": 2019
+    },
+    {
+        "name": "Savage Rage",
+        "genre": "Heavy Metal",
+        "themes": "Darkness, Underworld",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Curitiba, Paraná",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Dismorlech",
+        "genre": "Death Metal/Grindcore",
+        "themes": "Gore, Putrefaction",
+        "label": "Unsigned/independent",
+        "country": "Chile",
+        "location": "Quilpué",
+        "status": "Split-up",
+        "formed": 2002
+    },
+    {
+        "name": "Lintver",
+        "genre": "Thrash Metal",
+        "themes": "Evil, society, alcohol",
+        "label": "Unsigned/independent",
+        "country": "Slovenia",
+        "location": "Gorizia Hills",
+        "status": "Active",
+        "formed": 2004
+    },
+    {
+        "name": "Escape",
+        "genre": "Thrash Metal/Crossover",
+        "themes": "Politics, Society",
+        "label": "Unsigned/independent",
+        "country": "Mexico",
+        "location": "Aguascalientes, Aguascalientes",
+        "status": "Split-up",
+        "formed": 1987
+    },
+    {
+        "name": "Total War",
+        "genre": "Black Metal",
+        "themes": "War, Perversion, Gore",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Flomborn, Rhineland-Palatinate",
+        "status": "Active",
+        "formed": 2004
+    },
+    {
+        "name": "Zero Degrees Freedom",
+        "genre": "Melodic Death Metal",
+        "themes": "Introspective, Cynicism, Doom",
+        "label": "Unsigned/independent",
+        "country": "Australia",
+        "location": "Launceston, Tasmania",
+        "status": "Split-up",
+        "formed": 1997
+    },
+    {
+        "name": "Killbeast",
+        "genre": "Melodic Death/Black/Thrash Metal",
+        "themes": "Social/Environmental Issues, Disgust, Nihilism",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Seabrook/Manchester, New Hampshire",
+        "status": "Active",
+        "formed": 2009
+    },
+    {
+        "name": "Altkönig",
+        "genre": "Black Metal",
+        "themes": "Nature, Paganism, Philosophy, War",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Frankfurt, Hesse",
+        "status": "Split-up",
+        "formed": 2008
+    },
+    {
+        "name": "Deathpass",
+        "genre": "Black Metal",
+        "themes": "Anticosmic Satanism, Death, War",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Rio de Janeiro",
+        "status": "Unknown",
+        "formed": 2011
+    },
+    {
+        "name": "Operation Counterstrike",
+        "genre": "Death Metal",
+        "themes": "Humour, Meat and Vegetables",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Hanover, Lower Saxony",
+        "status": "Changed name",
+        "formed": 1997
+    },
+    {
+        "name": "Carniceira",
+        "genre": "Brutal Death Metal/Goregrind",
+        "themes": "Hate, Horror, Death, Gore",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "São Paulo, São Paulo",
+        "status": "Split-up",
+        "formed": 2005
+    },
+    {
+        "name": "Morbid Surgeon",
+        "genre": "Brutal Death Metal/Grindcore",
+        "themes": "Gore, Insanity, Horror, Dark Humor, Zombies",
+        "label": "Unsigned/independent",
+        "country": "Canada",
+        "location": "Vancouver, British Columbia",
+        "status": "Split-up",
+        "formed": 2005
+    },
+    {
+        "name": "Ghoulchapel",
+        "genre": "Symphonic Black Metal",
+        "themes": "Fear, Anti-Religion, Horror stories",
+        "label": "Unsigned/independent",
+        "country": "Armenia",
+        "location": "Yerevan",
+        "status": "Split-up",
+        "formed": 2013
+    },
+    {
+        "name": "Vaginal Bloodfart",
+        "genre": "Death Metal/Grindcore",
+        "themes": "Nonsense",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "West Bend, Wisconsin",
+        "status": "Split-up",
+        "formed": 1992
+    },
+    {
+        "name": "Instinto Caníbal",
+        "genre": "Blackened Death Metal/Grindcore",
+        "themes": "Cannibalism, Violence, Death",
+        "label": "Unsigned/independent",
+        "country": "Spain",
+        "location": "Montornés del Vallés, Barcelona, Catalonia",
+        "status": "Active",
+        "formed": 2002
+    },
+    {
+        "name": "Endless Descent",
+        "genre": "Death Metal",
+        "themes": "Mental Illness, The Meaning of Life",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Bremerton, Washington",
+        "status": "Split-up",
+        "formed": 1994
+    },
+    {
+        "name": "Object of Aggression",
+        "genre": "Death Metal/Metalcore",
+        "themes": "Fear, Pain, Anger",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Atlanta, Georgia",
+        "status": "Split-up",
+        "formed": 1999
+    },
+    {
+        "name": "Confinement",
+        "genre": "Thrash/Death Metal",
+        "themes": "Christianity",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Sao Paulo, Sao Paulo",
+        "status": "Active",
+        "formed": 1993
+    },
+    {
+        "name": "Soaking in Entrails",
+        "genre": "Brutal Death Metal",
+        "themes": "Death, Sickness, Gore",
+        "label": "Unsigned/independent",
+        "country": "Netherlands",
+        "location": "Leeuwarden, Friesland",
+        "status": "On hold",
+        "formed": 2006
+    },
+    {
+        "name": "By the Sins Fell Angels",
+        "genre": "Melodic Death Metal",
+        "themes": "Death, Warfare",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Augusta, Georgia",
+        "status": "Split-up",
+        "formed": 2003
+    },
+    {
+        "name": "Bloodlast",
+        "genre": "Death Metal",
+        "themes": "Death, Human, Apocalypse, War, Suffering",
+        "label": "Unsigned/independent",
+        "country": "Belarus",
+        "location": "Minsk",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Hormigón Armado",
+        "genre": "Thrash Metal/Crossover",
+        "themes": "Life, Society",
+        "label": "Unsigned/independent",
+        "country": "Spain",
+        "location": "Barcelona, Catalonia",
+        "status": "Active",
+        "formed": 2005
+    },
+    {
+        "name": "Chaos Ascending",
+        "genre": "Symphonic Black Metal",
+        "themes": "Chaos, Darkness, Occultism",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Tucson, Arizona",
+        "status": "Split-up",
+        "formed": 2010
+    },
+    {
+        "name": "Nihilith",
+        "genre": "Brutal Death Metal",
+        "themes": "Misanthropy, Nihilism, Oblivion",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Lancaster, California",
+        "status": "Active",
+        "formed": 2016
+    },
+    {
+        "name": "Cruentus",
+        "genre": "Symphonic Black Metal",
+        "themes": "Instrumental",
+        "label": "Unsigned/independent",
+        "country": "Greece",
+        "location": "Athens, Attica",
+        "status": "Unknown",
+        "formed": 1998
+    },
+    {
+        "name": "Castigo",
+        "genre": "Black/Thrash Metal",
+        "themes": "Misanthropy, Society, Madness, Demons, Hate",
+        "label": "Unsigned/independent",
+        "country": "Chile",
+        "location": "Concepción, Biobío",
+        "status": "Active",
+        "formed": 2015
+    },
+    {
+        "name": "Maestah",
+        "genre": "Heavy/Power Metal",
+        "themes": "Christianity",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Paraná",
+        "status": "Active",
+        "formed": 2012
+    },
+    {
+        "name": "Wizardmask",
+        "genre": "Symphonic Gothic/Progressive Metal",
+        "themes": "Feelings, Fantasy, Dreams",
+        "label": "Unsigned/independent",
+        "country": "Russia",
+        "location": "Novosibirsk, Novosibirsk Oblast",
+        "status": "On hold",
+        "formed": 2009
+    },
+    {
+        "name": "OwO",
+        "genre": "Raw Black Metal",
+        "themes": "Anime, Humor, Parody, Hentai, Sex, Porn",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Newark, Delaware",
+        "status": "Active",
+        "formed": 2019
+    },
+    {
+        "name": "Madness Co.",
+        "genre": "Death/Thrash Metal",
+        "themes": "Murderers, Insanity",
+        "label": "Unsigned/independent",
+        "country": "Finland",
+        "location": "Kouvola",
+        "status": "Split-up",
+        "formed": 2003
+    },
+    {
+        "name": "Stormcaller",
+        "genre": "Black Metal",
+        "themes": "Misanthropy, Heathenry, Nature, Heritage, Elitism",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "St. Louis, Missouri",
+        "status": "Active",
+        "formed": 2012
+    },
+    {
+        "name": "Slash-Her Throat",
+        "genre": "Death Metal/Grindcore",
+        "themes": "Gore",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "New Jersey",
+        "status": "Active",
+        "formed": 2004
+    },
+    {
+        "name": "Ahrcana",
+        "genre": "Power Metal",
+        "themes": "Fantasy",
+        "label": "Unsigned/independent",
+        "country": "Italy",
+        "location": "Milan, Lombardy",
+        "status": "Active",
+        "formed": 2000
+    },
+    {
+        "name": "Ghidorah",
+        "genre": "Death Metal",
+        "themes": "Death, Struggles, Destruction of humanity",
+        "label": "Unsigned/independent",
+        "country": "Norway",
+        "location": "Hønefoss",
+        "status": "Active",
+        "formed": 2019
+    },
+    {
+        "name": "Cerevisia",
+        "genre": "Melodic Death/Pagan Metal",
+        "themes": "Paganism, Warrior Tales, Battles",
+        "label": "Unsigned/independent",
+        "country": "France",
+        "location": "Marseille, Provence-Alpes-Côte d'Azur",
+        "status": "Split-up",
+        "formed": 2010
+    },
+    {
+        "name": "Haunted Shores",
+        "genre": "Progressive Metal",
+        "themes": "Instrumental (later)",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Washington, D.C.",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Decay of Light",
+        "genre": "Melodic Death Metal/Metalcore",
+        "themes": "Society, Humanity",
+        "label": "Unsigned/independent",
+        "country": "Luxembourg",
+        "location": "Gosseldange, Mersch",
+        "status": "Unknown",
+        "formed": 2003
+    },
+    {
+        "name": "Mortal Fear",
+        "genre": "Death Metal",
+        "themes": "Unholy Death",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Paderborn, North Rhine-Westphalia",
+        "status": "Split-up",
+        "formed": 2001
+    },
+    {
+        "name": "Fragile Existence",
+        "genre": "Death Metal",
+        "themes": "Death, Gore",
+        "label": "Unsigned/independent",
+        "country": "Canada",
+        "location": "Toronto, Ontario",
+        "status": "Active",
+        "formed": 2007
+    },
+    {
+        "name": "The Orphan and the Widow",
+        "genre": "Black Metal",
+        "themes": "Hate, War, Depression, Loss",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "New York",
+        "status": "Active",
+        "formed": 2010
+    },
+    {
+        "name": "Belzephus",
+        "genre": "Black Metal",
+        "themes": "Occultism, Satanism, Evil, Darkness",
+        "label": "Unsigned/independent",
+        "country": "Colombia",
+        "location": "Cali, Valle del Cauca",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Support",
+        "genre": "Thrash Metal",
+        "themes": "Emotions, Angst",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Buffalo, New York",
+        "status": "Split-up",
+        "formed": 1990
+    },
+    {
+        "name": "Krushok",
+        "genre": "Raw Black Metal",
+        "themes": "Evil, Darkness, Agression, Hatred",
+        "label": "Unsigned/independent",
+        "country": "Australia",
+        "location": "Mackay, Queensland",
+        "status": "On hold",
+        "formed": 2015
+    },
+    {
+        "name": "Natus Deprosis",
+        "genre": "Black Metal",
+        "themes": "Darkness, Mysticism, Paganism, Occultism, Mythology, Hatred",
+        "label": "Unsigned/independent",
+        "country": "France",
+        "location": "Grenoble, Auvergne-Rhône-Alpes",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Goldprick",
+        "genre": "Death Metal/Grindcore",
+        "themes": "Horror, Gore, Death",
+        "label": "Unsigned/independent",
+        "country": "Belarus",
+        "location": "Vitebsk, Vitebsk Region",
+        "status": "Active",
+        "formed": 1999
+    },
+    {
+        "name": "Bloody Slave",
+        "genre": "Heavy Metal",
+        "themes": "Life, War, Violence",
+        "label": "Unsigned/independent",
+        "country": "Italy",
+        "location": "Macerata, Marche",
+        "status": "Unknown",
+        "formed": 2004
+    },
+    {
+        "name": "Parasitosis",
+        "genre": "Death Metal/Goregrind",
+        "themes": "Death, Gore, Perversion, Sickness, Sex",
+        "label": "Unsigned/independent",
+        "country": "Costa Rica",
+        "location": "San José, San José",
+        "status": "Split-up",
+        "formed": 2006
+    },
+    {
+        "name": "Nuclear Scorn",
+        "genre": "Crust/Grindcore/Blackened Thrash Metal",
+        "themes": "War, Death, Hatred, Social/Political Unrest",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "El Paso, Texas",
+        "status": "Split-up",
+        "formed": 2010
+    },
+    {
+        "name": "Vixen Execution",
+        "genre": "Death Metal/Grindcore",
+        "themes": "Gore, Perversion, Depravity",
+        "label": "Unsigned/independent",
+        "country": "New Zealand",
+        "location": "Christchurch, Canterbury",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Emorage",
+        "genre": "Gothic Metal",
+        "themes": "Human condition",
+        "label": "Unsigned/independent",
+        "country": "France",
+        "location": "Montmorency, Île-de-France",
+        "status": "Split-up",
+        "formed": 2003
+    },
+    {
+        "name": "Lamazuus",
+        "genre": "Black Metal",
+        "themes": "Magic, Philosophy, Fantasy, Tolkien, RPG",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Suzano, São Paulo",
+        "status": "Active",
+        "formed": 2009
+    },
+    {
+        "name": "Landvaettir",
+        "genre": "Pagan Black Metal",
+        "themes": "The Glorious past of Normandy, Asatrù religion",
+        "label": "Unsigned/independent",
+        "country": "France",
+        "location": "Normandy (early), Orléans, Centre-Val de Loire (later)",
+        "status": "Split-up",
+        "formed": 2000
+    },
+    {
+        "name": "Neocracy",
+        "genre": "Melodic Death Metal",
+        "themes": "Christianity",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Brockway, Pennsylvania",
+        "status": "Active",
+        "formed": 2004
+    },
+    {
+        "name": "Mortiferian",
+        "genre": "Death Metal",
+        "themes": "Death, Anti-Religion, Occultism",
+        "label": "Unsigned/independent",
+        "country": "Colombia",
+        "location": "Medellin, Antioquia",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Atlas",
+        "genre": "Melodic Death Metal",
+        "themes": "Movies, Literature, Interpersonal, Philosophy",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Orlando, Florida",
+        "status": "Active",
+        "formed": 2010
+    },
+    {
+        "name": "Esprit Dérangé",
+        "genre": "Black Metal",
+        "themes": "Death, Horror Stories, Serial Killers, Insanity",
+        "label": "Unsigned/independent",
+        "country": "International",
+        "location": "Québec, Canada / Buffalo, New York",
+        "status": "Active",
+        "formed": 2005
+    },
+    {
+        "name": "Arpeghy",
+        "genre": "Heavy Metal",
+        "themes": "Epic Fantasy, Social Issues",
+        "label": "Unsigned/independent",
+        "country": "Argentina",
+        "location": "Buenos Aires",
+        "status": "Active",
+        "formed": 2001
+    },
+    {
+        "name": "Macabre Operetta",
+        "genre": "Black Metal",
+        "themes": "Death",
+        "label": "Unsigned/independent",
+        "country": "Greece",
+        "location": "Lamia, Central Greece",
+        "status": "Unknown",
+        "formed": 1995
+    },
+    {
+        "name": "Ravensoul",
+        "genre": "Black Metal",
+        "themes": "Satanism, Nuclear Holocaust, War",
+        "label": "Unsigned/independent",
+        "country": "United Kingdom",
+        "location": "Leicester, England",
+        "status": "Split-up",
+        "formed": 1995
+    },
+    {
+        "name": "Comatose Cadaver",
+        "genre": "Death Metal (early), Black Metal (later)",
+        "themes": "Gore, Blasphemy",
+        "label": "Unsigned/independent",
+        "country": "Pakistan",
+        "location": "Muzaffarabad, Azad Kashmir",
+        "status": "Split-up",
+        "formed": 2003
+    },
+    {
+        "name": "Horrify",
+        "genre": "Death Metal",
+        "themes": "Death, Political, Society",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Aracaju, Sergipe",
+        "status": "Active",
+        "formed": 2011
+    },
+    {
+        "name": "Pelvic Meatloaf",
+        "genre": "Groove Metal",
+        "themes": "Violence, Sex, Social Issues,",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Phoenix, Arizona",
+        "status": "Active",
+        "formed": 1990
+    },
+    {
+        "name": "Ogress",
+        "genre": "Thrash Metal",
+        "themes": "Humanism",
+        "label": "Unsigned/independent",
+        "country": "Belgium",
+        "location": "Kortrijk, West Flanders",
+        "status": "Split-up",
+        "formed": 2002
+    },
+    {
+        "name": "Black Bile",
+        "genre": "Black Metal",
+        "themes": "Apocalypse",
+        "label": "Unsigned/independent",
+        "country": "Australia",
+        "location": "Melbourne, Victoria",
+        "status": "Split-up",
+        "formed": 2001
+    },
+    {
+        "name": "Janesession",
+        "genre": "Heavy Metal/Hard Rock",
+        "themes": "Rock n Roll",
+        "label": "Unsigned/independent",
+        "country": "Slovakia",
+        "location": "Bratislava, Bratislava",
+        "status": "Active",
+        "formed": 2004
+    },
+    {
+        "name": "Burning Darkness",
+        "genre": "Melodic Black Metal",
+        "themes": "Darkness, Evil, Satan",
+        "label": "Unsigned/independent",
+        "country": "Sweden",
+        "location": "Stockholm",
+        "status": "Active",
+        "formed": 1999
+    },
+    {
+        "name": "Screaming Marionette",
+        "genre": "Groove Metal/Metalcore",
+        "themes": "Corruption, Society",
+        "label": "Unsigned/independent",
+        "country": "Nepal",
+        "location": "Kathmandu, Province 3",
+        "status": "Active",
+        "formed": 2016
+    },
+    {
+        "name": "Hymne",
+        "genre": "Black Metal",
+        "themes": "Occultsim, Norse Mythology, Darkness, Suffering",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Garden Grove, California",
+        "status": "Changed name",
+        "formed": 2014
+    },
+    {
+        "name": "Upon Extinction",
+        "genre": "Melodic Death/Thrash Metal",
+        "themes": "Zombie, Death, Destruction",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Appleton, Wisconsin",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Carnage",
+        "genre": "Death/Thrash Metal",
+        "themes": "Horror, Death",
+        "label": "Unsigned/independent",
+        "country": "United Kingdom",
+        "location": "Leamington Spa, Warwickshire, England",
+        "status": "Changed name",
+        "formed": 1989
+    },
+    {
+        "name": "Antique",
+        "genre": "Thrash/Speed Metal",
+        "themes": "Violence, Thrashing",
+        "label": "Unsigned/independent",
+        "country": "Mexico",
+        "location": "Mexico City",
+        "status": "Active",
+        "formed": 2009
+    },
+    {
+        "name": "Radamanthys",
+        "genre": "Death/Thrash Metal",
+        "themes": "Greek mythology",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Gaithersburg, Maryland",
+        "status": "Active",
+        "formed": 2009
+    },
+    {
+        "name": "Eclipse",
+        "genre": "Blackened Death Metal",
+        "themes": "Apocalypse, Horror, Fun",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Tübingen, Baden-Württemberg",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Anksunamon",
+        "genre": "Brutal Death Metal",
+        "themes": "Sumerian Mythology, Lovecraft, Ancient Times",
+        "label": "Unsigned/independent",
+        "country": "France",
+        "location": "Lyon, Auvergne-Rhône-Alpes",
+        "status": "Active",
+        "formed": 2000
+    },
+    {
+        "name": "Beyond Eternity",
+        "genre": "Heavy Metal",
+        "themes": "Life",
+        "label": "Unsigned/independent",
+        "country": "Germany",
+        "location": "Scheibenberg, Saxony",
+        "status": "Active",
+        "formed": 2003
+    },
+    {
+        "name": "Lethal Shöck",
+        "genre": "Heavy/Speed Metal",
+        "themes": "Violence, Revenge, Evil, Lust",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Chicago, Illinois",
+        "status": "Active",
+        "formed": 2008
+    },
+    {
+        "name": "Absyde",
+        "genre": "Black Metal",
+        "themes": "Blasphemy, Hate",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "São Caetano do Sul, São Paulo",
+        "status": "Active",
+        "formed": 1996
+    },
+    {
+        "name": "Absorde",
+        "genre": "Death Metal",
+        "themes": "Battle, Apocalypse",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Sylacauga, Alabama",
+        "status": "Split-up",
+        "formed": 2003
+    },
+    {
+        "name": "Second to Sun",
+        "genre": "Raw Black Metal (early); Post-Black/Groove Metal (later)",
+        "themes": "History, Mythology, Mysticism, Social decay",
+        "label": "Unsigned/independent",
+        "country": "Russia",
+        "location": "St. Petersburg",
+        "status": "Active",
+        "formed": 2011
+    },
+    {
+        "name": "Fear of Insomnia",
+        "genre": "Symphonic Black Metal",
+        "themes": "Dark romance, Life",
+        "label": "Unsigned/independent",
+        "country": "Russia",
+        "location": "St. Petersburg",
+        "status": "Active",
+        "formed": 2006
+    },
+    {
+        "name": "Preatcher",
+        "genre": "Heavy/Thrash Metal",
+        "themes": "Politics, Religion, Hypocrisy and War",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Recife, Pernambuco",
+        "status": "Changed name",
+        "formed": 2002
+    },
+    {
+        "name": "Atávica",
+        "genre": "Progressive/Power metal",
+        "themes": "Life, Personal thoughts",
+        "label": "Unsigned/independent",
+        "country": "Argentina",
+        "location": "San Martín, Buenos Aires",
+        "status": "Active",
+        "formed": 1997
+    },
+    {
+        "name": "Gulag",
+        "genre": "Death Metal",
+        "themes": "Blasphemy, Necronomicon, Anti-Christian",
+        "label": "Unsigned/independent",
+        "country": "Brazil",
+        "location": "Campinas, São Paulo",
+        "status": "Active",
+        "formed": 2013
+    },
+    {
+        "name": "Grave Desecration",
+        "genre": "Death Metal/Grindcore",
+        "themes": "Gore, Death, Mutilation",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Lynwood, California",
+        "status": "Split-up",
+        "formed": 2002
+    },
+    {
+        "name": "Dysphoric",
+        "genre": "Black Metal",
+        "themes": "Depression, Suicide, Loneliness",
+        "label": "Unsigned/independent",
+        "country": "Denmark",
+        "location": "Tilst, Midtjylland",
+        "status": "Active",
+        "formed": 2009
+    },
+    {
+        "name": "Belushi Speed Ball",
+        "genre": "Thrash Metal",
+        "themes": "Cartoons, Movies",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Louisville, Kentucky",
+        "status": "Active",
+        "formed": 2013
+    },
+    {
+        "name": "Sakahiter",
+        "genre": "Black Metal",
+        "themes": "Samnites, Death, Anti-christianity",
+        "label": "Unsigned/independent",
+        "country": "Italy",
+        "location": "Campobasso, Molise",
+        "status": "Active",
+        "formed": 2002
+    },
+    {
+        "name": "A Crow's Glory",
+        "genre": "Metalcore",
+        "themes": "Life",
+        "label": "Unsigned/independent",
+        "country": "Canada",
+        "location": "Vancouver, British Columbia",
+        "status": "Active",
+        "formed": 2004
+    },
+    {
+        "name": "Goathorde",
+        "genre": "Black Metal",
+        "themes": "Death, Darkness, Satan, Evilness",
+        "label": "Unsigned/independent",
+        "country": "Finland",
+        "location": "Joensuu",
+        "status": "On hold",
+        "formed": 1999
+    },
+    {
+        "name": "Sinister Tradition",
+        "genre": "Black Metal",
+        "themes": "Theistic Satanism, The Occult, Necromancy",
+        "label": "Unsigned/independent",
+        "country": "United States",
+        "location": "Orange, California",
+        "status": "Active",
+        "formed": 2015
+    },
+    {
+        "name": "Solar",
+        "genre": "Power Metal",
+        "themes": "Dreams, Romantic",
+        "label": "Unsigned/independent",
+        "country": "Russia",
+        "location": "Moscow",
+        "status": "On hold",
+        "formed": 2003
+    }
+]
