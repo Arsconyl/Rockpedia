@@ -27,7 +27,7 @@
         "country": "Germany",
         "location": "Wilnsdorf/Siegen, North Rhine-Westphalia",
         "status": "Split-up",
-        "formed": "1992"
+        "formed": 1992
     },
     {
         "name": "Mutilation Nation",
@@ -37,7 +37,7 @@
         "country": "Finland",
         "location": "Joensuu",
         "status": "Split-up",
-        "formed": "2003"
+        "formed": 2003
     },
     {
         "name": "Dimholt",
@@ -47,7 +47,7 @@
         "country": "Bulgaria",
         "location": "Burgas, Burgas",
         "status": "Active",
-        "formed": "2003"
+        "formed": 2003
     },
     {
         "name": "Valensorow",
@@ -57,7 +57,7 @@
         "country": "United States",
         "location": "San Jose, California",
         "status": "On hold",
-        "formed": "2012"
+        "formed": 2012
     },
     {
         "name": "Corazón Profeta",
