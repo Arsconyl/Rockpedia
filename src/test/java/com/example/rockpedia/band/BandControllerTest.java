@@ -1,5 +1,7 @@
 package com.example.rockpedia.band;
 
+import com.example.rockpedia.band.Band;
+import com.example.rockpedia.band.BandController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
