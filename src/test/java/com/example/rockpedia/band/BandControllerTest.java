@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Objects;
 
 import static org.junit.Assert.assertEquals;
@@ -234,6 +235,34 @@ public class BandControllerTest {
         band.setLabel("Unsigned/independent");
         band.setStatus("Changed name");
         band.setFormed(1979);
+
+        assertEquals(band, bandtoverify);
+    }
+
+    @Test
+    public void testBandReturnedBySearch()
+    {
+        List listOfBands = bandController.getBandsBySearch("met").getBody();
+        assert listOfBands != null;
+        ListIterator bands = listOfBands.listIterator(listOfBands.size());
+        assertTrue(bands.hasPrevious());
+        bands.previous();
+        assertTrue(bands.hasPrevious());
+        bands.previous();
+        assertTrue(bands.hasPrevious());
+
+        Band bandtoverify = (Band) bands.previous();
+
+        Band band = new Band();
+        band.setId(163L);
+        band.setName("Screaming Marionette");
+        band.setGenre("Groove/Metalcore");
+        band.setThemes("Corruption, Society");
+        band.setLocation("Kathmandu, Province 3");
+        band.setCountry("Nepal");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Active");
+        band.setFormed(2016);
 
         assertEquals(band, bandtoverify);
     }

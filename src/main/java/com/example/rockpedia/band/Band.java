@@ -94,7 +94,7 @@ class Band {
         this.status = status;
     }
 
-    int getFormed() {
+    public int getFormed() {
         return formed;
     }
 
