@@ -24,11 +24,43 @@ public class BandControllerTest {
     @Test
     public void testBandReturnedById()
     {
-        ResponseEntity<Band> band = bandController.byId(2L);
-        assertEquals("Band{id=2, name='S.U.T.U.R.E.', genre='Black Metal/Crust', themes='Misanthropy', location='Metz, Grand Est', country='France', label='Black Pandemie Production', status='Active', formed=2016}", Objects.requireNonNull(band.getBody()).toString());
-        ResponseEntity<List> listOfBands = bandController.byFormed(1979);
-        Iterator bands = Objects.requireNonNull(listOfBands.getBody()).iterator();
+        Band bandtoverify = bandController.byId(2L).getBody();
+
+        Band band = new Band();
+        band.setId(2L);
+        band.setName("S.U.T.U.R.E.");
+        band.setGenre("Black Metal/Crust");
+        band.setThemes("Misanthropy");
+        band.setLocation("Metz, Grand Est");
+        band.setCountry("France");
+        band.setLabel("Black Pandemie Production");
+        band.setStatus("Active");
+        band.setformed(2016);
+
+        assertEquals(band, bandtoverify);
+    }
+
+    @Test
+    public void testBandReturnedByFormed()
+    {
+        List listOfBands = bandController.byFormed(1979).getBody();
+        assert listOfBands != null;
+        Iterator bands = listOfBands.iterator();
         assertTrue(bands.hasNext());
-        assertEquals("Band{id=25, name='The Gentiles', genre='Heavy Metal', themes='Christianity', location='Salem, Oregon', country='United States', label='Unsigned/independent', status='Changed name', formed=1979}", bands.next().toString());
+
+        Band bandtoverify = (Band) bands.next();
+
+        Band band = new Band();
+        band.setId(25L);
+        band.setName("The Gentiles");
+        band.setGenre("Heavy Metal");
+        band.setThemes("Christianity");
+        band.setLocation("Salem, Oregon");
+        band.setCountry("United States");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Changed name");
+        band.setformed(1979);
+
+        assertEquals(band, bandtoverify);
     }
 }

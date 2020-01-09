@@ -26,7 +26,7 @@ public class BandController {
     }
 
     @GetMapping("")
-    public ResponseEntity<List> get(){
+    public ResponseEntity<List> getAll(){
         Iterable<Band> listOfBands = bandRepository.findAll();
         List<Band> bands = iterableToList(listOfBands);
         return new ResponseEntity<>(bands, HttpStatus.OK);

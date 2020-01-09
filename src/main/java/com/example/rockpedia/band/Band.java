@@ -32,17 +32,6 @@ public class Band {
     public Band() {
     }
 
-    public Band(String name, String genre, String themes, String location, String country, String label, String status, int formed) {
-        this.name = name;
-        this.genre = genre;
-        this.themes = themes;
-        this.location = location;
-        this.country = country;
-        this.label = label;
-        this.status = status;
-        this.formed = formed;
-    }
-
     public Long getId() {
         return id;
     }
