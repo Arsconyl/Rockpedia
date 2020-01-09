@@ -5,7 +5,8 @@ import java.util.Objects;
 
 @Entity
 @Table(name="Band")
-public class Band {
+public
+class Band {
 
     @Id
     @GeneratedValue
@@ -17,20 +18,17 @@ public class Band {
     @Column(name = "genre", length = 128, nullable = false)
     private String genre;
     @Column(name = "themes", nullable = false)
-    public String themes;
+    private String themes;
     @Column(name = "location", length = 128, nullable = false)
     private String location;
     @Column(name = "country", length = 128, nullable = false)
     private String country;
     @Column(name = "label", length = 128, nullable = false)
-    public String label;
+    private String label;
     @Column(name = "status", length = 128, nullable = false)
-    public String status;
+    private String status;
     @Column(name = "formed", length = 128, nullable = false)
-    public int formed;
-
-    public Band() {
-    }
+    private int formed;
 
     public Long getId() {
         return id;
@@ -96,7 +94,7 @@ public class Band {
         this.status = status;
     }
 
-    public int getFormed() {
+    int getFormed() {
         return formed;
     }
 
