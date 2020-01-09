@@ -96,11 +96,11 @@ public class Band {
         this.status = status;
     }
 
-    public int getformed() {
+    public int getFormed() {
         return formed;
     }
 
-    public void setformed(int formed) {
+    public void setFormed(int formed) {
         this.formed = formed;
     }
 

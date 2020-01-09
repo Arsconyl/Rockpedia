@@ -37,7 +37,7 @@ public class BandControllerTest {
         band.setCountry("France");
         band.setLabel("Black Pandemie Production");
         band.setStatus("Active");
-        band.setformed(2016);
+        band.setFormed(2016);
 
         assertEquals(band, bandtoverify);
     }
@@ -61,7 +61,7 @@ public class BandControllerTest {
         band.setCountry("Canada");
         band.setLabel("Unsigned/independent");
         band.setStatus("Active");
-        band.setformed(2007);
+        band.setFormed(2007);
 
         assertEquals(band, bandtoverify);
     }
@@ -85,7 +85,7 @@ public class BandControllerTest {
         band.setCountry("Norway");
         band.setLabel("Unsigned/independent");
         band.setStatus("Split-up");
-        band.setformed(2005);
+        band.setFormed(2005);
 
         assertEquals(band, bandtoverify);
     }
@@ -109,7 +109,7 @@ public class BandControllerTest {
         band.setCountry("Portugal");
         band.setLabel("Unsigned/independent");
         band.setStatus("Active");
-        band.setformed(2013);
+        band.setFormed(2013);
 
         assertEquals(band, bandtoverify);
     }
@@ -133,7 +133,7 @@ public class BandControllerTest {
         band.setCountry("Germany");
         band.setLabel("Unsigned/independent");
         band.setStatus("Active");
-        band.setformed(2008);
+        band.setFormed(2008);
 
         assertEquals(band, bandtoverify);
     }
@@ -157,7 +157,7 @@ public class BandControllerTest {
         band.setCountry("Bulgaria");
         band.setLabel("Unsigned/independent");
         band.setStatus("Active");
-        band.setformed(2003);
+        band.setFormed(2003);
 
         assertEquals(band, bandtoverify);
     }
@@ -181,7 +181,7 @@ public class BandControllerTest {
         band.setCountry("France");
         band.setLabel("Black Pandemie Production");
         band.setStatus("Active");
-        band.setformed(2016);
+        band.setFormed(2016);
 
         assertEquals(band, bandtoverify);
     }
@@ -209,7 +209,7 @@ public class BandControllerTest {
         band.setCountry("United States");
         band.setLabel("Unsigned/independent");
         band.setStatus("On hold");
-        band.setformed(2006);
+        band.setFormed(2006);
 
         assertEquals(band, bandtoverify);
     }
@@ -233,7 +233,7 @@ public class BandControllerTest {
         band.setCountry("United States");
         band.setLabel("Unsigned/independent");
         band.setStatus("Changed name");
-        band.setformed(1979);
+        band.setFormed(1979);
 
         assertEquals(band, bandtoverify);
     }
