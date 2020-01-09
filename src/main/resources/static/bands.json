@@ -1,7 +1,7 @@
 [
     {
         "name": "Metallica",
-        "genre": "Thrash Metal (early), Hard Rock (mid), Heavy/Thrash Metal (later)",
+        "genre": "Thrash (early), Hard Rock (mid), Heavy/Thrash (later)",
         "themes": "Corruption, Death, Life, Internal struggles, Anger",
         "label": "Blackened Recordings",
         "country": "United States",
@@ -11,7 +11,7 @@
     },
     {
         "name": "S.U.T.U.R.E.",
-        "genre": "Black Metal/Crust",
+        "genre": "Black/Crust",
         "themes": "Misanthropy",
         "label": "Black Pandemie Production",
         "country": "France",
@@ -21,7 +21,7 @@
     },
     {
         "name": "Psoriasis",
-        "genre": "Power/Progressive/Thrash Metal",
+        "genre": "Power/Progressive/Thrash",
         "themes": "Social critical (earlier), Humor (later)",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -31,7 +31,7 @@
     },
     {
         "name": "Mutilation Nation",
-        "genre": "Death/Thrash Metal",
+        "genre": "Death/Thrash",
         "themes": "Violence",
         "label": "Unsigned/independent",
         "country": "Finland",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Dimholt",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Darkness, Life, Death",
         "label": "Unsigned/independent",
         "country": "Bulgaria",
@@ -51,7 +51,7 @@
     },
     {
         "name": "Valensorow",
-        "genre": "Folk/Viking Metal/Metalcore",
+        "genre": "Folk/Viking/Metalcore",
         "themes": "Fantasy, Battle",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -61,8 +61,8 @@
     },
     {
         "name": "Corazón Profeta",
-        "genre": "Heavy Metal",
-        "themes": "Personal and social issues, Heavy Metal",
+        "genre": "Heavy",
+        "themes": "Personal and social issues, Heavy",
         "label": "Unsigned/independent",
         "country": "Argentina",
         "location": "Necochea, Buenos Aires",
@@ -71,7 +71,7 @@
     },
     {
         "name": "Dhraug",
-        "genre": "Death/Thrash/Black Metal",
+        "genre": "Death/Thrash/Black",
         "themes": "Destruction, Darkness, Hate, Anti-Religion",
         "label": "Unsigned/independent",
         "country": "Sweden",
@@ -81,7 +81,7 @@
     },
     {
         "name": "Nekrovoid",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Satanism, War, Misanthropy",
         "label": "Unsigned/independent",
         "country": "Denmark",
@@ -91,7 +91,7 @@
     },
     {
         "name": "Depredate",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Death, Society, Doom, Politics, Religion",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -101,7 +101,7 @@
     },
     {
         "name": "Garm",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Misanthropy, Despair, Satanic, Anti-Christian",
         "label": "Unsigned/independent",
         "country": "Ireland",
@@ -111,7 +111,7 @@
     },
     {
         "name": "Essência Insana",
-        "genre": "Thrash/Black Metal",
+        "genre": "Thrash/Black",
         "themes": "Social Criticism, Carnage, Misanthropy",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -121,7 +121,7 @@
     },
     {
         "name": "McLoud",
-        "genre": "Crossover/Thrash Metal",
+        "genre": "Crossover/Thrash",
         "themes": "Humour, Religion, Violence, Sarcasm",
         "label": "Unsigned/independent",
         "country": "Lithuania",
@@ -131,7 +131,7 @@
     },
     {
         "name": "Beatcoffin Bastard",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Hatred, Misanthropy",
         "label": "Unsigned/independent",
         "country": "Finland",
@@ -141,7 +141,7 @@
     },
     {
         "name": "Noctambulant",
-        "genre": "Death/Black Metal",
+        "genre": "Death/Black",
         "themes": "Satanism, Anti-Christianity, Hate, Violence",
         "label": "Unsigned/independent",
         "country": "Mexico",
@@ -151,7 +151,7 @@
     },
     {
         "name": "Metaphoris",
-        "genre": "Thrash/Death Metal",
+        "genre": "Thrash/Death",
         "themes": "Hate, Chaos",
         "label": "Unsigned/independent",
         "country": "Finland",
@@ -161,7 +161,7 @@
     },
     {
         "name": "Charlie Parra del Riego",
-        "genre": "Power/Thrash Metal, Shred",
+        "genre": "Power/Thrash, Shred",
         "themes": "Instrumental",
         "label": "Unsigned/independent",
         "country": "Peru",
@@ -171,7 +171,7 @@
     },
     {
         "name": "Golem",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Existential issues",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -181,7 +181,7 @@
     },
     {
         "name": "Axeslaughter",
-        "genre": "Death/Thrash Metal",
+        "genre": "Death/Thrash",
         "themes": "Death, Gore",
         "label": "Unsigned/independent",
         "country": "Finland",
@@ -191,7 +191,7 @@
     },
     {
         "name": "Brutal",
-        "genre": "Thrash Metal",
+        "genre": "Thrash",
         "themes": "Society, Violence, Politics, Anti-Religion",
         "label": "Unsigned/independent",
         "country": "Argentina",
@@ -201,7 +201,7 @@
     },
     {
         "name": "Engendro Malévolo",
-        "genre": "Death/Black/Thrash Metal",
+        "genre": "Death/Black/Thrash",
         "themes": "Pre-hispanic Rituals, Demonology, Horrors, Occult",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -211,7 +211,7 @@
     },
     {
         "name": "Surreal Demise",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Supernatural Horror, Elemental Power, Otherworldly Dimensions",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -221,7 +221,7 @@
     },
     {
         "name": "Insurgence",
-        "genre": "Black/Death Metal",
+        "genre": "Black/Death",
         "themes": "War, Death, Murder",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -231,7 +231,7 @@
     },
     {
         "name": "Truth Ascension",
-        "genre": "Progressive/Death Metal",
+        "genre": "Progressive/Death",
         "themes": "Life, Death, Ascension, Truth, Apocalypse",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -241,7 +241,7 @@
     },
     {
         "name": "The Gentiles",
-        "genre": "Heavy Metal",
+        "genre": "Heavy",
         "themes": "Christianity",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -251,7 +251,7 @@
     },
     {
         "name": "Prosecutor",
-        "genre": "Progressive/Thrash Metal",
+        "genre": "Progressive/Thrash",
         "themes": "War",
         "label": "Unsigned/independent",
         "country": "Lithuania",
@@ -261,7 +261,7 @@
     },
     {
         "name": "KillScream",
-        "genre": "Thrash/Death/Groove Metal",
+        "genre": "Thrash/Death/Groove",
         "themes": "Mental disorders, Sickness, Inner struggle",
         "label": "Unsigned/independent",
         "country": "Ukraine",
@@ -271,7 +271,7 @@
     },
     {
         "name": "Despondency",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Human Machine, Genocide, Death",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -281,7 +281,7 @@
     },
     {
         "name": "Ayera",
-        "genre": "Melodic Death Metal",
+        "genre": "Melodic Death",
         "themes": "Religion, War",
         "label": "Unsigned/independent",
         "country": "Australia",
@@ -291,7 +291,7 @@
     },
     {
         "name": "Percutor 1708",
-        "genre": "Heavy/Thrash Metal",
+        "genre": "Heavy/Thrash",
         "themes": "Political and Social Denounce, Pollution",
         "label": "Unsigned/independent",
         "country": "Argentina",
@@ -301,7 +301,7 @@
     },
     {
         "name": "Sicksouls",
-        "genre": "Death/Thrash Metal",
+        "genre": "Death/Thrash",
         "themes": "Politics, Society",
         "label": "Unsigned/independent",
         "country": "Portugal",
@@ -311,7 +311,7 @@
     },
     {
         "name": "Asgerahnum",
-        "genre": "Pagan/Black Metal",
+        "genre": "Pagan/Black",
         "themes": "Germanic Beliefs, War, Pride, Glory",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -321,7 +321,7 @@
     },
     {
         "name": "My Season",
-        "genre": "Gothic Metal/Rock",
+        "genre": "Gothic/Rock",
         "themes": "Instrumental",
         "label": "Unsigned/independent",
         "country": "Romania",
@@ -331,7 +331,7 @@
     },
     {
         "name": "Black Warrior",
-        "genre": "Melodic Power/Gothic Metal",
+        "genre": "Melodic Power/Gothic",
         "themes": "Love, Destiny, Freedom",
         "label": "Unsigned/independent",
         "country": "Russia",
@@ -341,7 +341,7 @@
     },
     {
         "name": "Frostthrone",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Death, Winter, Satan, Mysticism",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -351,7 +351,7 @@
     },
     {
         "name": "Svartalfheim",
-        "genre": "Folk/Black Metal",
+        "genre": "Folk/Black",
         "themes": "Paganism, Medieval Themes",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -361,7 +361,7 @@
     },
     {
         "name": "Sentensya",
-        "genre": "Brutal Death Metal",
+        "genre": "Brutal Death",
         "themes": "Gore, Death",
         "label": "Unsigned/independent",
         "country": "Philippines",
@@ -371,7 +371,7 @@
     },
     {
         "name": "Berdosa",
-        "genre": "Stoner/Doom Metal",
+        "genre": "Stoner/Doom",
         "themes": "Philosophy, Stoicism, Hypocrisy, Acceptance",
         "label": "Unsigned/independent",
         "country": "Malaysia",
@@ -381,7 +381,7 @@
     },
     {
         "name": "Asathor",
-        "genre": "Black/Death Metal",
+        "genre": "Black/Death",
         "themes": "Norse mythology, Vikings, LOTR (old)",
         "label": "Unsigned/independent",
         "country": "Luxembourg",
@@ -391,7 +391,7 @@
     },
     {
         "name": "Karburalcool",
-        "genre": "Heavy/Thrash Metal",
+        "genre": "Heavy/Thrash",
         "themes": "Anti-Government, Daily Life, Alcohol",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -401,7 +401,7 @@
     },
     {
         "name": "Bleedience",
-        "genre": "Black/Death Metal",
+        "genre": "Black/Death",
         "themes": "Christianity",
         "label": "Unsigned/independent",
         "country": "Norway",
@@ -411,7 +411,7 @@
     },
     {
         "name": "Sial",
-        "genre": "Raw Black Metal (early), Depressive Black Metal, Ambient (later)",
+        "genre": "Raw Black (early), Depressive Black, Ambient (later)",
         "themes": "Death, Torture (early), Suicide, Death, Misanthropy, Insanity (later)",
         "label": "Unsigned/independent",
         "country": "Malaysia",
@@ -421,7 +421,7 @@
     },
     {
         "name": "Neptunian Horizon",
-        "genre": "Epic Power/Symphonic Metal",
+        "genre": "Epic Power/Symphonic",
         "themes": "Gnosticism, Conspiracy, Despair, Spirituality",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -431,7 +431,7 @@
     },
     {
         "name": "Yin",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Lovecraft/Al Azif Myths, Autumn, The Moon",
         "label": "Unsigned/independent",
         "country": "Russia",
@@ -441,7 +441,7 @@
     },
     {
         "name": "Solve et Coagula",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Satanism, Ice",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -451,7 +451,7 @@
     },
     {
         "name": "Animus Necandi",
-        "genre": "Thrash Metal",
+        "genre": "Thrash",
         "themes": "Aggressive themes",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -461,7 +461,7 @@
     },
     {
         "name": "Foreshadow",
-        "genre": "Thrash Metal/Metalcore",
+        "genre": "Thrash/Metalcore",
         "themes": "Hate, Anger, Death",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -471,8 +471,8 @@
     },
     {
         "name": "Maniac Force",
-        "genre": "Thrash Metal",
-        "themes": "Violence, Anti-religion, Death, Metal",
+        "genre": "Thrash",
+        "themes": "Violence, Anti-religion, Death,",
         "label": "Unsigned/independent",
         "country": "Brazil",
         "location": "Mongaguá, São Paulo",
@@ -481,7 +481,7 @@
     },
     {
         "name": "Kratic",
-        "genre": "Sludge Metal",
+        "genre": "Sludge",
         "themes": "Life, Humanity",
         "label": "Unsigned/independent",
         "country": "Norway",
@@ -491,7 +491,7 @@
     },
     {
         "name": "Werewolf Satan",
-        "genre": "Raw Black Metal",
+        "genre": "Raw Black",
         "themes": "National Socialism, Fascism, War (before), Philosophy, European Spirituality",
         "label": "Unsigned/independent",
         "country": "Italy",
@@ -501,7 +501,7 @@
     },
     {
         "name": "Discrucior",
-        "genre": "Death/Doom Metal",
+        "genre": "Death/Doom",
         "themes": "Dark dreams, Sorrow",
         "label": "Unsigned/independent",
         "country": "Estonia",
@@ -511,7 +511,7 @@
     },
     {
         "name": "11th Dimension",
-        "genre": "Progressive Metal",
+        "genre": "Progressive",
         "themes": "Isolation, Society, Anxiety, Hope, Self-Discovery",
         "label": "Unsigned/independent",
         "country": "Portugal",
@@ -521,7 +521,7 @@
     },
     {
         "name": "Cerebro",
-        "genre": "Heavy Metal",
+        "genre": "Heavy",
         "themes": "Life issues",
         "label": "Unsigned/independent",
         "country": "Mexico",
@@ -531,7 +531,7 @@
     },
     {
         "name": "Februum",
-        "genre": "Black/Doom Metal",
+        "genre": "Black/Doom",
         "themes": "Anti-Christianity, Satanism, Occultism",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -541,7 +541,7 @@
     },
     {
         "name": "Ucumar",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Andean mythology",
         "label": "Unsigned/independent",
         "country": "Argentina",
@@ -551,7 +551,7 @@
     },
     {
         "name": "Necropia",
-        "genre": "Melodic Death Metal/Deathcore",
+        "genre": "Melodic Death/Deathcore",
         "themes": "Conceptual",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -561,7 +561,7 @@
     },
     {
         "name": "Keber",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Christianity",
         "label": "Unsigned/independent",
         "country": "Paraguay",
@@ -571,7 +571,7 @@
     },
     {
         "name": "Radical Corps",
-        "genre": "Thrash/Death Metal",
+        "genre": "Thrash/Death",
         "themes": "Politics, Human Suffering",
         "label": "Unsigned/independent",
         "country": "Indonesia",
@@ -581,7 +581,7 @@
     },
     {
         "name": "Fanatical Views",
-        "genre": "Thrash Metal/Crossover",
+        "genre": "Thrash/Crossover",
         "themes": "Society, the Environment, Anti-Posers",
         "label": "Unsigned/independent",
         "country": "Canada",
@@ -591,7 +591,7 @@
     },
     {
         "name": "Raven's Hill",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "War, Hate",
         "label": "Unsigned/independent",
         "country": "France",
@@ -601,7 +601,7 @@
     },
     {
         "name": "Vengeance Sorcery",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Occult, Satanic, Darkness",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -611,7 +611,7 @@
     },
     {
         "name": "Sannyasin",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Philosophy",
         "label": "Unsigned/independent",
         "country": "Poland",
@@ -621,7 +621,7 @@
     },
     {
         "name": "Annihilist",
-        "genre": "Melodic Groove/Death Metal",
+        "genre": "Melodic Groove/Death",
         "themes": "Inner struggles, Life",
         "label": "Unsigned/independent",
         "country": "Australia",
@@ -631,7 +631,7 @@
     },
     {
         "name": "Wintermute",
-        "genre": "Dark/Death/Doom Metal",
+        "genre": "Dark/Death/Doom",
         "themes": "Sorrow, Darkness, Suicide",
         "label": "Unsigned/independent",
         "country": "Spain",
@@ -641,7 +641,7 @@
     },
     {
         "name": "Grobut Neerg",
-        "genre": "Death/Folk Metal",
+        "genre": "Death/Folk",
         "themes": "Horror, Fantasy, Beer",
         "label": "Unsigned/independent",
         "country": "Russia",
@@ -651,7 +651,7 @@
     },
     {
         "name": "Demise",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Middle ages, Warriors, Doom",
         "label": "Unsigned/independent",
         "country": "France",
@@ -661,7 +661,7 @@
     },
     {
         "name": "Icestorm",
-        "genre": "Epic Heavy Metal",
+        "genre": "Epic Heavy",
         "themes": "Fantasy",
         "label": "Unsigned/independent",
         "country": "Spain",
@@ -671,7 +671,7 @@
     },
     {
         "name": "Ungodly Death",
-        "genre": "Black/Death Metal",
+        "genre": "Black/Death",
         "themes": "Morbid Theism",
         "label": "Unsigned/independent",
         "country": "Malaysia",
@@ -681,7 +681,7 @@
     },
     {
         "name": "Bloodwind",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Darkness, Hatred, Torment, Misery",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -691,7 +691,7 @@
     },
     {
         "name": "Air Conditioner-Sama",
-        "genre": "Death Metal/Grindcore",
+        "genre": "Death/Grindcore",
         "themes": "Anime, Hentai",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -701,7 +701,7 @@
     },
     {
         "name": "Forgotten Agony",
-        "genre": "Dark Ambient/Black Metal",
+        "genre": "Dark Ambient/Black",
         "themes": "Satanism, Worship of Demon, Paganism, NS",
         "label": "Unsigned/independent",
         "country": "France",
@@ -711,7 +711,7 @@
     },
     {
         "name": "Day of Mourning",
-        "genre": "Doom Metal",
+        "genre": "Doom",
         "themes": "Sadness, Darkness",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -721,7 +721,7 @@
     },
     {
         "name": "Psychiatric Regurgitation",
-        "genre": "Death Metal, Goregrind",
+        "genre": "Death, Goregrind",
         "themes": "Gore",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -731,7 +731,7 @@
     },
     {
         "name": "Crone",
-        "genre": "Folk Black Metal",
+        "genre": "Folk Black",
         "themes": "Paganism, Folklore, Medieval themes",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -741,7 +741,7 @@
     },
     {
         "name": "New Dawn Foundation",
-        "genre": "Melodic Gothic Metal",
+        "genre": "Melodic Gothic",
         "themes": "Love, Life",
         "label": "Unsigned/independent",
         "country": "Finland",
@@ -751,7 +751,7 @@
     },
     {
         "name": "Corporate Death",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Anti-Religion, Nihilism, Life",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -761,7 +761,7 @@
     },
     {
         "name": "Dead December Wind",
-        "genre": "Gothic/Doom Metal",
+        "genre": "Gothic/Doom",
         "themes": "Space, Chaos, Order",
         "label": "Unsigned/independent",
         "country": "Ukraine",
@@ -771,7 +771,7 @@
     },
     {
         "name": "Waryag",
-        "genre": "Death/Thrash Metal",
+        "genre": "Death/Thrash",
         "themes": "War, Warfare, Drugs",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -781,7 +781,7 @@
     },
     {
         "name": "Pablo G. Soler",
-        "genre": "Neoclassical Metal/Shred",
+        "genre": "Neoclassical/Shred",
         "themes": "Life, Past Experience, Future",
         "label": "Unsigned/independent",
         "country": "Argentina",
@@ -791,7 +791,7 @@
     },
     {
         "name": "Morgue Fetus",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Debauchery, Perversion",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -801,7 +801,7 @@
     },
     {
         "name": "Necroticism",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Life & Death, Social",
         "label": "Unsigned/independent",
         "country": "Romania",
@@ -811,7 +811,7 @@
     },
     {
         "name": "Phantom",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Death, Lunacy, Misery",
         "label": "Unsigned/independent",
         "country": "Chile",
@@ -821,7 +821,7 @@
     },
     {
         "name": "In Nomine",
-        "genre": "Industrial/Black Metal",
+        "genre": "Industrial/Black",
         "themes": "Nihilism, Blasphemy, Murder, Hate, Satanic Worship",
         "label": "Unsigned/independent",
         "country": "Italy",
@@ -831,7 +831,7 @@
     },
     {
         "name": "Morridan",
-        "genre": "Folk Metal",
+        "genre": "Folk",
         "themes": "Folkore, Winter",
         "label": "Unsigned/independent",
         "country": "Norway",
@@ -841,7 +841,7 @@
     },
     {
         "name": "Lunae",
-        "genre": "Melodic Heavy Metal",
+        "genre": "Melodic Heavy",
         "themes": "Nature, Personal feelings",
         "label": "Unsigned/independent",
         "country": "Italy",
@@ -851,7 +851,7 @@
     },
     {
         "name": "Oxidized Faith",
-        "genre": "Technical Death Metal",
+        "genre": "Technical Death",
         "themes": "Spirituality, Society, Personal Struggles",
         "label": "Unsigned/independent",
         "country": "Canada",
@@ -861,7 +861,7 @@
     },
     {
         "name": "Strappado",
-        "genre": "Thrash Metal",
+        "genre": "Thrash",
         "themes": "Death, Sci-fi, Paranormal",
         "label": "Unsigned/independent",
         "country": "Canada",
@@ -871,7 +871,7 @@
     },
     {
         "name": "Wrath Tears",
-        "genre": "Melodic Heavy Metal",
+        "genre": "Melodic Heavy",
         "themes": "Life, Human Thoughts",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -881,7 +881,7 @@
     },
     {
         "name": "At One with Chaos",
-        "genre": "Death/Black Metal",
+        "genre": "Death/Black",
         "themes": "Death, Chaos, Destruction",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -891,7 +891,7 @@
     },
     {
         "name": "Emperors Lair",
-        "genre": "Stoner/Doom Metal/Psychedelic Rock",
+        "genre": "Stoner/Doom/Psychedelic Rock",
         "themes": "Instrumental",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -901,7 +901,7 @@
     },
     {
         "name": "Barkhouse",
-        "genre": "Heavy Metal/Hard Rock",
+        "genre": "Heavy/Hard Rock",
         "themes": "Life, Society",
         "label": "Unsigned/independent",
         "country": "Korea, South",
@@ -911,7 +911,7 @@
     },
     {
         "name": "Vortilich",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Death, Horror, The Undead",
         "label": "Unsigned/independent",
         "country": "United Kingdom",
@@ -921,7 +921,7 @@
     },
     {
         "name": "Strijd",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Melancholy, Suicide",
         "label": "Unsigned/independent",
         "country": "Sweden",
@@ -931,7 +931,7 @@
     },
     {
         "name": "Sagu",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Epic stories",
         "label": "Unsigned/independent",
         "country": "Turkey",
@@ -941,7 +941,7 @@
     },
     {
         "name": "Sacrilegio",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Occultism, Profanation, Inquisition",
         "label": "Unsigned/independent",
         "country": "Ecuador",
@@ -951,7 +951,7 @@
     },
     {
         "name": "Knurzum",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Krzysztof Kononowicz quotes",
         "label": "Unsigned/independent",
         "country": "Poland",
@@ -961,7 +961,7 @@
     },
     {
         "name": "Savage Rage",
-        "genre": "Heavy Metal",
+        "genre": "Heavy",
         "themes": "Darkness, Underworld",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -971,7 +971,7 @@
     },
     {
         "name": "Dismorlech",
-        "genre": "Death Metal/Grindcore",
+        "genre": "Death/Grindcore",
         "themes": "Gore, Putrefaction",
         "label": "Unsigned/independent",
         "country": "Chile",
@@ -981,7 +981,7 @@
     },
     {
         "name": "Lintver",
-        "genre": "Thrash Metal",
+        "genre": "Thrash",
         "themes": "Evil, society, alcohol",
         "label": "Unsigned/independent",
         "country": "Slovenia",
@@ -991,7 +991,7 @@
     },
     {
         "name": "Escape",
-        "genre": "Thrash Metal/Crossover",
+        "genre": "Thrash/Crossover",
         "themes": "Politics, Society",
         "label": "Unsigned/independent",
         "country": "Mexico",
@@ -1001,7 +1001,7 @@
     },
     {
         "name": "Total War",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "War, Perversion, Gore",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -1011,7 +1011,7 @@
     },
     {
         "name": "Zero Degrees Freedom",
-        "genre": "Melodic Death Metal",
+        "genre": "Melodic Death",
         "themes": "Introspective, Cynicism, Doom",
         "label": "Unsigned/independent",
         "country": "Australia",
@@ -1021,7 +1021,7 @@
     },
     {
         "name": "Killbeast",
-        "genre": "Melodic Death/Black/Thrash Metal",
+        "genre": "Melodic Death/Black/Thrash",
         "themes": "Social/Environmental Issues, Disgust, Nihilism",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1031,7 +1031,7 @@
     },
     {
         "name": "Altkönig",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Nature, Paganism, Philosophy, War",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -1041,7 +1041,7 @@
     },
     {
         "name": "Deathpass",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Anticosmic Satanism, Death, War",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1051,7 +1051,7 @@
     },
     {
         "name": "Operation Counterstrike",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Humour, Meat and Vegetables",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -1061,7 +1061,7 @@
     },
     {
         "name": "Carniceira",
-        "genre": "Brutal Death Metal/Goregrind",
+        "genre": "Brutal Death/Goregrind",
         "themes": "Hate, Horror, Death, Gore",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1071,7 +1071,7 @@
     },
     {
         "name": "Morbid Surgeon",
-        "genre": "Brutal Death Metal/Grindcore",
+        "genre": "Brutal Death/Grindcore",
         "themes": "Gore, Insanity, Horror, Dark Humor, Zombies",
         "label": "Unsigned/independent",
         "country": "Canada",
@@ -1081,7 +1081,7 @@
     },
     {
         "name": "Ghoulchapel",
-        "genre": "Symphonic Black Metal",
+        "genre": "Symphonic Black",
         "themes": "Fear, Anti-Religion, Horror stories",
         "label": "Unsigned/independent",
         "country": "Armenia",
@@ -1091,7 +1091,7 @@
     },
     {
         "name": "Vaginal Bloodfart",
-        "genre": "Death Metal/Grindcore",
+        "genre": "Death/Grindcore",
         "themes": "Nonsense",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1101,7 +1101,7 @@
     },
     {
         "name": "Instinto Caníbal",
-        "genre": "Blackened Death Metal/Grindcore",
+        "genre": "Blackened Death/Grindcore",
         "themes": "Cannibalism, Violence, Death",
         "label": "Unsigned/independent",
         "country": "Spain",
@@ -1111,7 +1111,7 @@
     },
     {
         "name": "Endless Descent",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Mental Illness, The Meaning of Life",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1121,7 +1121,7 @@
     },
     {
         "name": "Object of Aggression",
-        "genre": "Death Metal/Metalcore",
+        "genre": "Death/Metalcore",
         "themes": "Fear, Pain, Anger",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1131,7 +1131,7 @@
     },
     {
         "name": "Confinement",
-        "genre": "Thrash/Death Metal",
+        "genre": "Thrash/Death",
         "themes": "Christianity",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1141,7 +1141,7 @@
     },
     {
         "name": "Soaking in Entrails",
-        "genre": "Brutal Death Metal",
+        "genre": "Brutal Death",
         "themes": "Death, Sickness, Gore",
         "label": "Unsigned/independent",
         "country": "Netherlands",
@@ -1151,7 +1151,7 @@
     },
     {
         "name": "By the Sins Fell Angels",
-        "genre": "Melodic Death Metal",
+        "genre": "Melodic Death",
         "themes": "Death, Warfare",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1161,7 +1161,7 @@
     },
     {
         "name": "Bloodlast",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Death, Human, Apocalypse, War, Suffering",
         "label": "Unsigned/independent",
         "country": "Belarus",
@@ -1171,7 +1171,7 @@
     },
     {
         "name": "Hormigón Armado",
-        "genre": "Thrash Metal/Crossover",
+        "genre": "Thrash/Crossover",
         "themes": "Life, Society",
         "label": "Unsigned/independent",
         "country": "Spain",
@@ -1181,7 +1181,7 @@
     },
     {
         "name": "Chaos Ascending",
-        "genre": "Symphonic Black Metal",
+        "genre": "Symphonic Black",
         "themes": "Chaos, Darkness, Occultism",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1191,7 +1191,7 @@
     },
     {
         "name": "Nihilith",
-        "genre": "Brutal Death Metal",
+        "genre": "Brutal Death",
         "themes": "Misanthropy, Nihilism, Oblivion",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1201,7 +1201,7 @@
     },
     {
         "name": "Cruentus",
-        "genre": "Symphonic Black Metal",
+        "genre": "Symphonic Black",
         "themes": "Instrumental",
         "label": "Unsigned/independent",
         "country": "Greece",
@@ -1211,7 +1211,7 @@
     },
     {
         "name": "Castigo",
-        "genre": "Black/Thrash Metal",
+        "genre": "Black/Thrash",
         "themes": "Misanthropy, Society, Madness, Demons, Hate",
         "label": "Unsigned/independent",
         "country": "Chile",
@@ -1221,7 +1221,7 @@
     },
     {
         "name": "Maestah",
-        "genre": "Heavy/Power Metal",
+        "genre": "Heavy/Power",
         "themes": "Christianity",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1231,7 +1231,7 @@
     },
     {
         "name": "Wizardmask",
-        "genre": "Symphonic Gothic/Progressive Metal",
+        "genre": "Symphonic Gothic/Progressive",
         "themes": "Feelings, Fantasy, Dreams",
         "label": "Unsigned/independent",
         "country": "Russia",
@@ -1241,7 +1241,7 @@
     },
     {
         "name": "OwO",
-        "genre": "Raw Black Metal",
+        "genre": "Raw Black",
         "themes": "Anime, Humor, Parody, Hentai, Sex, Porn",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1251,7 +1251,7 @@
     },
     {
         "name": "Madness Co.",
-        "genre": "Death/Thrash Metal",
+        "genre": "Death/Thrash",
         "themes": "Murderers, Insanity",
         "label": "Unsigned/independent",
         "country": "Finland",
@@ -1261,7 +1261,7 @@
     },
     {
         "name": "Stormcaller",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Misanthropy, Heathenry, Nature, Heritage, Elitism",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1271,7 +1271,7 @@
     },
     {
         "name": "Slash-Her Throat",
-        "genre": "Death Metal/Grindcore",
+        "genre": "Death/Grindcore",
         "themes": "Gore",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1281,7 +1281,7 @@
     },
     {
         "name": "Ahrcana",
-        "genre": "Power Metal",
+        "genre": "Power",
         "themes": "Fantasy",
         "label": "Unsigned/independent",
         "country": "Italy",
@@ -1291,7 +1291,7 @@
     },
     {
         "name": "Ghidorah",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Death, Struggles, Destruction of humanity",
         "label": "Unsigned/independent",
         "country": "Norway",
@@ -1301,7 +1301,7 @@
     },
     {
         "name": "Cerevisia",
-        "genre": "Melodic Death/Pagan Metal",
+        "genre": "Melodic Death/Pagan",
         "themes": "Paganism, Warrior Tales, Battles",
         "label": "Unsigned/independent",
         "country": "France",
@@ -1311,7 +1311,7 @@
     },
     {
         "name": "Haunted Shores",
-        "genre": "Progressive Metal",
+        "genre": "Progressive",
         "themes": "Instrumental (later)",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1321,7 +1321,7 @@
     },
     {
         "name": "Decay of Light",
-        "genre": "Melodic Death Metal/Metalcore",
+        "genre": "Melodic Death/Metalcore",
         "themes": "Society, Humanity",
         "label": "Unsigned/independent",
         "country": "Luxembourg",
@@ -1331,7 +1331,7 @@
     },
     {
         "name": "Mortal Fear",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Unholy Death",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -1341,7 +1341,7 @@
     },
     {
         "name": "Fragile Existence",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Death, Gore",
         "label": "Unsigned/independent",
         "country": "Canada",
@@ -1351,7 +1351,7 @@
     },
     {
         "name": "The Orphan and the Widow",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Hate, War, Depression, Loss",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1361,7 +1361,7 @@
     },
     {
         "name": "Belzephus",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Occultism, Satanism, Evil, Darkness",
         "label": "Unsigned/independent",
         "country": "Colombia",
@@ -1371,7 +1371,7 @@
     },
     {
         "name": "Support",
-        "genre": "Thrash Metal",
+        "genre": "Thrash",
         "themes": "Emotions, Angst",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1381,7 +1381,7 @@
     },
     {
         "name": "Krushok",
-        "genre": "Raw Black Metal",
+        "genre": "Raw Black",
         "themes": "Evil, Darkness, Agression, Hatred",
         "label": "Unsigned/independent",
         "country": "Australia",
@@ -1391,7 +1391,7 @@
     },
     {
         "name": "Natus Deprosis",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Darkness, Mysticism, Paganism, Occultism, Mythology, Hatred",
         "label": "Unsigned/independent",
         "country": "France",
@@ -1401,7 +1401,7 @@
     },
     {
         "name": "Goldprick",
-        "genre": "Death Metal/Grindcore",
+        "genre": "Death/Grindcore",
         "themes": "Horror, Gore, Death",
         "label": "Unsigned/independent",
         "country": "Belarus",
@@ -1411,7 +1411,7 @@
     },
     {
         "name": "Bloody Slave",
-        "genre": "Heavy Metal",
+        "genre": "Heavy",
         "themes": "Life, War, Violence",
         "label": "Unsigned/independent",
         "country": "Italy",
@@ -1421,7 +1421,7 @@
     },
     {
         "name": "Parasitosis",
-        "genre": "Death Metal/Goregrind",
+        "genre": "Death/Goregrind",
         "themes": "Death, Gore, Perversion, Sickness, Sex",
         "label": "Unsigned/independent",
         "country": "Costa Rica",
@@ -1431,7 +1431,7 @@
     },
     {
         "name": "Nuclear Scorn",
-        "genre": "Crust/Grindcore/Blackened Thrash Metal",
+        "genre": "Crust/Grindcore/Blackened Thrash",
         "themes": "War, Death, Hatred, Social/Political Unrest",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1441,7 +1441,7 @@
     },
     {
         "name": "Vixen Execution",
-        "genre": "Death Metal/Grindcore",
+        "genre": "Death/Grindcore",
         "themes": "Gore, Perversion, Depravity",
         "label": "Unsigned/independent",
         "country": "New Zealand",
@@ -1451,7 +1451,7 @@
     },
     {
         "name": "Emorage",
-        "genre": "Gothic Metal",
+        "genre": "Gothic",
         "themes": "Human condition",
         "label": "Unsigned/independent",
         "country": "France",
@@ -1461,7 +1461,7 @@
     },
     {
         "name": "Lamazuus",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Magic, Philosophy, Fantasy, Tolkien, RPG",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1471,7 +1471,7 @@
     },
     {
         "name": "Landvaettir",
-        "genre": "Pagan Black Metal",
+        "genre": "Pagan Black",
         "themes": "The Glorious past of Normandy, Asatrù religion",
         "label": "Unsigned/independent",
         "country": "France",
@@ -1481,7 +1481,7 @@
     },
     {
         "name": "Neocracy",
-        "genre": "Melodic Death Metal",
+        "genre": "Melodic Death",
         "themes": "Christianity",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1491,7 +1491,7 @@
     },
     {
         "name": "Mortiferian",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Death, Anti-Religion, Occultism",
         "label": "Unsigned/independent",
         "country": "Colombia",
@@ -1501,7 +1501,7 @@
     },
     {
         "name": "Atlas",
-        "genre": "Melodic Death Metal",
+        "genre": "Melodic Death",
         "themes": "Movies, Literature, Interpersonal, Philosophy",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1511,7 +1511,7 @@
     },
     {
         "name": "Esprit Dérangé",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Death, Horror Stories, Serial Killers, Insanity",
         "label": "Unsigned/independent",
         "country": "International",
@@ -1521,7 +1521,7 @@
     },
     {
         "name": "Arpeghy",
-        "genre": "Heavy Metal",
+        "genre": "Heavy",
         "themes": "Epic Fantasy, Social Issues",
         "label": "Unsigned/independent",
         "country": "Argentina",
@@ -1531,7 +1531,7 @@
     },
     {
         "name": "Macabre Operetta",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Death",
         "label": "Unsigned/independent",
         "country": "Greece",
@@ -1541,7 +1541,7 @@
     },
     {
         "name": "Ravensoul",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Satanism, Nuclear Holocaust, War",
         "label": "Unsigned/independent",
         "country": "United Kingdom",
@@ -1551,7 +1551,7 @@
     },
     {
         "name": "Comatose Cadaver",
-        "genre": "Death Metal (early), Black Metal (later)",
+        "genre": "Death (early), Black (later)",
         "themes": "Gore, Blasphemy",
         "label": "Unsigned/independent",
         "country": "Pakistan",
@@ -1561,7 +1561,7 @@
     },
     {
         "name": "Horrify",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Death, Political, Society",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1571,7 +1571,7 @@
     },
     {
         "name": "Pelvic Meatloaf",
-        "genre": "Groove Metal",
+        "genre": "Groove",
         "themes": "Violence, Sex, Social Issues,",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1581,7 +1581,7 @@
     },
     {
         "name": "Ogress",
-        "genre": "Thrash Metal",
+        "genre": "Thrash",
         "themes": "Humanism",
         "label": "Unsigned/independent",
         "country": "Belgium",
@@ -1591,7 +1591,7 @@
     },
     {
         "name": "Black Bile",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Apocalypse",
         "label": "Unsigned/independent",
         "country": "Australia",
@@ -1601,7 +1601,7 @@
     },
     {
         "name": "Janesession",
-        "genre": "Heavy Metal/Hard Rock",
+        "genre": "Heavy/Hard Rock",
         "themes": "Rock n Roll",
         "label": "Unsigned/independent",
         "country": "Slovakia",
@@ -1611,7 +1611,7 @@
     },
     {
         "name": "Burning Darkness",
-        "genre": "Melodic Black Metal",
+        "genre": "Melodic Black",
         "themes": "Darkness, Evil, Satan",
         "label": "Unsigned/independent",
         "country": "Sweden",
@@ -1621,7 +1621,7 @@
     },
     {
         "name": "Screaming Marionette",
-        "genre": "Groove Metal/Metalcore",
+        "genre": "Groove/Metalcore",
         "themes": "Corruption, Society",
         "label": "Unsigned/independent",
         "country": "Nepal",
@@ -1631,7 +1631,7 @@
     },
     {
         "name": "Hymne",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Occultsim, Norse Mythology, Darkness, Suffering",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1641,7 +1641,7 @@
     },
     {
         "name": "Upon Extinction",
-        "genre": "Melodic Death/Thrash Metal",
+        "genre": "Melodic Death/Thrash",
         "themes": "Zombie, Death, Destruction",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1651,7 +1651,7 @@
     },
     {
         "name": "Carnage",
-        "genre": "Death/Thrash Metal",
+        "genre": "Death/Thrash",
         "themes": "Horror, Death",
         "label": "Unsigned/independent",
         "country": "United Kingdom",
@@ -1661,7 +1661,7 @@
     },
     {
         "name": "Antique",
-        "genre": "Thrash/Speed Metal",
+        "genre": "Thrash/Speed",
         "themes": "Violence, Thrashing",
         "label": "Unsigned/independent",
         "country": "Mexico",
@@ -1671,7 +1671,7 @@
     },
     {
         "name": "Radamanthys",
-        "genre": "Death/Thrash Metal",
+        "genre": "Death/Thrash",
         "themes": "Greek mythology",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1681,7 +1681,7 @@
     },
     {
         "name": "Eclipse",
-        "genre": "Blackened Death Metal",
+        "genre": "Blackened Death",
         "themes": "Apocalypse, Horror, Fun",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -1691,7 +1691,7 @@
     },
     {
         "name": "Anksunamon",
-        "genre": "Brutal Death Metal",
+        "genre": "Brutal Death",
         "themes": "Sumerian Mythology, Lovecraft, Ancient Times",
         "label": "Unsigned/independent",
         "country": "France",
@@ -1701,7 +1701,7 @@
     },
     {
         "name": "Beyond Eternity",
-        "genre": "Heavy Metal",
+        "genre": "Heavy",
         "themes": "Life",
         "label": "Unsigned/independent",
         "country": "Germany",
@@ -1711,7 +1711,7 @@
     },
     {
         "name": "Lethal Shöck",
-        "genre": "Heavy/Speed Metal",
+        "genre": "Heavy/Speed",
         "themes": "Violence, Revenge, Evil, Lust",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1721,7 +1721,7 @@
     },
     {
         "name": "Absyde",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Blasphemy, Hate",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1731,7 +1731,7 @@
     },
     {
         "name": "Absorde",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Battle, Apocalypse",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1741,7 +1741,7 @@
     },
     {
         "name": "Second to Sun",
-        "genre": "Raw Black Metal (early); Post-Black/Groove Metal (later)",
+        "genre": "Raw Black (early); Post-Black/Groove (later)",
         "themes": "History, Mythology, Mysticism, Social decay",
         "label": "Unsigned/independent",
         "country": "Russia",
@@ -1751,7 +1751,7 @@
     },
     {
         "name": "Fear of Insomnia",
-        "genre": "Symphonic Black Metal",
+        "genre": "Symphonic Black",
         "themes": "Dark romance, Life",
         "label": "Unsigned/independent",
         "country": "Russia",
@@ -1761,7 +1761,7 @@
     },
     {
         "name": "Preatcher",
-        "genre": "Heavy/Thrash Metal",
+        "genre": "Heavy/Thrash",
         "themes": "Politics, Religion, Hypocrisy and War",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1771,7 +1771,7 @@
     },
     {
         "name": "Atávica",
-        "genre": "Progressive/Power metal",
+        "genre": "Progressive/Power",
         "themes": "Life, Personal thoughts",
         "label": "Unsigned/independent",
         "country": "Argentina",
@@ -1781,7 +1781,7 @@
     },
     {
         "name": "Gulag",
-        "genre": "Death Metal",
+        "genre": "Death",
         "themes": "Blasphemy, Necronomicon, Anti-Christian",
         "label": "Unsigned/independent",
         "country": "Brazil",
@@ -1791,7 +1791,7 @@
     },
     {
         "name": "Grave Desecration",
-        "genre": "Death Metal/Grindcore",
+        "genre": "Death/Grindcore",
         "themes": "Gore, Death, Mutilation",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1801,7 +1801,7 @@
     },
     {
         "name": "Dysphoric",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Depression, Suicide, Loneliness",
         "label": "Unsigned/independent",
         "country": "Denmark",
@@ -1811,7 +1811,7 @@
     },
     {
         "name": "Belushi Speed Ball",
-        "genre": "Thrash Metal",
+        "genre": "Thrash",
         "themes": "Cartoons, Movies",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1821,7 +1821,7 @@
     },
     {
         "name": "Sakahiter",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Samnites, Death, Anti-christianity",
         "label": "Unsigned/independent",
         "country": "Italy",
@@ -1841,7 +1841,7 @@
     },
     {
         "name": "Goathorde",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Death, Darkness, Satan, Evilness",
         "label": "Unsigned/independent",
         "country": "Finland",
@@ -1851,7 +1851,7 @@
     },
     {
         "name": "Sinister Tradition",
-        "genre": "Black Metal",
+        "genre": "Black",
         "themes": "Theistic Satanism, The Occult, Necromancy",
         "label": "Unsigned/independent",
         "country": "United States",
@@ -1861,7 +1861,7 @@
     },
     {
         "name": "Solar",
-        "genre": "Power Metal",
+        "genre": "Power",
         "themes": "Dreams, Romantic",
         "label": "Unsigned/independent",
         "country": "Russia",
