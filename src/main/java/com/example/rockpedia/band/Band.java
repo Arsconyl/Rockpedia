@@ -137,4 +137,23 @@ class Band {
     public int hashCode() {
         return Objects.hash(id, name, genre, themes, location, country, label, status, formed);
     }
+
+    public String valueIsNull()
+    {
+        if(name == null)
+            return "name";
+        else if (genre == null)
+            return "genre";
+        else if (themes == null)
+            return "themes";
+        else if (location == null)
+            return "location";
+        else if (country == null)
+            return "country";
+        else if (label == null)
+            return "label";
+        else if (status == null)
+            return "status";
+        return null;
+    }
 }

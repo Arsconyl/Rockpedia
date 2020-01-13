@@ -266,4 +266,15 @@ public class BandControllerTest {
 
         assertEquals(band, bandtoverify);
     }
+
+    @Test
+    public void testBandReturnedSpecialChar()
+    {
+        List listOfBands = bandController.getBandsBySearch("são").getBody();
+        assert listOfBands != null;
+
+        for (Object listOfBand : listOfBands) {
+            System.out.println((Band) listOfBand);
+        }
+    }
 }

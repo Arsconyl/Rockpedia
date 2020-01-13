@@ -6,54 +6,56 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-import static com.example.rockpedia.Tools.iterableToList;
-
 @RestController
 @RequestMapping("/bands")
 public class BandController {
 
-    private final BandRepository bandRepository;
-
     private final BandService bandService;
 
-    public BandController(BandRepository bandRepository, BandService bandService) {
-        this.bandRepository = bandRepository;
+    public BandController(BandService bandService) {
         this.bandService = bandService;
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Band> byId(@PathVariable Long id){
-        Optional<Band> bandtoget = bandRepository.findById(id);
-        Band band = new Band();
-        if(bandtoget.isPresent())
-           band = bandtoget.get();
-        return new ResponseEntity<>(band, HttpStatus.OK);
+        return new ResponseEntity<>(bandService.byId(id), HttpStatus.OK);
     }
 
     @GetMapping("")
     public ResponseEntity<List> getAll(){
-        Iterable<Band> listOfBands = bandRepository.findAll();
-        List<Band> bands = iterableToList(listOfBands);
-        return new ResponseEntity<>(bands, HttpStatus.OK);
+        return new ResponseEntity<>(bandService.getAll(), HttpStatus.OK);
     }
 
-    @PostMapping(path = "/add", consumes = "application/json")
-    public Band newBand(@RequestBody Band band)
+    @PostMapping(path = "/add", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<Object> newBand(@RequestBody Band band)
     {
-        return bandRepository.save(band);
+        try {
+            return new ResponseEntity<>(bandService.add(band), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
-    @PutMapping(path = "/update/{id}", consumes = "application/json")
-    public Band replaceBand(@RequestBody Band band, @PathVariable Long id)
+    @PutMapping(path = "/update/{id}", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<Object> replaceBand(@RequestBody Band band, @PathVariable Long id)
     {
-        band.setId(id);
-        return bandRepository.save(band);
+        try {
+            return new ResponseEntity<>(bandService.insert(id, band), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
-    @DeleteMapping(path = "/delete/{id}")
-    public void deleteBand(@PathVariable Long id)
+    @DeleteMapping(path = "/delete/{id}", produces = "application/json")
+    public ResponseEntity<String> deleteBand(@PathVariable Long id)
     {
-        bandRepository.deleteById(id);
+        String result;
+        try {
+            result = bandService.deleteById(id);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
     @GetMapping("/byName/{name}")

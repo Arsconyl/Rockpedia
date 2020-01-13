@@ -2,6 +2,7 @@ package com.example.rockpedia.band;
 
 import org.springframework.stereotype.Service;
 
+import javax.json.JsonObject;
 import java.util.*;
 
 import static com.example.rockpedia.Tools.*;
@@ -13,6 +14,47 @@ public class BandService {
 
     public BandService(BandRepository bandRepository) {
         this.bandRepository = bandRepository;
+    }
+
+    public List<Band> getAll()
+    {
+        List<Band> bands = new ArrayList<>();
+        bandRepository.findAll().forEach(bands::add);
+        return bands;
+    }
+
+    public Band byId(Long id)
+    {
+        Optional<Band> bandToGet = this.bandRepository.findById(id);
+        return bandToGet.orElse(null);
+    }
+
+    public Band add(Band band)
+    {
+        String valueNull = band.valueIsNull();
+        if(valueNull != null)
+            throw new IllegalArgumentException("{\n\t\"message\": \"" + valueNull + " has not been provided\"\n}");
+        return bandRepository.save(band);
+    }
+
+    public Band insert(Long id, Band band)
+    {
+        String valueNull = band.valueIsNull();
+        if(valueNull != null) {
+            throw new IllegalArgumentException("{\n\t\"message\": \"" + valueNull + " has not been provided\"\n}");
+        }
+            band.setId(id);
+        return bandRepository.save(band);
+    }
+
+    public String deleteById(Long id)
+    {
+        try {
+            bandRepository.deleteById(id);
+        } catch (Exception e) {
+            throw new IllegalArgumentException("{\n\t\"message\": \"" + e.getMessage() + "\"\n}");
+        }
+        return "{\n\t\"message\": \"Band " + id + " has been deleted succesfully.\"\n}";
     }
 
     public List<Band> searchBand(String query)
