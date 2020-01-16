@@ -270,10 +270,20 @@ public class BandControllerTest {
     @Test
     public void testBandReturnedSpecialChar()
     {
-        List listOfBands = bandController.getBandsBySearch("são").getBody();
-        assert listOfBands != null;
+        List list1 = bandController.getBandsBySearch("icorazon").getBody();
+        List list2 = bandController.getBandsBySearch("essencia").getBody();
+        List list3 = bandController.getBandsBySearch("altkonig").getBody();
 
-        for (Object listOfBand : listOfBands) {
+        assert list1 != null;
+        for (Object listOfBand : list1) {
+            System.out.println((Band) listOfBand);
+        }
+        assert list2 != null;
+        for (Object listOfBand : list2) {
+            System.out.println((Band) listOfBand);
+        }
+        assert list3 != null;
+        for (Object listOfBand : list3) {
             System.out.println((Band) listOfBand);
         }
     }

@@ -117,7 +117,7 @@ public class BandController {
     @GetMapping("/search")
     public ResponseEntity<List> getBandsBySearch(@RequestParam(value = "q") String query)
     {
-        List<Band> bands = bandService.searchBand(query);
+        List<Band> bands = bandService.searchAdvanced(query);
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 

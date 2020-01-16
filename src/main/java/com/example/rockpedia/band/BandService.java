@@ -1,5 +1,6 @@
 package com.example.rockpedia.band;
 
+import com.example.rockpedia.Pair;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -139,4 +140,32 @@ public class BandService {
         return bands;
     }
 
+    public List<Band> searchAdvanced(String query)
+    {
+        List<Band> all = getAll();
+        List<Pair<Integer, Band>> allSorted = new ArrayList<>();
+        for(Band band: all)
+        {
+            String name = band.getName();
+            int score = matchScore(name, query);
+            if(score > 0)
+                allSorted.add(new Pair<>(score, band));
+        }
+
+        allSorted.sort((o1, o2) -> {
+            if (o1.getKey() < o2.getKey())
+                return 1;
+            else if (o1.getKey().equals(o2.getKey()))
+                return 0;
+            else if (o1.getKey() > o2.getKey())
+                return -1;
+            return 0;
+        });
+
+        all.clear();
+
+        for(Pair<Integer, Band> band: allSorted)
+            all.add(band.getValue());
+        return all;
+    }
 }
