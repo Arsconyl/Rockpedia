@@ -2,7 +2,6 @@ package com.example.rockpedia.band;
 
 import org.springframework.stereotype.Service;
 
-import javax.json.JsonObject;
 import java.util.*;
 
 import static com.example.rockpedia.Tools.*;
@@ -139,4 +138,5 @@ public class BandService {
             bands = iterableToList(listOfBands.get());
         return bands;
     }
+
 }
