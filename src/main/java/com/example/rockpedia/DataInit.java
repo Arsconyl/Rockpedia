@@ -42,7 +42,6 @@ public class DataInit implements ApplicationRunner {
 
                 for (JsonValue value : bands) {
                     Band band = jsonb.fromJson(value.toString(), Band.class);
-                    System.out.println(band);
                     bandRepository.save(band);
                 }
             }

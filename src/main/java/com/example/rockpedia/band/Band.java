@@ -1,5 +1,7 @@
 package com.example.rockpedia.band;
 
+import javax.json.Json;
+import javax.json.JsonObject;
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -104,17 +106,18 @@ class Band {
 
     @Override
     public String toString() {
-        return "Band{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", genre='" + genre + '\'' +
-                ", themes='" + themes + '\'' +
-                ", location='" + location + '\'' +
-                ", country='" + country + '\'' +
-                ", label='" + label + '\'' +
-                ", status='" + status + '\'' +
-                ", formed=" + formed +
-                '}';
+        JsonObject json = Json.createObjectBuilder()
+                .add("id", id)
+                .add("name", name)
+                .add("genre", genre)
+                .add("themes", themes)
+                .add("location", location)
+                .add("country", country)
+                .add("label", label)
+                .add("status", status)
+                .add("formed", formed)
+                .build();
+        return json.toString();
     }
 
     @Override

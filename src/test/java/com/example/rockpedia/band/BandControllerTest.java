@@ -242,96 +242,122 @@ public class BandControllerTest {
         assertEquals(band, bandtoverify);
     }
 
-//    @Test
-//    public void testBandReturnedBySearch()
-//    {
-//        List listOfBands = (List) bandController.getBandsBySearch("met").getBody();
-//        assert listOfBands != null;
-//        ListIterator bands = listOfBands.listIterator(listOfBands.size());
-//        assertTrue(bands.hasPrevious());
-//        bands.previous();
-//        assertTrue(bands.hasPrevious());
-//        bands.previous();
-//        assertTrue(bands.hasPrevious());
-//
-//        Band bandtoverify = (Band) bands.previous();
-//
-//        Band band = new Band();
-//        band.setId(163L);
-//        band.setName("Screaming Marionette");
-//        band.setGenre("Groove/Metalcore");
-//        band.setThemes("Corruption, Society");
-//        band.setLocation("Kathmandu, Province 3");
-//        band.setCountry("Nepal");
-//        band.setLabel("Unsigned/independent");
-//        band.setStatus("Active");
-//        band.setFormed(2016);
-//
-//        assertEquals(band, bandtoverify);
-//    }
+    @Test
+    public void testBandReturnedBySearch()
+    {
+        List listOfBands = (List) bandController.getBandsBySearch("met").getBody();
+        assert listOfBands != null;
 
-//    @Test
-//    public void testBandAdvancedSearch()
-//    {
-//        List list1 = (List) bandController.getBandsBySearch("profeta").getBody();
-//        List list2 = (List) bandController.getBandsBySearch("essencia").getBody();
-//        List list3 = (List) bandController.getBandsBySearch("altkonig").getBody();
-//
-//        assert list1 != null;
-//        Iterator bands1 = list1.iterator();
-//        assertTrue(bands1.hasNext());
-//
-//        Band bandtoverify = (Band) bands1.next();
-//
-//        Band band = new Band();
-//        band.setId(7L);
-//        band.setName("Corazón Profeta");
-//        band.setGenre("Heavy");
-//        band.setThemes("Personal and social issues, Heavy");
-//        band.setLocation("Necochea, Buenos Aires");
-//        band.setCountry("Argentina");
-//        band.setLabel("Unsigned/independent");
-//        band.setStatus("Active");
-//        band.setFormed(2000);
-//
-//        assertEquals(band, bandtoverify);
-//
-//        assert list2 != null;
-//        Iterator bands2 = list2.iterator();
-//        assertTrue(bands2.hasNext());
-//
-//        bandtoverify = (Band) bands2.next();
-//
-//        band = new Band();
-//        band.setId(12L);
-//        band.setName("Essência Insana");
-//        band.setGenre("Thrash/Black");
-//        band.setThemes("Social Criticism, Carnage, Misanthropy");
-//        band.setLocation("Campos Sales, Ceará");
-//        band.setCountry("Brazil");
-//        band.setLabel("Unsigned/independent");
-//        band.setStatus("Active");
-//        band.setFormed(2012);
-//
-//        assertEquals(band, bandtoverify);
-//
-//        assert list3 != null;
-//        Iterator bands3 = list3.iterator();
-//        assertTrue(bands3.hasNext());
-//
-//        bandtoverify = (Band) bands3.next();
-//
-//        band = new Band();
-//        band.setId(104L);
-//        band.setName("Altkönig");
-//        band.setGenre("Black");
-//        band.setThemes("Nature, Paganism, Philosophy, War");
-//        band.setLocation("Frankfurt, Hesse");
-//        band.setCountry("Germany");
-//        band.setLabel("Unsigned/independent");
-//        band.setStatus("Split-up");
-//        band.setFormed(2008);
-//
-//        assertEquals(band, bandtoverify);
-//    }
+        Band bandToVerify1 = (Band) listOfBands.get(1);
+        Band bandToVerify2 = (Band) listOfBands.get(64);
+        Band bandToVerify3 = (Band) listOfBands.get(113);
+
+        System.out.println(bandToVerify1);
+        System.out.println(bandToVerify2);
+        System.out.println(bandToVerify3);
+
+        Band band = new Band();
+        band.setId(16L);
+        band.setName("Metaphoris");
+        band.setGenre("Thrash/Death");
+        band.setThemes("Hate, Chaos");
+        band.setLocation("Vantaa");
+        band.setCountry("Finland");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Changed name");
+        band.setFormed(2007);
+
+        assertEquals(band, bandToVerify1);
+
+        band = new Band();
+        band.setId(119L);
+        band.setName("Chaos Ascending");
+        band.setGenre("Symphonic Black");
+        band.setThemes("Chaos, Darkness, Occultism");
+        band.setLocation("Tucson, Arizona");
+        band.setCountry("United States");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Split-up");
+        band.setFormed(2010);
+
+        assertEquals(band, bandToVerify2);
+
+        band = new Band();
+        band.setId(164L);
+        band.setName("Hymne");
+        band.setGenre("Black");
+        band.setThemes("Occultsim, Norse Mythology, Darkness, Suffering");
+        band.setLocation("Garden Grove, California");
+        band.setCountry("United States");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Changed name");
+        band.setFormed(2014);
+
+        assertEquals(band, bandToVerify3);
+    }
+
+    @Test
+    public void testBandAdvancedSearch()
+    {
+        List list1 = (List) bandController.getBandsBySearch("profeta").getBody();
+        List list2 = (List) bandController.getBandsBySearch("essencia").getBody();
+        List list3 = (List) bandController.getBandsBySearch("altkonig").getBody();
+
+        assert list1 != null;
+        Iterator bands1 = list1.iterator();
+        assertTrue(bands1.hasNext());
+
+        Band bandtoverify = (Band) bands1.next();
+
+        Band band = new Band();
+        band.setId(7L);
+        band.setName("Corazón Profeta");
+        band.setGenre("Heavy");
+        band.setThemes("Personal and social issues, Heavy");
+        band.setLocation("Necochea, Buenos Aires");
+        band.setCountry("Argentina");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Active");
+        band.setFormed(2000);
+
+        assertEquals(band, bandtoverify);
+
+        assert list2 != null;
+        Iterator bands2 = list2.iterator();
+        assertTrue(bands2.hasNext());
+
+        bandtoverify = (Band) bands2.next();
+
+        band = new Band();
+        band.setId(12L);
+        band.setName("Essência Insana");
+        band.setGenre("Thrash/Black");
+        band.setThemes("Social Criticism, Carnage, Misanthropy");
+        band.setLocation("Campos Sales, Ceará");
+        band.setCountry("Brazil");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Active");
+        band.setFormed(2012);
+
+        assertEquals(band, bandtoverify);
+
+        assert list3 != null;
+        Iterator bands3 = list3.iterator();
+        assertTrue(bands3.hasNext());
+
+        bandtoverify = (Band) bands3.next();
+
+        band = new Band();
+        band.setId(104L);
+        band.setName("Altkönig");
+        band.setGenre("Black");
+        band.setThemes("Nature, Paganism, Philosophy, War");
+        band.setLocation("Frankfurt, Hesse");
+        band.setCountry("Germany");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Split-up");
+        band.setFormed(2008);
+
+        assertEquals(band, bandtoverify);
+    }
 }

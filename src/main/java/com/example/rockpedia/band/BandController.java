@@ -149,17 +149,17 @@ public class BandController {
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
-//    @GetMapping("/search")
-//    public ResponseEntity<Object> getBandsBySearch(@RequestParam(value = "q") String query)
-//    {
-//        List<Band> bands = null;
-//        try {
-//            bands = bandService.searchAdvanced(query);
-//        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-//            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
-//        }
-//        return new ResponseEntity<>(bands, HttpStatus.OK);
-//    }
+    @GetMapping("/search")
+    public ResponseEntity<Object> getBandsBySearch(@RequestParam(value = "q") String query)
+    {
+        List<Band> bands;
+        try {
+            bands = bandService.searchBand(query);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(bands, HttpStatus.OK);
+    }
 
 
 }
