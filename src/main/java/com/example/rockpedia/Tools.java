@@ -3,6 +3,7 @@ package com.example.rockpedia;
 import com.example.rockpedia.band.Band;
 import org.apache.commons.lang3.StringUtils;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -37,6 +38,34 @@ public class Tools {
         return result;
     }
 
+    public static List<Band> matchScoreBand(List<Band> all, String query, String memberToSearch) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        List<Pair<Integer, Band>> allSorted = new ArrayList<>();
+        String memberGetter = "get"+memberToSearch.substring(0, 1).toUpperCase() + memberToSearch.substring(1).toLowerCase();
+        for(Band band: all)
+        {
+            String value = band.getClass().getMethod(memberGetter).invoke(band).toString();
+            int score = matchScore(value, query);
+            if(score > 0)
+                allSorted.add(new Pair<>(score, band));
+        }
+
+        allSorted.sort((o1, o2) -> {
+            if (o1.getKey() < o2.getKey())
+                return -1;
+            else if (o1.getKey().equals(o2.getKey()))
+                return 0;
+            else if (o1.getKey() > o2.getKey())
+                return 1;
+            return 0;
+        });
+
+        all.clear();
+
+        for(Pair<Integer, Band> band: allSorted)
+            all.add(band.getValue());
+        return all;
+    }
+
     public static int matchScore(String input, String pattern)
     {
         return matchScore(input, pattern, false, input.contains("œ") || input.contains("Œ") || input.contains("æ") || input.contains("Æ") || input.contains("ß"));
@@ -67,9 +96,9 @@ public class Tools {
                 else if (Character.toLowerCase(in) == Character.toLowerCase(pat))
                     return 3 + matchScore(input.substring(1), pattern.substring(1), true, noCheckLength);
                 else if (in == ' ')
-                    return -1 + matchScore(input.substring(1), pattern, true, noCheckLength);
+                    return -1 + matchScore(input.substring(1), pattern, false, noCheckLength);
                 else if (pat == ' ')
-                    return -1 + matchScore(input, pattern.substring(1), true, noCheckLength);
+                    return -1 + matchScore(input, pattern.substring(1), false, noCheckLength);
                 else {
                     in = StringUtils.stripAccents(String.valueOf(in)).toCharArray()[0];
                     pat = StringUtils.stripAccents(String.valueOf(pat)).toCharArray()[0];
@@ -82,7 +111,7 @@ public class Tools {
             input = input.substring(1);
         }
         while(!found);
-        return 0;
+        return -Integer.MAX_VALUE;
     }
 
     private static String replaceSpecialChar(char ch)

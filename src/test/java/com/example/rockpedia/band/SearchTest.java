@@ -16,5 +16,7 @@ public class SearchTest {
         assertEquals(17, matchScore("Mál akÁœ", "malaka"));
         assertEquals(34, matchScore("São Paulo", "Sao Paulo"));
         assertEquals(18, matchScore("Bærum", "Baerum"));
+        assertEquals(10, matchScore("Isolation, Society, Anxiety, Hope, Self-Discovery", "xie"));
+        assertEquals(15, matchScore("Fragile Existence", "sten"));
     }
 }

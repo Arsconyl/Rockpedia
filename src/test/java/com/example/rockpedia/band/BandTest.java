@@ -5,6 +5,9 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

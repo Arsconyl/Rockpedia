@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 @RestController
@@ -59,51 +60,85 @@ public class BandController {
     }
 
     @GetMapping("/byName/{name}")
-    public ResponseEntity<List> byName(@PathVariable(value = "name") String name)
+    public ResponseEntity<Object> byName(@PathVariable(value = "name") String name)
     {
-        List<Band> bands = bandService.searchBandName(name);
+        List<Band> bands;
+        try {
+            bands = bandService.searchBandName(name);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byGenre/{genre}")
-    public ResponseEntity<List> byGenre(@PathVariable(value="genre")String genre)
+    public ResponseEntity<Object> byGenre(@PathVariable(value="genre")String genre)
     {
-
-        List<Band> bands = bandService.searchBandGenre(genre);
+        List<Band> bands;
+        try {
+            bands = bandService.searchBandGenre(genre);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byTheme/{theme}")
-    public ResponseEntity<List> byTheme(@PathVariable(value="theme")String theme)
+    public ResponseEntity<Object> byTheme(@PathVariable(value="theme")String theme)
     {
-        List<Band> bands = bandService.searchBandTheme(theme);
+        List<Band> bands;
+        try {
+            bands = bandService.searchBandTheme(theme);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byLocation/{location}")
-    public ResponseEntity<List> byLocation(@PathVariable(value="location")String location)
+    public ResponseEntity<Object> byLocation(@PathVariable(value="location")String location)
     {
-        List<Band> bands = bandService.searchBandLocation(location);
+        List<Band> bands;
+        try {
+            bands = bandService.searchBandLocation(location);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
     @GetMapping("/byCountry/{country}")
-    public ResponseEntity<List> byCountry(@PathVariable(value="country")String country)
+    public ResponseEntity<Object> byCountry(@PathVariable(value="country")String country)
     {
-        List<Band> bands = bandService.searchBandCountry(country);
+        List<Band> bands;
+        try {
+            bands = bandService.searchBandCountry(country);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byLabel/{label}")
-    public ResponseEntity<List> byLabel(@PathVariable(value="label")String label)
+    public ResponseEntity<Object> byLabel(@PathVariable(value="label")String label)
     {
-        List<Band> bands = bandService.searchBandLabel(label);
+        List<Band> bands;
+        try {
+            bands = bandService.searchBandLabel(label);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byStatus/{status}")
-    public ResponseEntity<List> byStatus(@PathVariable(value="status")String status)
+    public ResponseEntity<Object> byStatus(@PathVariable(value="status")String status)
     {
-        List<Band> bands = bandService.searchBandStatus(status);
+        List<Band> bands;
+        try {
+            bands = bandService.searchBandStatus(status);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
@@ -114,12 +149,17 @@ public class BandController {
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
-    @GetMapping("/search")
-    public ResponseEntity<List> getBandsBySearch(@RequestParam(value = "q") String query)
-    {
-        List<Band> bands = bandService.searchAdvanced(query);
-        return new ResponseEntity<>(bands, HttpStatus.OK);
-    }
+//    @GetMapping("/search")
+//    public ResponseEntity<Object> getBandsBySearch(@RequestParam(value = "q") String query)
+//    {
+//        List<Band> bands = null;
+//        try {
+//            bands = bandService.searchAdvanced(query);
+//        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+//            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+//        }
+//        return new ResponseEntity<>(bands, HttpStatus.OK);
+//    }
 
 
 }

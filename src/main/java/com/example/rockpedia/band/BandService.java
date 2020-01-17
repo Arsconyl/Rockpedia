@@ -3,6 +3,7 @@ package com.example.rockpedia.band;
 import com.example.rockpedia.Pair;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 import static com.example.rockpedia.Tools.*;
@@ -57,8 +58,7 @@ public class BandService {
         return "{\n\t\"message\": \"Band " + id + " has been deleted succesfully.\"\n}";
     }
 
-    public List<Band> searchBand(String query)
-    {
+    public List<Band> searchBand(String query) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
         List<Band> byName = searchBandName(query);
         List<Band> byGenre = searchBandGenre(query);
         List<Band> byTheme = searchBandTheme(query);
@@ -68,67 +68,33 @@ public class BandService {
         return concatenate(byName, byGenre, byTheme, byLocation, byCountry);
     }
 
-    public List<Band> searchBandName(String query)
-    {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByNameContainingIgnoreCase(query);
-        List<Band> bands = new ArrayList<>();
-        if(listOfBands.isPresent())
-            bands = iterableToList(listOfBands.get());
-        return bands;
+    public List<Band> searchBandName(String query) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        return searchAdvanced(query, "name");
     }
 
-    public List<Band> searchBandGenre(String query)
-    {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByGenreContainingIgnoreCase(query);
-        List<Band> bands = new ArrayList<>();
-        if(listOfBands.isPresent())
-            bands = iterableToList(listOfBands.get());
-        return bands;
+    public List<Band> searchBandGenre(String query) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        return searchAdvanced(query, "genre");
     }
 
-    public List<Band> searchBandTheme(String query)
-    {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByThemesContainingIgnoreCase(query);
-        List<Band> bands = new ArrayList<>();
-        if(listOfBands.isPresent())
-            bands = iterableToList(listOfBands.get());
-        return bands;
+
+    public List<Band> searchBandTheme(String query) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        return searchAdvanced(query, "themes");
     }
 
-    public List<Band> searchBandLocation(String query)
-    {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByLocationContainingIgnoreCase(query);
-        List<Band> bands = new ArrayList<>();
-        if(listOfBands.isPresent())
-            bands = iterableToList(listOfBands.get());
-        return bands;
+    public List<Band> searchBandLocation(String query) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        return searchAdvanced(query, "location");
     }
 
-    public List<Band> searchBandCountry(String query)
-    {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByCountryContainingIgnoreCase(query);
-        List<Band> bands = new ArrayList<>();
-        if(listOfBands.isPresent())
-            bands = iterableToList(listOfBands.get());
-        return bands;
+    public List<Band> searchBandCountry(String query) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        return searchAdvanced(query, "country");
     }
 
-    public List<Band> searchBandLabel(String query)
-    {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByLabelContainingIgnoreCase(query);
-        List<Band> bands = new ArrayList<>();
-        if(listOfBands.isPresent())
-            bands = iterableToList(listOfBands.get());
-        return bands;
+    public List<Band> searchBandLabel(String query) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        return searchAdvanced(query, "label");
     }
 
-    public List<Band> searchBandStatus(String query)
-    {
-        Optional<Iterable<Band>> listOfBands = bandRepository.findAllByStatusContainingIgnoreCase(query);
-        List<Band> bands = new ArrayList<>();
-        if(listOfBands.isPresent())
-            bands = iterableToList(listOfBands.get());
-        return bands;
+    public List<Band> searchBandStatus(String query) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        return searchAdvanced(query, "status");
     }
 
     public List<Band> searchBandFormed(int query)
@@ -140,32 +106,7 @@ public class BandService {
         return bands;
     }
 
-    public List<Band> searchAdvanced(String query)
-    {
-        List<Band> all = getAll();
-        List<Pair<Integer, Band>> allSorted = new ArrayList<>();
-        for(Band band: all)
-        {
-            String name = band.getName();
-            int score = matchScore(name, query);
-            if(score > 0)
-                allSorted.add(new Pair<>(score, band));
-        }
-
-        allSorted.sort((o1, o2) -> {
-            if (o1.getKey() < o2.getKey())
-                return 1;
-            else if (o1.getKey().equals(o2.getKey()))
-                return 0;
-            else if (o1.getKey() > o2.getKey())
-                return -1;
-            return 0;
-        });
-
-        all.clear();
-
-        for(Pair<Integer, Band> band: allSorted)
-            all.add(band.getValue());
-        return all;
+    private List<Band> searchAdvanced(String query, String memberToSearch) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        return matchScoreBand(getAll(), query, memberToSearch);
     }
 }
