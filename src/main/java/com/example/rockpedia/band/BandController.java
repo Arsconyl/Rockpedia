@@ -10,6 +10,9 @@ import java.util.*;
 @RestController
 @RequestMapping("/bands")
 public class BandController {
+    
+    private static final String MESSAGEBEGIN = "{\n\t\"message\": \"";
+    private static final String MESSAGEEND = "\"\n}";
 
     private final BandService bandService;
 
@@ -66,7 +69,7 @@ public class BandController {
         try {
             bands = bandService.searchBandName(name);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
@@ -78,7 +81,7 @@ public class BandController {
         try {
             bands = bandService.searchBandGenre(genre);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
@@ -90,7 +93,7 @@ public class BandController {
         try {
             bands = bandService.searchBandTheme(theme);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
@@ -102,7 +105,7 @@ public class BandController {
         try {
             bands = bandService.searchBandLocation(location);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
@@ -113,7 +116,7 @@ public class BandController {
         try {
             bands = bandService.searchBandCountry(country);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
@@ -125,7 +128,7 @@ public class BandController {
         try {
             bands = bandService.searchBandLabel(label);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
@@ -137,7 +140,7 @@ public class BandController {
         try {
             bands = bandService.searchBandStatus(status);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
@@ -156,7 +159,7 @@ public class BandController {
         try {
             bands = bandService.searchBand(query);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
