@@ -6,7 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: trigger single Job
-      uses: ALudwig57/Rockpedia@master
+    - uses: ALudwig57/Rockpedia@master
+    - uses: ./.github/actions/main.yml
       with:
         url: "https://jenkins.m2gi.win"
         user: "groupe1"
