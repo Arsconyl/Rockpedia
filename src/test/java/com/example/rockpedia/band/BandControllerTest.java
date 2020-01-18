@@ -1,18 +1,16 @@
 package com.example.rockpedia.band;
 
-import com.example.rockpedia.band.Band;
-import com.example.rockpedia.band.BandController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.core.annotation.Order;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.Objects;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -25,9 +23,10 @@ public class BandControllerTest {
     BandController bandController;
 
     @Test
+    @Order(1)
     public void testBandReturnedById()
     {
-        Band bandtoverify = bandController.byId(2L).getBody();
+        Band bandtoverify = (Band) bandController.byId(2L).getBody();
 
         Band band = new Band();
         band.setId(2L);
@@ -44,6 +43,7 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(2)
     public void testBandReturnedByName()
     {
         List listOfBands = (List) bandController.byName("sten").getBody();
@@ -69,6 +69,7 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(3)
     public void testBandReturnedByGenre()
     {
         List listOfBands = (List) bandController.byGenre("sl").getBody();
@@ -94,6 +95,7 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(4)
     public void testBandReturnedByTheme()
     {
         List listOfBands = (List) bandController.byTheme("xie").getBody();
@@ -118,6 +120,7 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(5)
     public void testBandReturnedByLocation()
     {
         List listOfBands = (List) bandController.byLocation("ingen").getBody();
@@ -143,6 +146,7 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(6)
     public void testBandReturnedByCountry()
     {
         List listOfBands = (List) bandController.byCountry("gar").getBody();
@@ -167,6 +171,7 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(7)
     public void testBandReturnedByLabel()
     {
         List listOfBands = (List) bandController.byLabel("pand").getBody();
@@ -191,6 +196,7 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(8)
     public void testBandReturnedByStatus()
     {
         List listOfBands = (List) bandController.byStatus("ho").getBody();
@@ -219,6 +225,7 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(9)
     public void testBandReturnedByFormed()
     {
         List listOfBands = bandController.byFormed(1979).getBody();
@@ -243,18 +250,20 @@ public class BandControllerTest {
     }
 
     @Test
+    @Order(10)
     public void testBandReturnedBySearch()
     {
         List listOfBands = (List) bandController.getBandsBySearch("met").getBody();
         assert listOfBands != null;
+        System.out.println(listOfBands);
+
+        assertEquals(8, listOfBands.size());
 
         Band bandToVerify1 = (Band) listOfBands.get(1);
-        Band bandToVerify2 = (Band) listOfBands.get(64);
-        Band bandToVerify3 = (Band) listOfBands.get(113);
+        Band bandToVerify2 = (Band) listOfBands.get(7);
 
         System.out.println(bandToVerify1);
         System.out.println(bandToVerify2);
-        System.out.println(bandToVerify3);
 
         Band band = new Band();
         band.setId(16L);
@@ -270,33 +279,21 @@ public class BandControllerTest {
         assertEquals(band, bandToVerify1);
 
         band = new Band();
-        band.setId(119L);
-        band.setName("Chaos Ascending");
-        band.setGenre("Symphonic Black");
-        band.setThemes("Chaos, Darkness, Occultism");
-        band.setLocation("Tucson, Arizona");
-        band.setCountry("United States");
-        band.setLabel("Unsigned/independent");
-        band.setStatus("Split-up");
-        band.setFormed(2010);
+        band.setId(2L);
+        band.setName("S.U.T.U.R.E.");
+        band.setGenre("Black/Crust");
+        band.setThemes("Misanthropy");
+        band.setLocation("Metz, Grand Est");
+        band.setCountry("France");
+        band.setLabel("Black Pandemie Production");
+        band.setStatus("Active");
+        band.setFormed(2016);
 
         assertEquals(band, bandToVerify2);
-
-        band = new Band();
-        band.setId(164L);
-        band.setName("Hymne");
-        band.setGenre("Black");
-        band.setThemes("Occultsim, Norse Mythology, Darkness, Suffering");
-        band.setLocation("Garden Grove, California");
-        band.setCountry("United States");
-        band.setLabel("Unsigned/independent");
-        band.setStatus("Changed name");
-        band.setFormed(2014);
-
-        assertEquals(band, bandToVerify3);
     }
 
     @Test
+    @Order(11)
     public void testBandAdvancedSearch()
     {
         List list1 = (List) bandController.getBandsBySearch("profeta").getBody();
@@ -360,4 +357,53 @@ public class BandControllerTest {
 
         assertEquals(band, bandtoverify);
     }
+
+    @Test
+    @Order(12)
+    public void testDeleteBand()
+    {
+        ResponseEntity<String> firstResult = bandController.deleteBand(34L);
+        assertEquals(HttpStatus.OK, firstResult.getStatusCode());
+        ResponseEntity<Object> secondResult = bandController.byId(34L);
+        assertEquals(HttpStatus.NO_CONTENT, secondResult.getStatusCode());
+        assertEquals("{\n\t\"message\": \"There is no band by id 34\"\n" + "}", secondResult.getBody());
+    }
+//
+//    @Test
+//    @Order(13)
+//    public void testAddBand()
+//    {
+//        Band band = new Band();
+//        band.setName("Altkönig");
+//        band.setGenre("Black");
+//        band.setThemes("Nature, Paganism, Philosophy, War");
+//        band.setLocation("Frankfurt, Hesse");
+//        band.setCountry("Germany");
+//        band.setLabel("Unsigned/independent");
+//        band.setStatus("Split-up");
+//        band.setFormed(2008);
+//
+//        bandController.newBand(band);
+//
+//        assertEquals(band, bandController.byId(188L).getBody());
+//    }
+//
+//    @Test
+//    @Order(2)
+//    public void testUpdateBand()
+//    {
+//        Band band = new Band();
+//        band.setName("Altkönig");
+//        band.setGenre("Black");
+//        band.setThemes("Nature, Paganism, Philosophy, War");
+//        band.setLocation("Frankfurt, Hesse");
+//        band.setCountry("Germany");
+//        band.setLabel("Unsigned/independent");
+//        band.setStatus("Split-up");
+//        band.setFormed(2008);
+//
+//        bandController.replaceBand(band, 120L);
+//
+//        assertEquals(band, bandController.byId(120L).getBody());
+//    }
 }

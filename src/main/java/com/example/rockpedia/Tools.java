@@ -13,12 +13,6 @@ public class Tools {
     private Tools() {
     }
 
-    public static Optional<List<Band>> mapToSortedList(Map<Integer, Band> bands)
-    {
-        Map<Integer, Band> sortedBands = new TreeMap<>(bands);
-        return Optional.of(new ArrayList<>(sortedBands.values()));
-    }
-
     public static List<Band> iterableToList(Iterable<Band> listOfBands)
     {
         List<Band> bands = new ArrayList<>();
@@ -76,10 +70,11 @@ public class Tools {
         {
             int inputLength = input.length();
             int patternLength = pattern.length();
-            if(inputLength < patternLength && !noCheckLength)
-                return -Integer.MAX_VALUE;
+            if(inputLength < patternLength && !noCheckLength) {
+                return -2000000000;
+            }
             if (inputLength == 0 || patternLength == 0)
-                return patternLength != 0 ? -Integer.MAX_VALUE : 0;
+                return patternLength != 0 ? -2000000000 : 0;
             else
             {
                 char in = input.charAt(0);
@@ -111,7 +106,7 @@ public class Tools {
             input = input.substring(1);
         }
         while(!found);
-        return -Integer.MAX_VALUE;
+        return -2000000000;
     }
 
     private static String replaceSpecialChar(char ch)

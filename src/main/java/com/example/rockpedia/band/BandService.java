@@ -1,6 +1,5 @@
 package com.example.rockpedia.band;
 
-import com.example.rockpedia.Pair;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.InvocationTargetException;
@@ -10,6 +9,9 @@ import static com.example.rockpedia.Tools.*;
 
 @Service
 public class BandService {
+
+    private static final String MESSAGEBEGIN = "{\n\t\"message\": \"";
+    private static final String NOTPROVIDED = " has not been provided\"\n}";
 
     private final BandRepository bandRepository;
 
@@ -34,7 +36,7 @@ public class BandService {
     {
         String valueNull = band.valueIsNull();
         if(valueNull != null)
-            throw new IllegalArgumentException("{\n\t\"message\": \"" + valueNull + " has not been provided\"\n}");
+            throw new IllegalArgumentException(MESSAGEBEGIN + valueNull + NOTPROVIDED);
         return bandRepository.save(band);
     }
 
@@ -42,7 +44,7 @@ public class BandService {
     {
         String valueNull = band.valueIsNull();
         if(valueNull != null) {
-            throw new IllegalArgumentException("{\n\t\"message\": \"" + valueNull + " has not been provided\"\n}");
+            throw new IllegalArgumentException(MESSAGEBEGIN + valueNull + NOTPROVIDED);
         }
             band.setId(id);
         return bandRepository.save(band);
@@ -53,7 +55,7 @@ public class BandService {
         try {
             bandRepository.deleteById(id);
         } catch (Exception e) {
-            throw new IllegalArgumentException("{\n\t\"message\": \"" + e.getMessage() + "\"\n}");
+            throw new IllegalArgumentException(MESSAGEBEGIN + e.getMessage() + "\"\n}");
         }
         return "{\n\t\"message\": \"Band " + id + " has been deleted succesfully.\"\n}";
     }

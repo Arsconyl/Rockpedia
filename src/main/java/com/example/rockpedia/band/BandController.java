@@ -21,7 +21,10 @@ public class BandController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Band> byId(@PathVariable Long id){
+    public ResponseEntity<Object> byId(@PathVariable Long id){
+        Band band = bandService.byId(id);
+        if (band == null)
+            return new ResponseEntity<>(MESSAGEBEGIN + "There is no band by id " + id + MESSAGEEND, HttpStatus.NO_CONTENT);
         return new ResponseEntity<>(bandService.byId(id), HttpStatus.OK);
     }
 
