@@ -1,2 +1,2 @@
-- name: Trigger Jenkins Job
+- name: trigger Jenkins Job
   uses: ALudwig57/Rockpedia@master
