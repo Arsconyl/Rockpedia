@@ -368,42 +368,42 @@ public class BandControllerTest {
         assertEquals(HttpStatus.NO_CONTENT, secondResult.getStatusCode());
         assertEquals("{\n\t\"message\": \"There is no band by id 34\"\n" + "}", secondResult.getBody());
     }
-//
-//    @Test
-//    @Order(13)
-//    public void testAddBand()
-//    {
-//        Band band = new Band();
-//        band.setName("Altkönig");
-//        band.setGenre("Black");
-//        band.setThemes("Nature, Paganism, Philosophy, War");
-//        band.setLocation("Frankfurt, Hesse");
-//        band.setCountry("Germany");
-//        band.setLabel("Unsigned/independent");
-//        band.setStatus("Split-up");
-//        band.setFormed(2008);
-//
-//        bandController.newBand(band);
-//
-//        assertEquals(band, bandController.byId(188L).getBody());
-//    }
-//
-//    @Test
-//    @Order(2)
-//    public void testUpdateBand()
-//    {
-//        Band band = new Band();
-//        band.setName("Altkönig");
-//        band.setGenre("Black");
-//        band.setThemes("Nature, Paganism, Philosophy, War");
-//        band.setLocation("Frankfurt, Hesse");
-//        band.setCountry("Germany");
-//        band.setLabel("Unsigned/independent");
-//        band.setStatus("Split-up");
-//        band.setFormed(2008);
-//
-//        bandController.replaceBand(band, 120L);
-//
-//        assertEquals(band, bandController.byId(120L).getBody());
-//    }
+
+    @Test
+    @Order(13)
+    public void testAddBand()
+    {
+        Band band = new Band();
+        band.setName("Altkönig");
+        band.setGenre("Black");
+        band.setThemes("Nature, Paganism, Philosophy, War");
+        band.setLocation("Frankfurt, Hesse");
+        band.setCountry("Germany");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Split-up");
+        band.setFormed(2008);
+
+        bandController.newBand(band);
+
+        assertEquals(band, bandController.byId(188L).getBody());
+    }
+
+    @Test
+    @Order(2)
+    public void testUpdateBand()
+    {
+        Band band = new Band();
+        band.setName("Altkönig");
+        band.setGenre("Black");
+        band.setThemes("Nature, Paganism, Philosophy, War");
+        band.setLocation("Frankfurt, Hesse");
+        band.setCountry("Germany");
+        band.setLabel("Unsigned/independent");
+        band.setStatus("Split-up");
+        band.setFormed(2008);
+
+        bandController.replaceBand(band, 120L);
+
+        assertEquals(band, bandController.byId(120L).getBody());
+    }
 }
