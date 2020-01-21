@@ -146,11 +146,11 @@ public class BandService {
 
         allSorted.sort((o1, o2) -> {
             if (o1.getKey() < o2.getKey())
-                return -1;
+                return 1;
             else if (o1.getKey().equals(o2.getKey()))
                 return 0;
             else if (o1.getKey() > o2.getKey())
-                return 1;
+                return -1;
             return 0;
         });
 

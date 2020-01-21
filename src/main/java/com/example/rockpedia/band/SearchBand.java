@@ -38,9 +38,9 @@ public class SearchBand {
                     return 4 + matchScore(input.substring(1), pattern.substring(1), true, noCheckLength);
                 else if (Character.toLowerCase(in) == Character.toLowerCase(pat))
                     return 3 + matchScore(input.substring(1), pattern.substring(1), true, noCheckLength);
-                else if (in == ' ')
+                else if (in == ' ' || in == '.')
                     return -1 + matchScore(input.substring(1), pattern, false, noCheckLength);
-                else if (pat == ' ')
+                else if (pat == ' ' || pat == '.')
                     return -1 + matchScore(input, pattern.substring(1), false, noCheckLength);
                 else {
                     in = StringUtils.stripAccents(String.valueOf(in)).toCharArray()[0];

@@ -16,5 +16,7 @@ public class SearchTest {
         assertEquals(10, matchScore("Isolation, Society, Anxiety, Hope, Self-Discovery", "xie"));
         assertEquals(15, matchScore("Fragile Existence", "sten"));
         assertEquals(-2000000007, matchScore("Death, Torture (early), Suicide, Death, Misanthropy, Insanity (later)", "xie"));
+        assertEquals(5, matchScore("S.U.T.U.R.E.", "su"));
+        assertEquals(6, matchScore("Morbid Surgeon", "su"));
     }
 }
