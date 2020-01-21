@@ -116,7 +116,7 @@ public class BandControllerTest {
         band.setStatus("Active");
         band.setFormed(2013);
 
-//        assertEquals(band, bandtoverify);
+        assertEquals(band, bandtoverify);
     }
 
     @Test
