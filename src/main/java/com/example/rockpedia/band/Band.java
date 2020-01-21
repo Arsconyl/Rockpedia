@@ -107,7 +107,7 @@ class Band {
     @Override
     public String toString() {
         JsonObject json = Json.createObjectBuilder()
-                .add("id", id)
+//                .add("id", id)
                 .add("name", name)
                 .add("genre", genre)
                 .add("themes", themes)
@@ -141,9 +141,8 @@ class Band {
         return Objects.hash(id, name, genre, themes, location, country, label, status, formed);
     }
 
-    public String valueIsNull()
-    {
-        if(name == null)
+    public String valueIsNull() {
+        if (name == null)
             return "name";
         else if (genre == null)
             return "genre";
@@ -158,5 +157,19 @@ class Band {
         else if (status == null)
             return "status";
         return null;
+    }
+
+    public Band() {
+    }
+
+    public Band(BandTemplate band) {
+        this.name = band.name;
+        this.genre = band.genre;
+        this.themes = band.themes;
+        this.location = band.location;
+        this.country = band.country;
+        this.label = band.label;
+        this.status = band.status;
+        this.formed = band.formed;
     }
 }

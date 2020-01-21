@@ -2,7 +2,7 @@ package com.example.rockpedia.band;
 
 import org.junit.Test;
 
-import static com.example.rockpedia.Tools.matchScore;
+import static com.example.rockpedia.band.SearchBand.matchScore;
 import static org.junit.Assert.assertEquals;
 
 public class SearchTest {

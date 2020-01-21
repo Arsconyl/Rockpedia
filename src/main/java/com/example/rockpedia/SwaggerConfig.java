@@ -1,5 +1,7 @@
 package com.example.rockpedia;
 
+import com.example.rockpedia.band.Band;
+import io.swagger.annotations.ApiModel;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -8,6 +10,9 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+import java.net.InterfaceAddress;
+import java.util.List;
 
 @Configuration
 @EnableSwagger2
@@ -24,11 +29,17 @@ public class SwaggerConfig {
 
     private ApiInfo metaData() {
         return new ApiInfoBuilder()
-                .title("Spring Boot REST API - Rockpedia")
-                .description("\"Spring Boot REST API - Rockpedia\"")
+                .title("Rockpedia")
+                .description("\"L'API qui fait du bruit\"")
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses")
                 .build();
+    }
+
+    @ApiModel()
+    public interface BandsList extends List<Band> {
+        // This is a shim class that serves to generate a meaningful swagger spec
+        // SEE https://github.com/swagger-api/swagger-core/issues/498#issuecomment-73732315
     }
 }

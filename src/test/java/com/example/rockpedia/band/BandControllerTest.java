@@ -373,7 +373,7 @@ public class BandControllerTest {
     @Order(13)
     public void testAddBand()
     {
-        Band band = new Band();
+        BandTemplate band = new BandTemplate();
         band.setName("Altkönig");
         band.setGenre("Black");
         band.setThemes("Nature, Paganism, Philosophy, War");
@@ -385,14 +385,17 @@ public class BandControllerTest {
 
         bandController.newBand(band);
 
-        assertEquals(band, bandController.byId(188L).getBody());
+        Band bandToVerify = new Band(band);
+        bandToVerify.setId(188L);
+
+        assertEquals(bandToVerify, bandController.byId(188L).getBody());
     }
 
     @Test
     @Order(2)
     public void testUpdateBand()
     {
-        Band band = new Band();
+        BandTemplate band = new BandTemplate();
         band.setName("Altkönig");
         band.setGenre("Black");
         band.setThemes("Nature, Paganism, Philosophy, War");
@@ -404,6 +407,9 @@ public class BandControllerTest {
 
         bandController.replaceBand(band, 120L);
 
-        assertEquals(band, bandController.byId(120L).getBody());
+        Band bandToVerify = new Band(band);
+        bandToVerify.setId(120L);
+
+        assertEquals(bandToVerify, bandController.byId(120L).getBody());
     }
 }
