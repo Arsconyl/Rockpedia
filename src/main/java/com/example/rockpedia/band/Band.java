@@ -1,5 +1,7 @@
 package com.example.rockpedia.band;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.persistence.*;
@@ -13,23 +15,32 @@ class Band {
     @Id
     @GeneratedValue
     @Column(name = "Id", nullable = false)
+    @CsvBindByPosition(position = 0)
     private Long id;
 
     @Column(name = "Name", length = 128, nullable = false)
+    @CsvBindByPosition(position = 1)
     private String name;
     @Column(name = "genre", length = 128, nullable = false)
+    @CsvBindByPosition(position = 2)
     private String genre;
     @Column(name = "themes", nullable = false)
+    @CsvBindByPosition(position = 3)
     private String themes;
     @Column(name = "location", length = 128, nullable = false)
+    @CsvBindByPosition(position = 4)
     private String location;
     @Column(name = "country", length = 128, nullable = false)
+    @CsvBindByPosition(position = 5)
     private String country;
     @Column(name = "label", length = 128, nullable = false)
+    @CsvBindByPosition(position = 6)
     private String label;
     @Column(name = "status", length = 128, nullable = false)
+    @CsvBindByPosition(position = 7)
     private String status;
     @Column(name = "formed", length = 128, nullable = false)
+    @CsvBindByPosition(position = 8)
     private int formed;
 
     public Long getId() {

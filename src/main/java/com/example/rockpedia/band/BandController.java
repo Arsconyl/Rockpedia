@@ -1,12 +1,17 @@
 package com.example.rockpedia.band;
 
 import com.example.rockpedia.SwaggerConfig;
+import com.opencsv.CSVWriter;
+import com.opencsv.bean.StatefulBeanToCsv;
+import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import io.swagger.annotations.*;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
@@ -203,5 +208,26 @@ public class BandController {
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
+    @GetMapping("/export-bands")
+    public void exportCSV(HttpServletResponse response) throws Exception {
+
+        //set file name and content type
+        String filename = "bands.csv";
+
+        response.setContentType("text/csv");
+        response.setCharacterEncoding("utf-8");
+        response.setHeader(HttpHeaders.CONTENT_DISPOSITION,"attachment; filename=\"" + filename + "\"");
+
+        //create a csv writer
+        StatefulBeanToCsv<Band> writer = new StatefulBeanToCsvBuilder<Band>(response.getWriter())
+                .withQuotechar(CSVWriter.DEFAULT_QUOTE_CHARACTER)
+                .withSeparator(CSVWriter.DEFAULT_SEPARATOR)
+                .withOrderedResults(true)
+                .build();
+
+        //write all users to csv file
+        writer.write(bandService.getAll());
+
+    }
 
 }
