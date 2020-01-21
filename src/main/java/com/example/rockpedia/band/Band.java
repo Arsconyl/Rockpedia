@@ -172,4 +172,15 @@ class Band {
         this.status = band.status;
         this.formed = band.formed;
     }
+
+    public String toCSV() {
+        return name + ',' +
+                  genre + ',' +
+                  themes + ',' +
+                  location + ',' +
+                  country + ',' +
+                  label + ',' +
+                  status + ',' +
+                 + formed;
+    }
 }
