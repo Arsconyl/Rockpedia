@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Iterator;
 import java.util.List;
 
@@ -21,6 +22,9 @@ public class BandControllerTest {
 
     @Autowired
     BandController bandController;
+
+    @Autowired
+    BandRESTService bandRESTService;
 
     @Test
     @Order(1)
@@ -251,9 +255,8 @@ public class BandControllerTest {
 
     @Test
     @Order(10)
-    public void testBandReturnedBySearch()
-    {
-        List listOfBands = (List) bandController.getBandsBySearch("met").getBody();
+    public void testBandReturnedBySearch() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        List listOfBands = (List) bandRESTService.searchBand("met");
         assert listOfBands != null;
         System.out.println(listOfBands);
 
@@ -294,11 +297,10 @@ public class BandControllerTest {
 
     @Test
     @Order(11)
-    public void testBandAdvancedSearch()
-    {
-        List list1 = (List) bandController.getBandsBySearch("profeta").getBody();
-        List list2 = (List) bandController.getBandsBySearch("essencia").getBody();
-        List list3 = (List) bandController.getBandsBySearch("altkonig").getBody();
+    public void testBandAdvancedSearch() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        List list1 = (List) bandRESTService.searchBand("profeta");
+        List list2 = (List) bandRESTService.searchBand("essencia");
+        List list3 = (List) bandRESTService.searchBand("altkonig");
 
         assert list1 != null;
         Iterator bands1 = list1.iterator();

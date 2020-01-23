@@ -10,14 +10,14 @@ import java.util.stream.Stream;
 import static com.example.rockpedia.band.SearchBand.matchScore;
 
 @Service
-public class BandService {
+public class BandRESTService {
 
     private static final String MESSAGEBEGIN = "{\n\t\"message\": \"";
     private static final String NOTPROVIDED = " has not been provided\"\n}";
 
     private final BandRepository bandRepository;
 
-    public BandService(BandRepository bandRepository) {
+    public BandRESTService(BandRepository bandRepository) {
         this.bandRepository = bandRepository;
     }
 
@@ -123,7 +123,6 @@ public class BandService {
         return bands;
     }
 
-    // Generic function to concatenate multiple lists in Java
     @SafeVarargs
     public static<T> List<T> concatenate(List<T>... lists)
     {

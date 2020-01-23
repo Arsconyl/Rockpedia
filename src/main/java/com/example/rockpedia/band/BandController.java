@@ -1,17 +1,15 @@
 package com.example.rockpedia.band;
 
 import com.example.rockpedia.SwaggerConfig;
-import com.opencsv.CSVWriter;
-import com.opencsv.bean.StatefulBeanToCsv;
-import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import io.swagger.annotations.*;
+import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
@@ -23,10 +21,12 @@ public class BandController {
     private static final String MESSAGEBEGIN = "{\n\t\"message\": \"";
     private static final String MESSAGEEND = "\"\n}";
 
-    private final BandService bandService;
+    private final BandRESTService bandRESTService;
+    private final BandExcelService bandExcelService;
 
-    public BandController(BandService bandService) {
-        this.bandService = bandService;
+    public BandController(BandRESTService bandRESTService, BandExcelService bandExcelService) {
+        this.bandRESTService = bandRESTService;
+        this.bandExcelService = bandExcelService;
     }
 
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -35,10 +35,10 @@ public class BandController {
             @ApiResponse(code = 204, message = MESSAGEBEGIN + "There is no band by id {id}" +  MESSAGEEND),
             @ApiResponse(code = 404, message = "Not Found")})
     public ResponseEntity<Object> byId(@PathVariable Long id){
-        Band band = bandService.byId(id);
+        Band band = bandRESTService.byId(id);
         if (band == null)
             return new ResponseEntity<>(MESSAGEBEGIN + "There is no band by id " + id + MESSAGEEND, HttpStatus.NO_CONTENT);
-        return new ResponseEntity<>(bandService.byId(id), HttpStatus.OK);
+        return new ResponseEntity<>(bandRESTService.byId(id), HttpStatus.OK);
     }
 
     @GetMapping("")
@@ -47,7 +47,7 @@ public class BandController {
             @ApiResponse(code = 204, message = MESSAGEBEGIN + "There is no band by id {id}" +  MESSAGEEND),
             @ApiResponse(code = 404, message = "Not Found")})
     public ResponseEntity<List> getAll(){
-        return new ResponseEntity<>(bandService.getAll(), HttpStatus.OK);
+        return new ResponseEntity<>(bandRESTService.getAll(), HttpStatus.OK);
     }
 
     @PostMapping(path = "/add", consumes = "application/json", produces = "application/json")
@@ -56,7 +56,7 @@ public class BandController {
     public ResponseEntity<Object> newBand(@RequestBody BandTemplate band)
     {
         try {
-            return new ResponseEntity<>(bandService.add(new Band(band)), HttpStatus.OK);
+            return new ResponseEntity<>(bandRESTService.add(new Band(band)), HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
@@ -68,7 +68,7 @@ public class BandController {
     public ResponseEntity<Object> replaceBand(@RequestBody BandTemplate band, @PathVariable Long id)
     {
         try {
-            return new ResponseEntity<>(bandService.insert(id, new Band(band)), HttpStatus.OK);
+            return new ResponseEntity<>(bandRESTService.insert(id, new Band(band)), HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
@@ -81,7 +81,7 @@ public class BandController {
     {
         String result;
         try {
-            result = bandService.deleteById(id);
+            result = bandRESTService.deleteById(id);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
@@ -95,7 +95,7 @@ public class BandController {
     {
         List<Band> bands;
         try {
-            bands = bandService.searchBandName(name);
+            bands = bandRESTService.searchBandName(name);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
@@ -109,7 +109,7 @@ public class BandController {
     {
         List<Band> bands;
         try {
-            bands = bandService.searchBandGenre(genre);
+            bands = bandRESTService.searchBandGenre(genre);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
@@ -123,7 +123,7 @@ public class BandController {
     {
         List<Band> bands;
         try {
-            bands = bandService.searchBandTheme(theme);
+            bands = bandRESTService.searchBandTheme(theme);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
@@ -137,7 +137,7 @@ public class BandController {
     {
         List<Band> bands;
         try {
-            bands = bandService.searchBandLocation(location);
+            bands = bandRESTService.searchBandLocation(location);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
@@ -150,7 +150,7 @@ public class BandController {
     {
         List<Band> bands;
         try {
-            bands = bandService.searchBandCountry(country);
+            bands = bandRESTService.searchBandCountry(country);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
@@ -164,7 +164,7 @@ public class BandController {
     {
         List<Band> bands;
         try {
-            bands = bandService.searchBandLabel(label);
+            bands = bandRESTService.searchBandLabel(label);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
@@ -178,7 +178,7 @@ public class BandController {
     {
         List<Band> bands;
         try {
-            bands = bandService.searchBandStatus(status);
+            bands = bandRESTService.searchBandStatus(status);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
@@ -190,44 +190,31 @@ public class BandController {
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
     public ResponseEntity<List> byFormed(@PathVariable(value="formed")int formed)
     {
-        List<Band> bands = bandService.searchBandFormed(formed);
+        List<Band> bands = bandRESTService.searchBandFormed(formed);
         return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/search")
     @ApiOperation(value = "Searching a band by all values, date of formation apart")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<Object> getBandsBySearch(@ApiParam(name = "q", value = "Query to search", defaultValue = "") @RequestParam("q") String query)
-    {
+    public ResponseEntity<Object> getBandsBySearch(@ApiParam(name = "q", value = "Query to search") @RequestParam("q") String query, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) throws IOException {
         List<Band> bands;
         try {
-            bands = bandService.searchBand(query);
+            bands = bandRESTService.searchBand(query);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(bands, HttpStatus.OK);
+        return csv ? exportCSV(bands, "bands_search_" + query) : new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
-    @GetMapping("/export-bands")
-    public void exportCSV(HttpServletResponse response) throws Exception {
+    private ResponseEntity<Object> exportCSV(List<Band> bands, String filename) throws IOException {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("charset", "utf-8");
+        headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment; filename=\"" + filename + ".csv\"");
 
-        //set file name and content type
-        String filename = "bands.csv";
+        InputStreamResource excel = bandExcelService.exportCSV(bands);
 
-        response.setContentType("text/csv");
-        response.setCharacterEncoding("utf-8");
-        response.setHeader(HttpHeaders.CONTENT_DISPOSITION,"attachment; filename=\"" + filename + "\"");
-
-        //create a csv writer
-        StatefulBeanToCsv<Band> writer = new StatefulBeanToCsvBuilder<Band>(response.getWriter())
-                .withQuotechar(CSVWriter.DEFAULT_QUOTE_CHARACTER)
-                .withSeparator(CSVWriter.DEFAULT_SEPARATOR)
-                .withOrderedResults(true)
-                .build();
-
-        //write all users to csv file
-        writer.write(bandService.getAll());
-
+        return ResponseEntity.ok().headers(headers).contentType(MediaType.parseMediaType("text/csv")).body(excel);
     }
 
 }
