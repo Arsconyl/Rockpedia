@@ -1,4 +1,4 @@
-# Rockpedia : l'API qui fait du bruit
+# Rockpedia : Guide d'installation
 
 Voici les instructions à suivre pour être prêt à coder le plus rapidemment possible.
 
@@ -20,8 +20,6 @@ Vous aurez besoin des outils suivants :
 - un IDE (nous conseillons Intellij si possible)
 - un compte Github (pour pouvoir commit)
 - un compte sur la plateforme Jenkins
-
-
 
 ## 2. Démarrer
 
@@ -46,13 +44,9 @@ Vous devriez voir apparaître cette page :
 
 ![](src/main/resources/public/images/start.png)
 
-
-
 ## 3. Swagger
 
 Swagger est la documentation de l'application. Elle est accessible en local à l'adresse [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) et en ligne : [https://groupe1.m2gi.win/swagger-ui.html
-
-
 
 ## 4. Lancer un build Jenkins
 
@@ -63,30 +57,21 @@ Swagger est la documentation de l'application. Elle est accessible en local à l
   ![](src/main/resources/public/images/jenkinsStart.png)
 
 - Cliquez sur le nom du projet
-
 - Cliquez sur lancer un build
-
 - Vous devriez voir que quelque chose a démarré. Cliquez sur le #nombre à côté du point clignotant.
-
 - Cliquez sur Console Output pour voir le déroulement du build
-
 - Une fois le build terminé avec succès, passez à l'étape suivante
 
-
-
-## 5. Analyse SonarQube
+  ## 5. Analyse SonarQube
 
 - Rendez vous à l'adresse [https://sonarqube.m2gi.win/dashboard?id=com.example%3Arockpedia](https://sonarqube.m2gi.win/dashboard?id=com.example%3Arockpedia)
-
 - Vous arrivez sur le tableau de bord de l'application
 
 ![](src/main/resources/public/images/sonarqube.png)
 
 - On peut distinguer les bugs, les failles de sécurités, la dette technique, la couverture de code...
 
-
-
-## 6. Surveillance avec Spring Actuator, Prometheus et Spring Boot Admin
+  ## 6. Surveillance avec Spring Actuator, Prometheus et Spring Boot Admin
 
 ### Spring Actuator et Prometheus
 
