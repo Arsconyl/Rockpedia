@@ -4,6 +4,22 @@
 
 Swagger est la documentation de l'application. Elle est accessible en local à l'adresse [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) et en ligne : [https://groupe1.m2gi.win/swagger-ui.html](https://groupe1.m2gi.win/swagger-ui.html)
 
+## Tests
+
+Les tests sont primordiaux pour s'assurer de la qualité du code. Il en existe deux types :
+
+- ### Les tests <u>unitaires</u>
+
+Les tests unitaires sont chargés de s'assurer que le résultat d'une fonction retourne toujours exactement le même résultat pour une même entrée. Cela permet aussi de vérifier, après modification, que toutes les fonctions existantes apparavant ne sont pas compromises et fonctionnent correctement (tests de non-régression).
+
+Ces tests servent surtout à vérifier si la logique de l'application retourne les résultats escontés, dans notre cas, la fonction de scoring pour le tri des résultats de recherche (`SearchBand.matchScore()`)
+
+- ### Les test <u>d'intégration</u>
+
+Les tests d'intégration servent à s'assurer que les résultats sont envoyés et sous la bonne forme (bon encodage par exemple, pour éviter les Ã, ©...) pour une entrée donnée.
+
+Dans ce cas, on va plutôt tester que le controleur (`BandController`) renvoye les bons résultats sous la bonne forme.
+
 ## Jenkins
 
 Pour éviter les phrases du type "...mais ça fonctionne sur ma machine", on fait de l'intégration continue : On fait compiler le code sur une machine autre que les postes depuis le dépot Git.

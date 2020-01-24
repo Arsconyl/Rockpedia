@@ -15,7 +15,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/bands")
-@Api(value = "UserController", produces = MediaType.APPLICATION_JSON_VALUE)
+@Api(value = "BandController", produces = MediaType.APPLICATION_JSON_VALUE)
 public class BandController {
     
     private static final String MESSAGEBEGIN = "{\n\t\"message\": \"";
@@ -208,12 +208,12 @@ public class BandController {
 
     private ResponseEntity<Object> exportCSV(List<Band> bands, String filename) throws IOException {
         HttpHeaders headers = new HttpHeaders();
-        headers.add("charset", "utf-8");
+        headers.add("Content-Type", "text/csv;charset=UTF-8");
         headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment; filename=\"" + filename + ".csv\"");
 
         InputStreamResource excel = bandExcelService.exportCSV(bands);
 
-        return ResponseEntity.ok().headers(headers).contentType(MediaType.parseMediaType("text/csv")).body(excel);
+        return ResponseEntity.ok().headers(headers).body(excel);
     }
 
 }
