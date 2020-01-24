@@ -32,7 +32,7 @@ node {
 
         stage('backend tests') {
             try {
-                sh "./mvnw test"
+                sh "./mvnw verify -Psurefire"
             } catch (err) {
                 throw err
             } finally {
