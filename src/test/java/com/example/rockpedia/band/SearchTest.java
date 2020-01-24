@@ -18,5 +18,6 @@ public class SearchTest {
         assertEquals(-2000000007, matchScore("Death, Torture (early), Suicide, Death, Misanthropy, Insanity (later)", "xie"));
         assertEquals(5, matchScore("S.U.T.U.R.E.", "su"));
         assertEquals(6, matchScore("Morbid Surgeon", "su"));
+        assertEquals(4, matchScore("Bærum", "æ"));
     }
 }
