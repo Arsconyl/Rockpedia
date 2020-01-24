@@ -46,8 +46,13 @@ public class BandController {
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class),
             @ApiResponse(code = 204, message = MESSAGEBEGIN + "There is no band by id {id}" +  MESSAGEEND),
             @ApiResponse(code = 404, message = "Not Found")})
-    public ResponseEntity<List> getAll(){
-        return new ResponseEntity<>(bandRESTService.getAll(), HttpStatus.OK);
+    public ResponseEntity<Object> getAll(@ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) {
+        List<Band> bands = bandRESTService.getAll();
+        try {
+            return csv ? exportCSV(bands, "all_bands") : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (IOException e) {
+            return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
+        }
     }
 
     @PostMapping(path = "/add", consumes = "application/json", produces = "application/json")
@@ -91,107 +96,101 @@ public class BandController {
     @GetMapping("/byName/{name}")
     @ApiOperation(value = "Searching a band by its name")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<Object> byName(@PathVariable(value = "name") String name)
-    {
+    public ResponseEntity<Object> byName(@PathVariable(value="name")String name, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) {
         List<Band> bands;
         try {
             bands = bandRESTService.searchBandName(name);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return csv ? exportCSV(bands, "bands_name_" + name) : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | IOException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byGenre/{genre}")
     @ApiOperation(value = "Searching a band by its genre")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<Object> byGenre(@PathVariable(value="genre")String genre)
-    {
+    public ResponseEntity<Object> byGenre(@PathVariable(value="genre")String genre, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) {
         List<Band> bands;
         try {
             bands = bandRESTService.searchBandGenre(genre);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return csv ? exportCSV(bands, "bands_genre_" + genre) : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | IOException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byTheme/{theme}")
     @ApiOperation(value = "Searching a band by its theme")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<Object> byTheme(@PathVariable(value="theme")String theme)
-    {
+    public ResponseEntity<Object> byTheme(@PathVariable(value="theme")String theme, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) {
         List<Band> bands;
         try {
             bands = bandRESTService.searchBandTheme(theme);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return csv ? exportCSV(bands, "bands_theme_" + theme) : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | IOException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byLocation/{location}")
     @ApiOperation(value = "Searching a band by its location")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<Object> byLocation(@PathVariable(value="location")String location)
-    {
+    public ResponseEntity<Object> byLocation(@PathVariable(value="location")String location, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) {
         List<Band> bands;
         try {
             bands = bandRESTService.searchBandLocation(location);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return csv ? exportCSV(bands, "bands_location_" + location) : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | IOException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
+
     @GetMapping("/byCountry/{country}")
     @ApiOperation(value = "Searching a band by its country")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<Object> byCountry(@PathVariable(value="country")String country)
-    {
+    public ResponseEntity<Object> byCountry(@PathVariable(value="country")String country, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) {
         List<Band> bands;
         try {
             bands = bandRESTService.searchBandCountry(country);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return csv ? exportCSV(bands, "bands_country_" + country) : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | IOException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byLabel/{label}")
     @ApiOperation(value = "Searching a band by its label")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<Object> byLabel(@PathVariable(value="label")String label)
-    {
+    public ResponseEntity<Object> byLabel(@PathVariable(value="label")String label, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) {
         List<Band> bands;
         try {
             bands = bandRESTService.searchBandLabel(label);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return csv ? exportCSV(bands, "bands_label_" + label) : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | IOException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byStatus/{status}")
     @ApiOperation(value = "Searching a band by its status")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<Object> byStatus(@PathVariable(value="status")String status)
-    {
+    public ResponseEntity<Object> byStatus(@PathVariable(value="status")String status, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) {
         List<Band> bands;
         try {
             bands = bandRESTService.searchBandStatus(status);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return csv ? exportCSV(bands, "bands_status_" + status) : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | IOException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/byFormed/{formed}")
     @ApiOperation(value = "Searching a band by its date of formation")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = SwaggerConfig.BandsList.class)})
-    public ResponseEntity<List> byFormed(@PathVariable(value="formed")int formed)
+    public ResponseEntity<Object> byFormed(@PathVariable(value="formed")int formed, @ApiParam(name = "csv", value = "Export CSV") @RequestParam(value = "csv", defaultValue = "false") boolean csv) throws IOException
     {
         List<Band> bands = bandRESTService.searchBandFormed(formed);
-        return new ResponseEntity<>(bands, HttpStatus.OK);
+        return csv ? exportCSV(bands, "bands_status_" + formed) : new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     @GetMapping("/search")
@@ -201,10 +200,10 @@ public class BandController {
         List<Band> bands;
         try {
             bands = bandRESTService.searchBand(query);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            return csv ? exportCSV(bands, "bands_search_" + query) : new ResponseEntity<>(bands, HttpStatus.OK);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | IOException e) {
             return new ResponseEntity<>(MESSAGEBEGIN + e.getMessage() + MESSAGEEND, HttpStatus.BAD_REQUEST);
         }
-        return csv ? exportCSV(bands, "bands_search_" + query) : new ResponseEntity<>(bands, HttpStatus.OK);
     }
 
     private ResponseEntity<Object> exportCSV(List<Band> bands, String filename) throws IOException {
