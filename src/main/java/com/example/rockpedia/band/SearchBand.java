@@ -30,7 +30,7 @@ public class SearchBand {
                 if (in == 'œ' || in == 'Œ' || in == 'æ' || in == 'Æ' || in == 'ß')
                 {
                     String spe = replaceSpecialChar(in);
-                    String spePat = pattern.length() > 2 ? pattern.substring(0,2) : String.valueOf(pat);
+                    String spePat = pattern.length() >= 2 ? pattern.substring(0,2) : String.valueOf(pat);
                     if (spe.equals(spePat))
                         return 2 + matchScore(input.substring(1), pattern.substring(2), true, noCheckLength);
                 }

@@ -19,5 +19,6 @@ public class SearchTest {
         assertEquals(5, matchScore("S.U.T.U.R.E.", "su"));
         assertEquals(6, matchScore("Morbid Surgeon", "su"));
         assertEquals(4, matchScore("Bærum", "æ"));
+        assertEquals(2, matchScore("Bærum", "ae"));
     }
 }
