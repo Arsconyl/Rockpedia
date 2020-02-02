@@ -11,11 +11,11 @@ public class BandTemplate {
     public String genre;
     @ApiModelProperty(value = "themes", example = "Misanthropy")
     public String themes;
-    @ApiModelProperty(value = "location", example = "Black Pandemie Production")
+    @ApiModelProperty(value = "location", example = "Metz, Grand Est")
     public String location;
     @ApiModelProperty(value = "country", example = "France")
     public String country;
-    @ApiModelProperty(value = "label", example = "Metz, Grand Est")
+    @ApiModelProperty(value = "label", example = "Black Pandemie Production")
     public String label;
     @ApiModelProperty(value = "status", example = "Active")
     public String status;
