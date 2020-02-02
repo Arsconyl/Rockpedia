@@ -7,7 +7,7 @@ node {
     def nomDeLimage = 'g1-rockpedia'
 
     stage('checkout') {
-        git branch: 'master', url: 'https://github.com/ALudwig57/rockpedia.git'
+        git branch: 'develop', url: 'https://github.com/ALudwig57/rockpedia.git'
         commitId = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
     }
 
