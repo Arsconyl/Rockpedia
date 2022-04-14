@@ -7,8 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name="Band")
-public
-class Band {
+public class Band {
 
     @Id
     @GeneratedValue
