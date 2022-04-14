@@ -58,7 +58,7 @@ public class BandController {
     @PostMapping(path = "/add", consumes = "application/json", produces = "application/json")
     @ApiOperation(value = "Adding a band")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = Band.class)})
-    public ResponseEntity<Object> newBand(@RequestBody BandTemplate band)
+    public ResponseEntity<Object> newBand(@RequestBody BandDTO band)
     {
         try {
             return new ResponseEntity<>(bandRESTService.add(new Band(band)), HttpStatus.OK);
@@ -70,7 +70,7 @@ public class BandController {
     @PutMapping(path = "/update/{id}", consumes = "application/json", produces = "application/json")
     @ApiOperation(value = "Updating a band")
     @ApiResponses({@ApiResponse(code = 200, message = "OK", response = Band.class)})
-    public ResponseEntity<Object> replaceBand(@RequestBody BandTemplate band, @PathVariable Long id)
+    public ResponseEntity<Object> replaceBand(@RequestBody BandDTO band, @PathVariable Long id)
     {
         try {
             return new ResponseEntity<>(bandRESTService.insert(id, new Band(band)), HttpStatus.OK);

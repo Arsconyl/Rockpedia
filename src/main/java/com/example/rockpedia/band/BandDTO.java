@@ -4,7 +4,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(subTypes = Band.class)
-public class BandTemplate {
+public class BandDTO {
     @ApiModelProperty(value = "name", example = "S.U.T.U.R.E.")
     public String name;
     @ApiModelProperty(value = "genre", example = "Black/Crust")

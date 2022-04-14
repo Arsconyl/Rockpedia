@@ -1,13 +1,16 @@
 package com.example.rockpedia.band;
 
-import com.example.rockpedia.Pair;
+import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static com.example.rockpedia.band.SearchBand.matchScore;
+import static org.springframework.util.StringUtils.capitalize;
 
 @Service
 public class BandRESTService {
@@ -131,32 +134,29 @@ public class BandRESTService {
 
         return result;
     }
+    public static List<Band> matchScoreBand(List<Band> bands, String query, String memberToSearch) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        List<Pair<Integer, Band>> bandsSorted = new ArrayList<>();
+        String memberGetter = "get"+capitalize(memberToSearch);
+        Method getterMemberToSearch = Band.class.getMethod(memberGetter);
 
-    public static List<Band> matchScoreBand(List<Band> all, String query, String memberToSearch) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        List<Pair<Integer, Band>> allSorted = new ArrayList<>();
-        String memberGetter = "get"+memberToSearch.substring(0, 1).toUpperCase() + memberToSearch.substring(1).toLowerCase();
-        for(Band band: all)
+        for(Band band: bands)
         {
-            String value = band.getClass().getMethod(memberGetter).invoke(band).toString();
+            String value = getterMemberToSearch.invoke(band).toString();
             int score = matchScore(value, query);
             if(score > 0)
-                allSorted.add(new Pair<>(score, band));
+                bandsSorted.add(Pair.of(score, band));
         }
 
-        allSorted.sort((o1, o2) -> {
-            if (o1.getKey() < o2.getKey())
+        bandsSorted.sort((o1, o2) -> {
+            if (o1.getFirst() < o2.getFirst())
                 return 1;
-            else if (o1.getKey().equals(o2.getKey()))
+            else if (o1.getFirst().equals(o2.getFirst()))
                 return 0;
-            else if (o1.getKey() > o2.getKey())
-                return -1;
-            return 0;
+            else return -1;
         });
 
-        all.clear();
-
-        for(Pair<Integer, Band> band: allSorted)
-            all.add(band.getValue());
-        return all;
+        return bandsSorted.stream()
+                .map(Pair::getSecond)
+                .collect(Collectors.toList());
     }
 }

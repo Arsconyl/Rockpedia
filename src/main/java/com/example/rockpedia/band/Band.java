@@ -162,7 +162,7 @@ class Band {
     public Band() {
     }
 
-    public Band(BandTemplate band) {
+    public Band(BandDTO band) {
         this.name = band.name;
         this.genre = band.genre;
         this.themes = band.themes;
